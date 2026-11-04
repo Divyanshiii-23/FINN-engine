@@ -1,0 +1,1289 @@
+{
+ "suite": "ui",
+ "label": "release_verify",
+ "seconds": 145.6,
+ "metrics": {},
+ "groups": {
+  "D1 ticker search": {
+   "passed": 21,
+   "failed": 0
+  },
+  "D2 navigation": {
+   "passed": 18,
+   "failed": 0
+  },
+  "D3 filtering": {
+   "passed": 6,
+   "failed": 0
+  },
+  "D4 loading states": {
+   "passed": 6,
+   "failed": 0
+  },
+  "D5 error states": {
+   "passed": 10,
+   "failed": 0
+  },
+  "D6 mobile responsiveness (no horizontal overflow)": {
+   "passed": 54,
+   "failed": 0
+  },
+  "D6 tap targets \u2265 24px (WCAG 2.5.8)": {
+   "passed": 24,
+   "failed": 0
+  }
+ },
+ "checks": [
+  {
+   "area": "D",
+   "group": "D1 ticker search",
+   "name": "'reliance' finds RELIANCE",
+   "passed": true,
+   "detail": "first=RELIANCE; 8 options",
+   "severity": "normal",
+   "data": {}
+  },
+  {
+   "area": "D",
+   "group": "D1 ticker search",
+   "name": "'RELIANCE' finds RELIANCE",
+   "passed": true,
+   "detail": "first=RELIANCE; 8 options",
+   "severity": "normal",
+   "data": {}
+  },
+  {
+   "area": "D",
+   "group": "D1 ticker search",
+   "name": "'M&M' finds M&M",
+   "passed": true,
+   "detail": "first=M&M; 2 options",
+   "severity": "normal",
+   "data": {}
+  },
+  {
+   "area": "D",
+   "group": "D1 ticker search",
+   "name": "'bajaj-auto' finds BAJAJ-AUTO",
+   "passed": true,
+   "detail": "first=BAJAJ-AUTO; 1 options",
+   "severity": "normal",
+   "data": {}
+  },
+  {
+   "area": "D",
+   "group": "D1 ticker search",
+   "name": "'tata motors' finds TATAMOTORS",
+   "passed": true,
+   "detail": "first=TATAMOTORS; 2 options",
+   "severity": "normal",
+   "data": {}
+  },
+  {
+   "area": "D",
+   "group": "D1 ticker search",
+   "name": "'hdfc bank' finds HDFCBANK",
+   "passed": true,
+   "detail": "first=HDFCBANK; 1 options",
+   "severity": "normal",
+   "data": {}
+  },
+  {
+   "area": "D",
+   "group": "D1 ticker search",
+   "name": "'TCS.NS' finds TCS",
+   "passed": true,
+   "detail": "first=TCS; 2 options",
+   "severity": "normal",
+   "data": {}
+  },
+  {
+   "area": "D",
+   "group": "D1 ticker search",
+   "name": "'NSE:INFY' finds INFY",
+   "passed": true,
+   "detail": "first=INFY; 1 options",
+   "severity": "normal",
+   "data": {}
+  },
+  {
+   "area": "D",
+   "group": "D1 ticker search",
+   "name": "'  halcyon  ' finds HALCYON",
+   "passed": true,
+   "detail": "first=HALCYON; 1 options",
+   "severity": "normal",
+   "data": {}
+  },
+  {
+   "area": "D",
+   "group": "D1 ticker search",
+   "name": "'infosys' finds INFY",
+   "passed": true,
+   "detail": "first=INFY; 2 options",
+   "severity": "normal",
+   "data": {}
+  },
+  {
+   "area": "D",
+   "group": "D1 ticker search",
+   "name": "'zzzqqq' -> No listed company matches",
+   "passed": true,
+   "detail": "No listed company matches \u201czzzqqq\u201d.\nTry ZZZQQQ anyway: NSE is checked when research runs, which catches listings newer than this list.",
+   "severity": "normal",
+   "data": {}
+  },
+  {
+   "area": "D",
+   "group": "D1 ticker search",
+   "name": "'<script>alert(1)</script>' -> No listed company matches",
+   "passed": true,
+   "detail": "No listed company matches \u201c<script>alert(1)</script>\u201d.",
+   "severity": "normal",
+   "data": {}
+  },
+  {
+   "area": "D",
+   "group": "D1 ticker search",
+   "name": "'ETERNAL' -> Try ETERNAL anyway",
+   "passed": true,
+   "detail": "No listed company matches \u201cETERNAL\u201d.\nTry ETERNAL anyway: NSE is checked when research runs, which catches listings newer than this list.",
+   "severity": "normal",
+   "data": {}
+  },
+  {
+   "area": "D",
+   "group": "D1 ticker search",
+   "name": "no script ran from the search box",
+   "passed": true,
+   "detail": "[]",
+   "severity": "normal",
+   "data": {}
+  },
+  {
+   "area": "D",
+   "group": "D1 ticker search",
+   "name": "blank query shows no list",
+   "passed": true,
+   "detail": "",
+   "severity": "normal",
+   "data": {}
+  },
+  {
+   "area": "D",
+   "group": "D1 ticker search",
+   "name": "keyboard: arrow + enter opens the report",
+   "passed": true,
+   "detail": "http://127.0.0.1:3000/research/HALCYON",
+   "severity": "normal",
+   "data": {}
+  },
+  {
+   "area": "D",
+   "group": "D1 ticker search",
+   "name": "unbuilt ticker offers to run research",
+   "passed": true,
+   "detail": "",
+   "severity": "normal",
+   "data": {}
+  },
+  {
+   "area": "D",
+   "group": "D1 ticker search",
+   "name": "live research on an arbitrary ticker ends in a stated failure, not a hang (28s; no route to NSE/BSE here)",
+   "passed": true,
+   "detail": "\u2039 Research POLYCAB  None of the filing sources for POLYCAB could be reached, so there is nothing to research yet.  Polycab India Limited, ISIN INE455K01017  Ticker checked against a November 2023 copy",
+   "severity": "critical",
+   "data": {}
+  },
+  {
+   "area": "D",
+   "group": "D1 ticker search",
+   "name": "the failure names the company, its ISIN and the sources tried",
+   "passed": true,
+   "detail": "\u2039 Research POLYCAB  None of the filing sources for POLYCAB could be reached, so there is nothing to research yet.  Polycab India Limited, ISIN INE455K01017  Ticker checked against a November 2023 copy of NSE's equity list because NSE couldn't be reached; name and ISIN may have changed since.  BSE's ",
+   "severity": "normal",
+   "data": {}
+  },
+  {
+   "area": "D",
+   "group": "D1 ticker search",
+   "name": "a 'Try again' action is offered",
+   "passed": true,
+   "detail": "",
+   "severity": "normal",
+   "data": {}
+  },
+  {
+   "area": "D",
+   "group": "D1 ticker search",
+   "name": "no page errors during search",
+   "passed": true,
+   "detail": "[]",
+   "severity": "normal",
+   "data": {}
+  },
+  {
+   "area": "D",
+   "group": "D2 navigation",
+   "name": "phone tab Portfolio -> /portfolio, marked current",
+   "passed": true,
+   "detail": "Portfolio",
+   "severity": "normal",
+   "data": {}
+  },
+  {
+   "area": "D",
+   "group": "D2 navigation",
+   "name": "phone tab Research -> /research, marked current",
+   "passed": true,
+   "detail": "Research",
+   "severity": "normal",
+   "data": {}
+  },
+  {
+   "area": "D",
+   "group": "D2 navigation",
+   "name": "phone tab Alerts -> /alerts, marked current",
+   "passed": true,
+   "detail": "Alerts\n10",
+   "severity": "normal",
+   "data": {}
+  },
+  {
+   "area": "D",
+   "group": "D2 navigation",
+   "name": "phone tab Brief -> /, marked current",
+   "passed": true,
+   "detail": "Brief",
+   "severity": "normal",
+   "data": {}
+  },
+  {
+   "area": "D",
+   "group": "D2 navigation",
+   "name": "browser back returns to the previous tab",
+   "passed": true,
+   "detail": "http://127.0.0.1:3000/alerts",
+   "severity": "normal",
+   "data": {}
+  },
+  {
+   "area": "D",
+   "group": "D2 navigation",
+   "name": "desktop sidebar Portfolio",
+   "passed": true,
+   "detail": "http://127.0.0.1:3000/portfolio",
+   "severity": "normal",
+   "data": {}
+  },
+  {
+   "area": "D",
+   "group": "D2 navigation",
+   "name": "desktop sidebar Research",
+   "passed": true,
+   "detail": "http://127.0.0.1:3000/research",
+   "severity": "normal",
+   "data": {}
+  },
+  {
+   "area": "D",
+   "group": "D2 navigation",
+   "name": "desktop sidebar Alerts",
+   "passed": true,
+   "detail": "http://127.0.0.1:3000/alerts",
+   "severity": "normal",
+   "data": {}
+  },
+  {
+   "area": "D",
+   "group": "D2 navigation",
+   "name": "desktop sidebar Brief",
+   "passed": true,
+   "detail": "http://127.0.0.1:3000/",
+   "severity": "normal",
+   "data": {}
+  },
+  {
+   "area": "D",
+   "group": "D2 navigation",
+   "name": "brief -> event detail",
+   "passed": true,
+   "detail": "http://127.0.0.1:3000/events/8bd8e04dd9d147bd",
+   "severity": "normal",
+   "data": {}
+  },
+  {
+   "area": "D",
+   "group": "D2 navigation",
+   "name": "deep link /events/8bd8e04dd9d147bd",
+   "passed": true,
+   "detail": "FINN  Financial investment agent  Brief Portfolio Research Alerts 10  As of Wed, 4 Nov, 07:30 IST  Test fixtures: synthetic filings and prices for fictional com",
+   "severity": "normal",
+   "data": {}
+  },
+  {
+   "area": "D",
+   "group": "D2 navigation",
+   "name": "deep link /moves/SARANG",
+   "passed": true,
+   "detail": "FINN  Financial investment agent  Brief Portfolio Research Alerts 10  As of Wed, 4 Nov, 07:30 IST  Test fixtures: synthetic filings and prices for fictional com",
+   "severity": "normal",
+   "data": {}
+  },
+  {
+   "area": "D",
+   "group": "D2 navigation",
+   "name": "deep link /research/HALCYON/credibility",
+   "passed": true,
+   "detail": "FINN  Financial investment agent  Brief Portfolio Research Alerts 10  As of Wed, 4 Nov, 07:30 IST  Test fixtures: synthetic filings and prices for fictional com",
+   "severity": "normal",
+   "data": {}
+  },
+  {
+   "area": "D",
+   "group": "D2 navigation",
+   "name": "deep link /events/does-not-exist",
+   "passed": true,
+   "detail": "FINN  Financial investment agent  Brief Portfolio Research Alerts 10  As of Wed, 4 Nov, 07:30 IST  Test fixtures: synthetic filings and prices for fictional com",
+   "severity": "normal",
+   "data": {}
+  },
+  {
+   "area": "D",
+   "group": "D2 navigation",
+   "name": "deep link /moves/NOPE",
+   "passed": true,
+   "detail": "FINN  Financial investment agent  Brief Portfolio Research Alerts 10  As of Wed, 4 Nov, 07:30 IST  Test fixtures: synthetic filings and prices for fictional com",
+   "severity": "normal",
+   "data": {}
+  },
+  {
+   "area": "D",
+   "group": "D2 navigation",
+   "name": "deep link /definitely-not-a-page",
+   "passed": true,
+   "detail": "FINN  Financial investment agent  Brief Portfolio Research Alerts 10  As of Wed, 4 Nov, 07:30 IST  Test fixtures: synthetic filings and prices for fictional com",
+   "severity": "normal",
+   "data": {}
+  },
+  {
+   "area": "D",
+   "group": "D2 navigation",
+   "name": "all 38 internal links resolve",
+   "passed": true,
+   "detail": "",
+   "severity": "critical",
+   "data": {}
+  },
+  {
+   "area": "D",
+   "group": "D2 navigation",
+   "name": "no page errors while navigating",
+   "passed": true,
+   "detail": "[]",
+   "severity": "normal",
+   "data": {}
+  },
+  {
+   "area": "D",
+   "group": "D3 filtering",
+   "name": "alert type filter changes the list ({'All': 10, 'Filings': 7, 'Market moves': 3, 'Unexplained moves': 1})",
+   "passed": true,
+   "detail": "total 10",
+   "severity": "normal",
+   "data": {}
+  },
+  {
+   "area": "D",
+   "group": "D3 filtering",
+   "name": "symbol filter 'HELIX' shows only that company",
+   "passed": true,
+   "detail": "1 rows; other symbols visible: []",
+   "severity": "normal",
+   "data": {}
+  },
+  {
+   "area": "D",
+   "group": "D3 filtering",
+   "name": "'Clear filters' appears when filtered and restores the list",
+   "passed": true,
+   "detail": "10 vs 10",
+   "severity": "normal",
+   "data": {}
+  },
+  {
+   "area": "D",
+   "group": "D3 filtering",
+   "name": "category filter 'Litigation and regulatory' narrows the list",
+   "passed": true,
+   "detail": "1 of 10",
+   "severity": "normal",
+   "data": {}
+  },
+  {
+   "area": "D",
+   "group": "D3 filtering",
+   "name": "unread-only toggle works",
+   "passed": true,
+   "detail": "10 of 10",
+   "severity": "normal",
+   "data": {}
+  },
+  {
+   "area": "D",
+   "group": "D3 filtering",
+   "name": "brief window filter is monotonic [('24 h', 14), ('3 days', 16), ('7 days', 24)]",
+   "passed": true,
+   "detail": "[('24 h', 14), ('3 days', 16), ('7 days', 24)]",
+   "severity": "normal",
+   "data": {}
+  },
+  {
+   "area": "D",
+   "group": "D4 loading states",
+   "name": "report: busy state shown while the API is slow",
+   "passed": true,
+   "detail": "aria-busy=1; held 1",
+   "severity": "normal",
+   "data": {}
+  },
+  {
+   "area": "D",
+   "group": "D4 loading states",
+   "name": "report: content replaces the busy state",
+   "passed": true,
+   "detail": "",
+   "severity": "normal",
+   "data": {}
+  },
+  {
+   "area": "D",
+   "group": "D4 loading states",
+   "name": "brief: busy state shown while the feed loads",
+   "passed": true,
+   "detail": "held 1",
+   "severity": "normal",
+   "data": {}
+  },
+  {
+   "area": "D",
+   "group": "D4 loading states",
+   "name": "brief: content replaces the busy state",
+   "passed": true,
+   "detail": "",
+   "severity": "normal",
+   "data": {}
+  },
+  {
+   "area": "D",
+   "group": "D4 loading states",
+   "name": "Ask: button says it is reading and input is locked",
+   "passed": true,
+   "detail": "Reading\u2026",
+   "severity": "normal",
+   "data": {}
+  },
+  {
+   "area": "D",
+   "group": "D4 loading states",
+   "name": "Ask: answer appears and the input unlocks",
+   "passed": true,
+   "detail": "",
+   "severity": "normal",
+   "data": {}
+  },
+  {
+   "area": "D",
+   "group": "D5 error states",
+   "name": "/ with feed -> 500",
+   "passed": true,
+   "detail": "The feed couldn't be loaded  feed exploded  Try again",
+   "severity": "critical",
+   "data": {}
+  },
+  {
+   "area": "D",
+   "group": "D5 error states",
+   "name": "/: retry recovers after 500",
+   "passed": true,
+   "detail": "Since you last looked\n\nTue, 3 Nov, 13:10 IST to Wed, 4 Nov, 07:30 IST\n\nSince last look\n24 h\n3 days\n7 days\n\n27 filings\u2192\n,",
+   "severity": "normal",
+   "data": {}
+  },
+  {
+   "area": "D",
+   "group": "D5 error states",
+   "name": "/research/HALCYON with HALCYON -> 500",
+   "passed": true,
+   "detail": "\u2039 Research HALCYON  The engine hit an error; it has been logged.",
+   "severity": "critical",
+   "data": {}
+  },
+  {
+   "area": "D",
+   "group": "D5 error states",
+   "name": "/research/HALCYON with HALCYON -> 502",
+   "passed": true,
+   "detail": "\u2039 Research HALCYON  The research engine isn't responding.",
+   "severity": "critical",
+   "data": {}
+  },
+  {
+   "area": "D",
+   "group": "D5 error states",
+   "name": "/ with feed -> 200 (bad JSON)",
+   "passed": true,
+   "detail": "The feed couldn't be loaded  The feed could not be reached. Check that the app server is running.  Try again",
+   "severity": "critical",
+   "data": {}
+  },
+  {
+   "area": "D",
+   "group": "D5 error states",
+   "name": "/: retry recovers after 200",
+   "passed": true,
+   "detail": "Since you last looked\n\nTue, 3 Nov, 13:10 IST to Wed, 4 Nov, 07:30 IST\n\nSince last look\n24 h\n3 days\n7 days\n\n27 filings\u2192\n,",
+   "severity": "normal",
+   "data": {}
+  },
+  {
+   "area": "D",
+   "group": "D5 error states",
+   "name": "Ask with engine unavailable shows the reason",
+   "passed": true,
+   "detail": "Ask FINN about HALCYON\n\nAnswers only from HALCYON's filings, results, transcripts and presentations read for this report.\n\nQuestion about HALCYON\nAsk\nWhy did margins decline in Q2 FY27?\nWhat changed b",
+   "severity": "critical",
+   "data": {}
+  },
+  {
+   "area": "D",
+   "group": "D5 error states",
+   "name": "invalid ticker in the URL explains itself",
+   "passed": true,
+   "detail": "\u2039 Research\n@@@\n\nThat isn't an NSE symbol (letters, digits, & and - only).",
+   "severity": "normal",
+   "data": {}
+  },
+  {
+   "area": "D",
+   "group": "D5 error states",
+   "name": "company with no documents explains its gaps",
+   "passed": true,
+   "detail": "\u2039 Research\nCORAL\n\nCoral Retail Limited, Diversified Retail\n\n\u20b91,952.22\n\n+1.1% on 2026-11-03, synthetic prices\n\nPrimary sources only, as of 2026-11-04: 0 results filings, 0 call transcripts, 0 presentat",
+   "severity": "normal",
+   "data": {}
+  },
+  {
+   "area": "D",
+   "group": "D5 error states",
+   "name": "no uncaught page errors in any error state",
+   "passed": true,
+   "detail": "[]",
+   "severity": "critical",
+   "data": {}
+  },
+  {
+   "area": "D",
+   "group": "D6 mobile responsiveness (no horizontal overflow)",
+   "name": "320x640 /",
+   "passed": true,
+   "detail": "page 320px in 320px; 0 elements past the edge: []",
+   "severity": "critical",
+   "data": {}
+  },
+  {
+   "area": "D",
+   "group": "D6 tap targets \u2265 24px (WCAG 2.5.8)",
+   "name": "320x640 /",
+   "passed": true,
+   "detail": "0 small: []",
+   "severity": "normal",
+   "data": {}
+  },
+  {
+   "area": "D",
+   "group": "D6 mobile responsiveness (no horizontal overflow)",
+   "name": "320x640 /portfolio",
+   "passed": true,
+   "detail": "page 320px in 320px; 0 elements past the edge: []",
+   "severity": "critical",
+   "data": {}
+  },
+  {
+   "area": "D",
+   "group": "D6 tap targets \u2265 24px (WCAG 2.5.8)",
+   "name": "320x640 /portfolio",
+   "passed": true,
+   "detail": "0 small: []",
+   "severity": "normal",
+   "data": {}
+  },
+  {
+   "area": "D",
+   "group": "D6 mobile responsiveness (no horizontal overflow)",
+   "name": "320x640 /alerts",
+   "passed": true,
+   "detail": "page 320px in 320px; 0 elements past the edge: []",
+   "severity": "critical",
+   "data": {}
+  },
+  {
+   "area": "D",
+   "group": "D6 tap targets \u2265 24px (WCAG 2.5.8)",
+   "name": "320x640 /alerts",
+   "passed": true,
+   "detail": "0 small: []",
+   "severity": "normal",
+   "data": {}
+  },
+  {
+   "area": "D",
+   "group": "D6 mobile responsiveness (no horizontal overflow)",
+   "name": "320x640 /research",
+   "passed": true,
+   "detail": "page 320px in 320px; 0 elements past the edge: []",
+   "severity": "critical",
+   "data": {}
+  },
+  {
+   "area": "D",
+   "group": "D6 tap targets \u2265 24px (WCAG 2.5.8)",
+   "name": "320x640 /research",
+   "passed": true,
+   "detail": "0 small: []",
+   "severity": "normal",
+   "data": {}
+  },
+  {
+   "area": "D",
+   "group": "D6 mobile responsiveness (no horizontal overflow)",
+   "name": "320x640 /research/HALCYON",
+   "passed": true,
+   "detail": "page 320px in 320px; 0 elements past the edge: []",
+   "severity": "critical",
+   "data": {}
+  },
+  {
+   "area": "D",
+   "group": "D6 tap targets \u2265 24px (WCAG 2.5.8)",
+   "name": "320x640 /research/HALCYON",
+   "passed": true,
+   "detail": "0 small: []",
+   "severity": "normal",
+   "data": {}
+  },
+  {
+   "area": "D",
+   "group": "D6 mobile responsiveness (no horizontal overflow)",
+   "name": "320x640 /research/KAVERI/credibility",
+   "passed": true,
+   "detail": "page 320px in 320px; 0 elements past the edge: []",
+   "severity": "critical",
+   "data": {}
+  },
+  {
+   "area": "D",
+   "group": "D6 tap targets \u2265 24px (WCAG 2.5.8)",
+   "name": "320x640 /research/KAVERI/credibility",
+   "passed": true,
+   "detail": "0 small: []",
+   "severity": "normal",
+   "data": {}
+  },
+  {
+   "area": "D",
+   "group": "D6 mobile responsiveness (no horizontal overflow)",
+   "name": "320x640 /events/8bd8e04dd9d147bd",
+   "passed": true,
+   "detail": "page 320px in 320px; 0 elements past the edge: []",
+   "severity": "critical",
+   "data": {}
+  },
+  {
+   "area": "D",
+   "group": "D6 tap targets \u2265 24px (WCAG 2.5.8)",
+   "name": "320x640 /events/8bd8e04dd9d147bd",
+   "passed": true,
+   "detail": "0 small: []",
+   "severity": "normal",
+   "data": {}
+  },
+  {
+   "area": "D",
+   "group": "D6 mobile responsiveness (no horizontal overflow)",
+   "name": "320x640 /moves/SARANG",
+   "passed": true,
+   "detail": "page 320px in 320px; 0 elements past the edge: []",
+   "severity": "critical",
+   "data": {}
+  },
+  {
+   "area": "D",
+   "group": "D6 tap targets \u2265 24px (WCAG 2.5.8)",
+   "name": "320x640 /moves/SARANG",
+   "passed": true,
+   "detail": "0 small: []",
+   "severity": "normal",
+   "data": {}
+  },
+  {
+   "area": "D",
+   "group": "D6 mobile responsiveness (no horizontal overflow)",
+   "name": "320x640: no page errors",
+   "passed": true,
+   "detail": "[]",
+   "severity": "normal",
+   "data": {}
+  },
+  {
+   "area": "D",
+   "group": "D6 mobile responsiveness (no horizontal overflow)",
+   "name": "375x667 /",
+   "passed": true,
+   "detail": "page 375px in 375px; 0 elements past the edge: []",
+   "severity": "critical",
+   "data": {}
+  },
+  {
+   "area": "D",
+   "group": "D6 tap targets \u2265 24px (WCAG 2.5.8)",
+   "name": "375x667 /",
+   "passed": true,
+   "detail": "0 small: []",
+   "severity": "normal",
+   "data": {}
+  },
+  {
+   "area": "D",
+   "group": "D6 mobile responsiveness (no horizontal overflow)",
+   "name": "375x667 /portfolio",
+   "passed": true,
+   "detail": "page 375px in 375px; 0 elements past the edge: []",
+   "severity": "critical",
+   "data": {}
+  },
+  {
+   "area": "D",
+   "group": "D6 tap targets \u2265 24px (WCAG 2.5.8)",
+   "name": "375x667 /portfolio",
+   "passed": true,
+   "detail": "0 small: []",
+   "severity": "normal",
+   "data": {}
+  },
+  {
+   "area": "D",
+   "group": "D6 mobile responsiveness (no horizontal overflow)",
+   "name": "375x667 /alerts",
+   "passed": true,
+   "detail": "page 375px in 375px; 0 elements past the edge: []",
+   "severity": "critical",
+   "data": {}
+  },
+  {
+   "area": "D",
+   "group": "D6 tap targets \u2265 24px (WCAG 2.5.8)",
+   "name": "375x667 /alerts",
+   "passed": true,
+   "detail": "0 small: []",
+   "severity": "normal",
+   "data": {}
+  },
+  {
+   "area": "D",
+   "group": "D6 mobile responsiveness (no horizontal overflow)",
+   "name": "375x667 /research",
+   "passed": true,
+   "detail": "page 375px in 375px; 0 elements past the edge: []",
+   "severity": "critical",
+   "data": {}
+  },
+  {
+   "area": "D",
+   "group": "D6 tap targets \u2265 24px (WCAG 2.5.8)",
+   "name": "375x667 /research",
+   "passed": true,
+   "detail": "0 small: []",
+   "severity": "normal",
+   "data": {}
+  },
+  {
+   "area": "D",
+   "group": "D6 mobile responsiveness (no horizontal overflow)",
+   "name": "375x667 /research/HALCYON",
+   "passed": true,
+   "detail": "page 375px in 375px; 0 elements past the edge: []",
+   "severity": "critical",
+   "data": {}
+  },
+  {
+   "area": "D",
+   "group": "D6 tap targets \u2265 24px (WCAG 2.5.8)",
+   "name": "375x667 /research/HALCYON",
+   "passed": true,
+   "detail": "0 small: []",
+   "severity": "normal",
+   "data": {}
+  },
+  {
+   "area": "D",
+   "group": "D6 mobile responsiveness (no horizontal overflow)",
+   "name": "375x667 /research/KAVERI/credibility",
+   "passed": true,
+   "detail": "page 375px in 375px; 0 elements past the edge: []",
+   "severity": "critical",
+   "data": {}
+  },
+  {
+   "area": "D",
+   "group": "D6 tap targets \u2265 24px (WCAG 2.5.8)",
+   "name": "375x667 /research/KAVERI/credibility",
+   "passed": true,
+   "detail": "0 small: []",
+   "severity": "normal",
+   "data": {}
+  },
+  {
+   "area": "D",
+   "group": "D6 mobile responsiveness (no horizontal overflow)",
+   "name": "375x667 /events/8bd8e04dd9d147bd",
+   "passed": true,
+   "detail": "page 375px in 375px; 0 elements past the edge: []",
+   "severity": "critical",
+   "data": {}
+  },
+  {
+   "area": "D",
+   "group": "D6 tap targets \u2265 24px (WCAG 2.5.8)",
+   "name": "375x667 /events/8bd8e04dd9d147bd",
+   "passed": true,
+   "detail": "0 small: []",
+   "severity": "normal",
+   "data": {}
+  },
+  {
+   "area": "D",
+   "group": "D6 mobile responsiveness (no horizontal overflow)",
+   "name": "375x667 /moves/SARANG",
+   "passed": true,
+   "detail": "page 375px in 375px; 0 elements past the edge: []",
+   "severity": "critical",
+   "data": {}
+  },
+  {
+   "area": "D",
+   "group": "D6 tap targets \u2265 24px (WCAG 2.5.8)",
+   "name": "375x667 /moves/SARANG",
+   "passed": true,
+   "detail": "0 small: []",
+   "severity": "normal",
+   "data": {}
+  },
+  {
+   "area": "D",
+   "group": "D6 mobile responsiveness (no horizontal overflow)",
+   "name": "375x667: no page errors",
+   "passed": true,
+   "detail": "[]",
+   "severity": "normal",
+   "data": {}
+  },
+  {
+   "area": "D",
+   "group": "D6 mobile responsiveness (no horizontal overflow)",
+   "name": "390x844 /",
+   "passed": true,
+   "detail": "page 390px in 390px; 0 elements past the edge: []",
+   "severity": "critical",
+   "data": {}
+  },
+  {
+   "area": "D",
+   "group": "D6 tap targets \u2265 24px (WCAG 2.5.8)",
+   "name": "390x844 /",
+   "passed": true,
+   "detail": "0 small: []",
+   "severity": "normal",
+   "data": {}
+  },
+  {
+   "area": "D",
+   "group": "D6 mobile responsiveness (no horizontal overflow)",
+   "name": "390x844 /portfolio",
+   "passed": true,
+   "detail": "page 390px in 390px; 0 elements past the edge: []",
+   "severity": "critical",
+   "data": {}
+  },
+  {
+   "area": "D",
+   "group": "D6 tap targets \u2265 24px (WCAG 2.5.8)",
+   "name": "390x844 /portfolio",
+   "passed": true,
+   "detail": "0 small: []",
+   "severity": "normal",
+   "data": {}
+  },
+  {
+   "area": "D",
+   "group": "D6 mobile responsiveness (no horizontal overflow)",
+   "name": "390x844 /alerts",
+   "passed": true,
+   "detail": "page 390px in 390px; 0 elements past the edge: []",
+   "severity": "critical",
+   "data": {}
+  },
+  {
+   "area": "D",
+   "group": "D6 tap targets \u2265 24px (WCAG 2.5.8)",
+   "name": "390x844 /alerts",
+   "passed": true,
+   "detail": "0 small: []",
+   "severity": "normal",
+   "data": {}
+  },
+  {
+   "area": "D",
+   "group": "D6 mobile responsiveness (no horizontal overflow)",
+   "name": "390x844 /research",
+   "passed": true,
+   "detail": "page 390px in 390px; 0 elements past the edge: []",
+   "severity": "critical",
+   "data": {}
+  },
+  {
+   "area": "D",
+   "group": "D6 tap targets \u2265 24px (WCAG 2.5.8)",
+   "name": "390x844 /research",
+   "passed": true,
+   "detail": "0 small: []",
+   "severity": "normal",
+   "data": {}
+  },
+  {
+   "area": "D",
+   "group": "D6 mobile responsiveness (no horizontal overflow)",
+   "name": "390x844 /research/HALCYON",
+   "passed": true,
+   "detail": "page 390px in 390px; 0 elements past the edge: []",
+   "severity": "critical",
+   "data": {}
+  },
+  {
+   "area": "D",
+   "group": "D6 tap targets \u2265 24px (WCAG 2.5.8)",
+   "name": "390x844 /research/HALCYON",
+   "passed": true,
+   "detail": "0 small: []",
+   "severity": "normal",
+   "data": {}
+  },
+  {
+   "area": "D",
+   "group": "D6 mobile responsiveness (no horizontal overflow)",
+   "name": "390x844 /research/KAVERI/credibility",
+   "passed": true,
+   "detail": "page 390px in 390px; 0 elements past the edge: []",
+   "severity": "critical",
+   "data": {}
+  },
+  {
+   "area": "D",
+   "group": "D6 tap targets \u2265 24px (WCAG 2.5.8)",
+   "name": "390x844 /research/KAVERI/credibility",
+   "passed": true,
+   "detail": "0 small: []",
+   "severity": "normal",
+   "data": {}
+  },
+  {
+   "area": "D",
+   "group": "D6 mobile responsiveness (no horizontal overflow)",
+   "name": "390x844 /events/8bd8e04dd9d147bd",
+   "passed": true,
+   "detail": "page 390px in 390px; 0 elements past the edge: []",
+   "severity": "critical",
+   "data": {}
+  },
+  {
+   "area": "D",
+   "group": "D6 tap targets \u2265 24px (WCAG 2.5.8)",
+   "name": "390x844 /events/8bd8e04dd9d147bd",
+   "passed": true,
+   "detail": "0 small: []",
+   "severity": "normal",
+   "data": {}
+  },
+  {
+   "area": "D",
+   "group": "D6 mobile responsiveness (no horizontal overflow)",
+   "name": "390x844 /moves/SARANG",
+   "passed": true,
+   "detail": "page 390px in 390px; 0 elements past the edge: []",
+   "severity": "critical",
+   "data": {}
+  },
+  {
+   "area": "D",
+   "group": "D6 tap targets \u2265 24px (WCAG 2.5.8)",
+   "name": "390x844 /moves/SARANG",
+   "passed": true,
+   "detail": "0 small: []",
+   "severity": "normal",
+   "data": {}
+  },
+  {
+   "area": "D",
+   "group": "D6 mobile responsiveness (no horizontal overflow)",
+   "name": "390x844: no page errors",
+   "passed": true,
+   "detail": "[]",
+   "severity": "normal",
+   "data": {}
+  },
+  {
+   "area": "D",
+   "group": "D6 mobile responsiveness (no horizontal overflow)",
+   "name": "768x1024 /",
+   "passed": true,
+   "detail": "page 768px in 768px; 0 elements past the edge: []",
+   "severity": "normal",
+   "data": {}
+  },
+  {
+   "area": "D",
+   "group": "D6 mobile responsiveness (no horizontal overflow)",
+   "name": "768x1024 /portfolio",
+   "passed": true,
+   "detail": "page 768px in 768px; 0 elements past the edge: []",
+   "severity": "normal",
+   "data": {}
+  },
+  {
+   "area": "D",
+   "group": "D6 mobile responsiveness (no horizontal overflow)",
+   "name": "768x1024 /alerts",
+   "passed": true,
+   "detail": "page 768px in 768px; 0 elements past the edge: []",
+   "severity": "normal",
+   "data": {}
+  },
+  {
+   "area": "D",
+   "group": "D6 mobile responsiveness (no horizontal overflow)",
+   "name": "768x1024 /research",
+   "passed": true,
+   "detail": "page 768px in 768px; 0 elements past the edge: []",
+   "severity": "normal",
+   "data": {}
+  },
+  {
+   "area": "D",
+   "group": "D6 mobile responsiveness (no horizontal overflow)",
+   "name": "768x1024 /research/HALCYON",
+   "passed": true,
+   "detail": "page 768px in 768px; 0 elements past the edge: []",
+   "severity": "normal",
+   "data": {}
+  },
+  {
+   "area": "D",
+   "group": "D6 mobile responsiveness (no horizontal overflow)",
+   "name": "768x1024 /research/KAVERI/credibility",
+   "passed": true,
+   "detail": "page 768px in 768px; 0 elements past the edge: []",
+   "severity": "normal",
+   "data": {}
+  },
+  {
+   "area": "D",
+   "group": "D6 mobile responsiveness (no horizontal overflow)",
+   "name": "768x1024 /events/8bd8e04dd9d147bd",
+   "passed": true,
+   "detail": "page 768px in 768px; 0 elements past the edge: []",
+   "severity": "normal",
+   "data": {}
+  },
+  {
+   "area": "D",
+   "group": "D6 mobile responsiveness (no horizontal overflow)",
+   "name": "768x1024 /moves/SARANG",
+   "passed": true,
+   "detail": "page 768px in 768px; 0 elements past the edge: []",
+   "severity": "normal",
+   "data": {}
+  },
+  {
+   "area": "D",
+   "group": "D6 mobile responsiveness (no horizontal overflow)",
+   "name": "768x1024: no page errors",
+   "passed": true,
+   "detail": "[]",
+   "severity": "normal",
+   "data": {}
+  },
+  {
+   "area": "D",
+   "group": "D6 mobile responsiveness (no horizontal overflow)",
+   "name": "1024x768 /",
+   "passed": true,
+   "detail": "page 1024px in 1024px; 0 elements past the edge: []",
+   "severity": "normal",
+   "data": {}
+  },
+  {
+   "area": "D",
+   "group": "D6 mobile responsiveness (no horizontal overflow)",
+   "name": "1024x768 /portfolio",
+   "passed": true,
+   "detail": "page 1024px in 1024px; 0 elements past the edge: []",
+   "severity": "normal",
+   "data": {}
+  },
+  {
+   "area": "D",
+   "group": "D6 mobile responsiveness (no horizontal overflow)",
+   "name": "1024x768 /alerts",
+   "passed": true,
+   "detail": "page 1024px in 1024px; 0 elements past the edge: []",
+   "severity": "normal",
+   "data": {}
+  },
+  {
+   "area": "D",
+   "group": "D6 mobile responsiveness (no horizontal overflow)",
+   "name": "1024x768 /research",
+   "passed": true,
+   "detail": "page 1024px in 1024px; 0 elements past the edge: []",
+   "severity": "normal",
+   "data": {}
+  },
+  {
+   "area": "D",
+   "group": "D6 mobile responsiveness (no horizontal overflow)",
+   "name": "1024x768 /research/HALCYON",
+   "passed": true,
+   "detail": "page 1024px in 1024px; 0 elements past the edge: []",
+   "severity": "normal",
+   "data": {}
+  },
+  {
+   "area": "D",
+   "group": "D6 mobile responsiveness (no horizontal overflow)",
+   "name": "1024x768 /research/KAVERI/credibility",
+   "passed": true,
+   "detail": "page 1024px in 1024px; 0 elements past the edge: []",
+   "severity": "normal",
+   "data": {}
+  },
+  {
+   "area": "D",
+   "group": "D6 mobile responsiveness (no horizontal overflow)",
+   "name": "1024x768 /events/8bd8e04dd9d147bd",
+   "passed": true,
+   "detail": "page 1024px in 1024px; 0 elements past the edge: []",
+   "severity": "normal",
+   "data": {}
+  },
+  {
+   "area": "D",
+   "group": "D6 mobile responsiveness (no horizontal overflow)",
+   "name": "1024x768 /moves/SARANG",
+   "passed": true,
+   "detail": "page 1024px in 1024px; 0 elements past the edge: []",
+   "severity": "normal",
+   "data": {}
+  },
+  {
+   "area": "D",
+   "group": "D6 mobile responsiveness (no horizontal overflow)",
+   "name": "1024x768: no page errors",
+   "passed": true,
+   "detail": "[]",
+   "severity": "normal",
+   "data": {}
+  },
+  {
+   "area": "D",
+   "group": "D6 mobile responsiveness (no horizontal overflow)",
+   "name": "1440x900 /",
+   "passed": true,
+   "detail": "page 1440px in 1440px; 0 elements past the edge: []",
+   "severity": "normal",
+   "data": {}
+  },
+  {
+   "area": "D",
+   "group": "D6 mobile responsiveness (no horizontal overflow)",
+   "name": "1440x900 /portfolio",
+   "passed": true,
+   "detail": "page 1440px in 1440px; 0 elements past the edge: []",
+   "severity": "normal",
+   "data": {}
+  },
+  {
+   "area": "D",
+   "group": "D6 mobile responsiveness (no horizontal overflow)",
+   "name": "1440x900 /alerts",
+   "passed": true,
+   "detail": "page 1440px in 1440px; 0 elements past the edge: []",
+   "severity": "normal",
+   "data": {}
+  },
+  {
+   "area": "D",
+   "group": "D6 mobile responsiveness (no horizontal overflow)",
+   "name": "1440x900 /research",
+   "passed": true,
+   "detail": "page 1440px in 1440px; 0 elements past the edge: []",
+   "severity": "normal",
+   "data": {}
+  },
+  {
+   "area": "D",
+   "group": "D6 mobile responsiveness (no horizontal overflow)",
+   "name": "1440x900 /research/HALCYON",
+   "passed": true,
+   "detail": "page 1440px in 1440px; 0 elements past the edge: []",
+   "severity": "normal",
+   "data": {}
+  },
+  {
+   "area": "D",
+   "group": "D6 mobile responsiveness (no horizontal overflow)",
+   "name": "1440x900 /research/KAVERI/credibility",
+   "passed": true,
+   "detail": "page 1440px in 1440px; 0 elements past the edge: []",
+   "severity": "normal",
+   "data": {}
+  },
+  {
+   "area": "D",
+   "group": "D6 mobile responsiveness (no horizontal overflow)",
+   "name": "1440x900 /events/8bd8e04dd9d147bd",
+   "passed": true,
+   "detail": "page 1440px in 1440px; 0 elements past the edge: []",
+   "severity": "normal",
+   "data": {}
+  },
+  {
+   "area": "D",
+   "group": "D6 mobile responsiveness (no horizontal overflow)",
+   "name": "1440x900 /moves/SARANG",
+   "passed": true,
+   "detail": "page 1440px in 1440px; 0 elements past the edge: []",
+   "severity": "normal",
+   "data": {}
+  },
+  {
+   "area": "D",
+   "group": "D6 mobile responsiveness (no horizontal overflow)",
+   "name": "1440x900: no page errors",
+   "passed": true,
+   "detail": "[]",
+   "severity": "normal",
+   "data": {}
+  }
+ ]
+}

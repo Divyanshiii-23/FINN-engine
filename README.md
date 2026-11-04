@@ -13,7 +13,7 @@ Built for the ENAM Holdings AI Engineer Build Challenge by Divyanshi Agnihotri (
 
 | | What you get | How |
 |---|---|---|
-| **Static demo** (hosted) | The real FINN screens with the bundled demo data: brief, alerts and rules, portfolio, five research reports with sources, credibility tracker, ticker search. Ask FINN and on-demand research are disabled, because no engine runs there. | <https://claude.ai/artifact/L9dgVoqU59h9e4vsqhg1n1> (claude.ai hosted page; the owner must share it publicly before others can open it) |
+| **Static demo** (hosted) | The real FINN screens with the bundled demo data: brief, alerts and rules, portfolio, five research reports with sources, credibility tracker, ticker search. Ask FINN and on-demand research are disabled, because no engine runs there. | <https://claude.ai/artifact/L9dgVoqU59h9e4vsqhg1n1> (a claude.ai page, private until the owner shares it). The published files passed 58/58 checks locally; the URL itself has not been opened from the build environment. |
 | **Full app, local** | Everything, including Ask FINN and on-demand research (live NSE/BSE when your network allows) | See below; about 5 minutes |
 | **Full app, container** | The same, as one image | `Dockerfile` (see [Deploy](#deploy)) |
 
