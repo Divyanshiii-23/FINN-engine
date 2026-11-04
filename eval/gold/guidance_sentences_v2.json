@@ -1,0 +1,21 @@
+{
+  "_about": "Second held-out set of management sentences, written after the fixes and never used to change a rule. Same conventions as guidance_sentences.json (call Q2 FY27, 29 Oct 2026).",
+  "items": [
+    {"id": "h01", "s": "We now expect FY27 revenue growth of 11% to 13%.", "expect": "numeric", "metric": ["revenue"], "period": "FY27", "low": 11, "high": 13},
+    {"id": "h02", "s": "EBITDA margin for FY27 should be around 17%.", "expect": "numeric", "metric": ["ebitda_margin"], "period": "FY27", "contains": 17},
+    {"id": "h03", "s": "Freight cost increases of 4% will weigh on margins in Q3.", "expect": "forbid", "forbid": [{"metric": "ebitda_margin", "value_near": 4}], "trap": "a cost increase read as a margin target"},
+    {"id": "h04", "s": "We plan capex of Rs. 900 crore in FY27, of which Rs. 350 crore was incurred in Q1.", "expect": "numeric", "metric": ["capex"], "period": "FY27", "low_near": 900, "forbid": [{"period": "Q1 FY27"}, {"value_near": 350}], "trap": "spent-so-far amount or quarter read as the target"},
+    {"id": "h05", "s": "Our revenue grew 14% in H1, and we expect similar momentum to continue.", "expect": "no_numeric", "trap": "a reported H1 figure carried into guidance"},
+    {"id": "h06", "s": "We are aiming for strong double-digit EBITDA growth.", "expect": "forbid", "forbid": [{"low_gt": 10}], "trap": "vague phrase turned into a specific number"},
+    {"id": "h07", "s": "The street is expecting 25% margins, which is not something we have guided to.", "expect": "forbid", "forbid": [{"value_near": 25}], "trap": "consensus attributed to management"},
+    {"id": "h08", "s": "Credit cost should be 2.2% plus or minus 20 basis points this year.", "fin": true, "expect": "numeric", "metric": ["credit_cost"], "period": "FY27", "low": 2.0, "high": 2.4},
+    {"id": "h09", "s": "We expect net debt to reduce by Rs. 800 crore over the next two years.", "expect": "forbid", "forbid": [{"period": "FY27", "value_near": 800}], "trap": "a two-year reduction scored as a FY27 level"},
+    {"id": "h10", "s": "For FY27 we are maintaining our capex guidance of Rs. 1,100 crore.", "expect": "numeric", "metric": ["capex"], "period": "FY27", "low_near": 1100},
+    {"id": "h11", "s": "Wage hikes of 7% to 8% were rolled out in October.", "expect": "forbid", "forbid": [{"metric": "ebitda_margin"}, {"metric": "ebit_margin"}, {"metric": "revenue"}], "trap": "a wage hike read as margin or revenue guidance"},
+    {"id": "h12", "s": "We remain on track to deliver an EBIT margin of 21% to 23% for the year.", "it": true, "expect": "numeric", "metric": ["ebit_margin"], "period": "FY27", "low": 21, "high": 23},
+    {"id": "h13", "s": "We hope to get back to double-digit growth by FY29.", "expect": "forbid", "forbid": [{"period": "FY27"}], "trap": "a FY29 aspiration scored against FY27"},
+    {"id": "h14", "s": "The effective tax rate should be about 24% in FY27.", "expect": "forbid", "forbid": [{"value_near": 24}], "trap": "tax rate attributed to a tracked metric"},
+    {"id": "h15", "s": "We expect AUM growth of 20% to 22% in FY27.", "fin": true, "expect": "numeric", "metric": ["aum_growth"], "period": "FY27", "low": 20, "high": 22},
+    {"id": "h16", "s": "We delivered 160 basis points of margin expansion in the first half.", "expect": "no_numeric", "trap": "a reported outcome read as guidance"}
+  ]
+}

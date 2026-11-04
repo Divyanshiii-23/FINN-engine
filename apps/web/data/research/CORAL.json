@@ -1,0 +1,336 @@
+{
+ "schema": "finn.research.v1",
+ "dataset": "fixture",
+ "dataset_note": "SYNTHETIC TEST FIXTURE: fictional company and documents; not a real filing.",
+ "generated_at": "2026-11-04T16:10:15.685742+00:00",
+ "as_of": "2026-11-04",
+ "versions": {
+  "research": "research-v1",
+  "claims": "claims-rules-v1",
+  "statements": "results-text-v1"
+ },
+ "identity": {
+  "symbol": "CORAL",
+  "name": "Coral Retail Limited",
+  "isin": "INFIXT000114",
+  "series": "EQ",
+  "listed_on": "02-AUG-2012",
+  "bse_code": "990114",
+  "bse_name": "Coral Retail Ltd",
+  "industry": "Diversified Retail",
+  "market_cap_cr": 3400.0,
+  "is_financial": false,
+  "is_it_services": false,
+  "sources": [
+   "NSE equity master",
+   "BSE scrip list (matched on ISIN)"
+  ],
+  "notes": []
+ },
+ "documents": [],
+ "counts": {
+  "documents": {
+   "results": 0,
+   "transcript": 0,
+   "presentation": 0,
+   "annual_report": 0,
+   "press_release": 0
+  },
+  "claims": {
+   "guidance": 0,
+   "assertion": 0,
+   "outlook": 0
+  },
+  "claims_rejected_by_gates": 0,
+  "verdicts": {}
+ },
+ "facts": {},
+ "claims": [],
+ "ledger": [],
+ "sections": {
+  "business": {
+   "description": null,
+   "industry": "Diversified Retail",
+   "segments": [],
+   "segment_period": null,
+   "gaps": [
+    {
+     "area": "Business description",
+     "detail": "No annual report or presentation with an overview section was found, so the business isn't described in the company's words."
+    }
+   ]
+  },
+  "snapshot": {
+   "period": null,
+   "rows": [],
+   "gaps": [
+    {
+     "area": "Financial snapshot",
+     "detail": "No results filing could be read."
+    }
+   ]
+  },
+  "trajectory": {
+   "quarters": [],
+   "series": {
+    "revenue": [],
+    "pat": [],
+    "revenue_yoy": [],
+    "pat_yoy": [],
+    "ebitda": [],
+    "ebitda_margin": []
+   },
+   "annual": [],
+   "restated": [],
+   "gaps": [
+    {
+     "area": "Trajectory",
+     "detail": "0 quarters available from the results filings read (eight need four filings)."
+    }
+   ]
+  },
+  "balance_sheet": {
+   "dates": [],
+   "rows": [],
+   "gaps": [
+    {
+     "area": "Balance sheet",
+     "detail": "No statement of assets and liabilities was found. It is filed with half-year (Q2) and annual (Q4) results."
+    }
+   ]
+  },
+  "cash_quality": {
+   "periods": [],
+   "rows": [],
+   "flags": [],
+   "gaps": [
+    {
+     "area": "Cash quality",
+     "detail": "No cash flow statement was found. It is filed with half-year (Q2) and annual (Q4) results."
+    }
+   ]
+  },
+  "nvn": {
+   "entries": [],
+   "shifts": [],
+   "discrepancies": [],
+   "calls": []
+  },
+  "guidance": {
+   "entries": [],
+   "commentary": []
+  },
+  "bull_bear": {
+   "bull": [],
+   "bear": [],
+   "note": "Rule-based: each point is a fixed test over the cited facts, and every number in it comes from those facts. A side with nothing listed means no rule fired on the evidence available, not that there is nothing to say."
+  }
+ },
+ "credibility": {
+  "window": {
+   "calls": 0,
+   "first_call": null,
+   "last_call": null,
+   "results": 0,
+   "closed_years": []
+  },
+  "rules": {
+   "min_closed": 4,
+   "min_years": 2,
+   "no_score": "FINN doesn't combine these indicators into a trust score: any weighting would be a judgement, not a measurement."
+  },
+  "indicators": [
+   {
+    "id": "delivery",
+    "title": "Guidance delivery",
+    "question": "When management gave a number, did the reported figure land within it?",
+    "status": "none",
+    "n": 0,
+    "years": [],
+    "headline": "No explicit target has reached the end of its period in the documents read.",
+    "stat": {
+     "kept": 0,
+     "missed": 0,
+     "rate": null
+    },
+    "by_family": [],
+    "rows": [],
+    "method": "Closed explicit targets only. Kept = delivered or ahead; the ledger's tolerance applies. A rate needs at least 4 targets across 2 fiscal years."
+   },
+   {
+    "id": "landing",
+    "title": "Where results landed in the range",
+    "question": "Does management guide conservatively, or tend to land short of the middle?",
+    "status": "none",
+    "n": 0,
+    "headline": "No closed target was a range or an approximate figure, so there is no midpoint to compare with.",
+    "stat": null,
+    "rows": [],
+    "method": "Ranges and 'around' figures only. Offset = actual - midpoint, in percentage points for growth and margins, and as a share of the midpoint for amounts. 'Favourable' depends on the metric: above the midpoint for growth, margins and capex; below it for credit cost and debt. Within 0.15 pp or 2% counts as at the midpoint. Counts are shown only from 4 targets across 2 years."
+   },
+   {
+    "id": "revisions",
+    "title": "Guidance revisions",
+    "question": "How often were targets changed mid-period, and in which direction?",
+    "status": "none",
+    "n": 0,
+    "headline": "Management gave no explicit targets in the documents read.",
+    "rows": [],
+    "repeated": [],
+    "met_only_after_revision": [],
+    "method": "A revision is a later statement with a different number for the same metric and period. 'Against the company' means lowered for growth, margins and capex, raised for credit cost and debt. Two documents disagreeing in the same quarter are reported as a contradiction, not counted as a revision."
+   },
+   {
+    "id": "capex",
+    "title": "Capex execution",
+    "question": "Did the company spend what it said it would?",
+    "status": "none",
+    "n": 0,
+    "headline": "Management gave no capex figure in the documents read.",
+    "rows": [],
+    "method": "Capex = purchase of property, plant and equipment in the cash flow statement (year-end filing). The plan is the first figure stated for the year, so mid-year cuts don't hide under-spending."
+   },
+   {
+    "id": "revenue",
+    "title": "Revenue growth against what was guided",
+    "question": "How did revenue growth compare with what management said to expect?",
+    "status": "none",
+    "n": 0,
+    "headline": "Management gave no revenue guidance in the documents read.",
+    "rows": [],
+    "path": [],
+    "method": "Each statement is shown with the reported figure for its period. Constant-currency and worded statements are listed but not scored."
+   },
+   {
+    "id": "margins",
+    "title": "Margin progression",
+    "question": "Did margins move the way management said they would?",
+    "status": "none",
+    "n": 0,
+    "headline": "Management gave no margin guidance in the documents read.",
+    "rows": [],
+    "path": [],
+    "method": "Each statement is shown with the reported figure for its period. Constant-currency and worded statements are listed but not scored."
+   },
+   {
+    "id": "cash",
+    "title": "Cash generation against profit",
+    "question": "Does reported profit turn into cash, and does management describe it fairly?",
+    "status": "none",
+    "n": 0,
+    "headline": "No full-year cash flow statement was read.",
+    "rows": [],
+    "management_said": [],
+    "contradictions": [],
+    "method": "Full years from the year-end cash flow statement. What management said about cash is set against the ratio for the same period."
+   },
+   {
+    "id": "silence",
+    "title": "Targets that went quiet",
+    "question": "Does management stop mentioning targets it is going to miss?",
+    "status": "none",
+    "n": 0,
+    "headline": "No explicit target went quiet without being met.",
+    "rows": [],
+    "method": "A target goes quiet when a later complete call transcript doesn't mention it before its period ends, when it is withdrawn, or when the number is restated only in words."
+   },
+   {
+    "id": "quoted",
+    "title": "Figures quoted on calls",
+    "question": "When management describes a reported quarter, do the statements agree?",
+    "status": "none",
+    "n": 0,
+    "headline": "No checkable figures quoted about reported periods.",
+    "stat": {
+     "consistent": 0,
+     "partial": 0,
+     "contradicted": 0
+    },
+    "rows": [],
+    "method": "Checked on every plausible basis (year on year, sequential, level) before a figure is called contradicted."
+   }
+  ],
+  "lanes": [],
+  "interpretation": [],
+  "contradictions": []
+ },
+ "cost_lines": {},
+ "audit": {
+  "reported": 0,
+  "quotes": 0,
+  "computed": 0,
+  "market": 0,
+  "points": 0,
+  "ok": true
+ },
+ "restatements": [],
+ "checks": [],
+ "gaps": [
+  {
+   "area": "Numbers",
+   "detail": "No results filing could be read, so no reported figures are shown and no guidance can be checked."
+  },
+  {
+   "area": "Narrative vs Numbers",
+   "detail": "No earnings-call transcript was found on the exchange for the quarters read, so management guidance comes only from presentations and the annual report, if any."
+  }
+ ],
+ "rejections": [],
+ "fetch_log": [
+  {
+   "source": "nse",
+   "target": "equity master",
+   "url": "file:///home/claude/finn/data/research_fixtures/nse/EQUITY_L.csv",
+   "ok": true,
+   "status": null,
+   "error": null,
+   "fetched_at": "2026-11-04T16:10:15.685265Z",
+   "raw_path": "/home/claude/finn/data/research_fixtures/nse/EQUITY_L.csv",
+   "rows": 5
+  },
+  {
+   "source": "bse",
+   "target": "scrip list",
+   "url": "file:///home/claude/finn/data/research_fixtures/bse/scrips.json",
+   "ok": true,
+   "status": null,
+   "error": null,
+   "fetched_at": "2026-11-04T16:10:15.685342Z",
+   "raw_path": "/home/claude/finn/data/research_fixtures/bse/scrips.json",
+   "rows": 5
+  },
+  {
+   "source": "bse",
+   "target": "990114",
+   "url": "file:///home/claude/finn/data/research_fixtures/bse/announcements/990114.json",
+   "ok": true,
+   "status": null,
+   "error": null,
+   "fetched_at": "2026-11-04T16:10:15.685429Z",
+   "raw_path": "/home/claude/finn/data/research_fixtures/bse/announcements/990114.json",
+   "rows": 1
+  },
+  {
+   "source": "nse",
+   "target": "CORAL",
+   "url": "file:///home/claude/finn/data/research_fixtures/nse/announcements/CORAL.json",
+   "ok": true,
+   "status": null,
+   "error": null,
+   "fetched_at": "2026-11-04T16:10:15.685512Z",
+   "raw_path": "/home/claude/finn/data/research_fixtures/nse/announcements/CORAL.json",
+   "rows": 0
+  },
+  {
+   "source": "nse",
+   "target": "CORAL annual reports",
+   "url": "file:///home/claude/finn/data/research_fixtures/nse/annual_reports/CORAL.json",
+   "ok": false,
+   "status": null,
+   "error": "no annual-reports file",
+   "fetched_at": "2026-11-04T16:10:15.685549Z",
+   "raw_path": null,
+   "rows": 0
+  }
+ ]
+}

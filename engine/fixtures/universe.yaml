@@ -1,0 +1,22 @@
+# SYNTHETIC TEST UNIVERSE: fictional companies used only for pipeline tests and
+# UI review. None of these companies exist; their codes (9901xx) are not real
+# BSE codes. Reference sizes exist so the "size" materiality component can be
+# exercised.
+companies:
+  - {symbol: AURELIA,   name: Aurelia Consumer,           bse_code: "990101", sector: FMCG,                 weight: 10}
+  - {symbol: KESTREL,   name: Kestrel Polymers,           bse_code: "990102", sector: Specialty chemicals,  weight: 9}
+  - {symbol: HALCYON,   name: Halcyon Infotech,           bse_code: "990103", sector: IT services,          weight: 9}
+  - {symbol: NGRID,     name: Northgrid Power,            bse_code: "990104", sector: Utilities,            weight: 8}
+  - {symbol: QUANTA,    name: Quanta Electronics,         bse_code: "990105", sector: Electronics manufacturing, weight: 7, revenue_ttm_cr: 2150}
+  - {symbol: SARANG,    name: Sarang Finance,             bse_code: "990106", sector: NBFC,                 weight: 6.5, is_financial: true}
+  - {symbol: KAVERI,    name: Kaveri Cement,              bse_code: "990107", sector: Cement,               weight: 6.5, market_cap_cr: 10450}
+  - {symbol: VEDIKA,    name: Vedika Pharma,              bse_code: "990108", sector: Pharmaceuticals,      weight: 6}
+  - {symbol: TIDEMARK, name: Tidemark Logistics,        bse_code: "990109", sector: Logistics,            weight: 5.5}
+  - {symbol: ORBIT,     name: Orbit Auto Components,      bse_code: "990110", sector: Auto components,      weight: 5}
+  - {symbol: ANVIL,     name: Anvil Specialty Steel,      bse_code: "990111", sector: Metals,               weight: 5, market_cap_cr: 6700}
+  - {symbol: MERIDIAN,  name: Meridian Cables,            bse_code: "990112", sector: Electricals,          weight: 4}
+  - {symbol: LOTUS,     name: Lotus Leisure Hotels,       bse_code: "990113", sector: Hotels,               weight: 4}
+  - {symbol: CORAL,     name: Coral Retail,               bse_code: "990114", sector: Retail,               weight: 4}
+  - {symbol: PRAGATI,   name: Pragati Small Finance Bank, bse_code: "990115", sector: Banking,              weight: 3.5, is_financial: true}
+  - {symbol: MONSOON,   name: Monsoon Agritech,           bse_code: "990116", sector: Agri inputs,          weight: 3.5, market_cap_cr: 950}
+  - {symbol: HELIX,     name: Helix Diagnostics,          bse_code: "990117", sector: Healthcare services,  weight: 3.5, market_cap_cr: 2300}

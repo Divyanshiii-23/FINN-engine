@@ -1,0 +1,6511 @@
+{
+ "schema": "finn.research.v1",
+ "dataset": "fixture",
+ "dataset_note": "SYNTHETIC TEST FIXTURE: fictional company and documents; not a real filing.",
+ "generated_at": "2026-11-04T16:10:15.381071+00:00",
+ "as_of": "2026-11-04",
+ "versions": {
+  "research": "research-v1",
+  "claims": "claims-rules-v1",
+  "statements": "results-text-v1"
+ },
+ "identity": {
+  "symbol": "SARANG",
+  "name": "Sarang Finance Limited",
+  "isin": "INFIXT000106",
+  "series": "EQ",
+  "listed_on": "14-MAR-2007",
+  "bse_code": "990106",
+  "bse_name": "Sarang Finance Ltd",
+  "industry": "Non Banking Financial Company (NBFC)",
+  "market_cap_cr": 18900.0,
+  "is_financial": true,
+  "is_it_services": false,
+  "sources": [
+   "NSE equity master",
+   "BSE scrip list (matched on ISIN)"
+  ],
+  "notes": []
+ },
+ "documents": [
+  {
+   "id": "d:2e2be23d1d",
+   "kind": "annual_report",
+   "title": "Annual Report 2025-26",
+   "period": "FY26",
+   "period_basis": "financial year in the filing subject",
+   "filed_at": "2026-08-08T12:00:00+05:30",
+   "source": "bse",
+   "source_id": "fx-sarang-044",
+   "url": null,
+   "listing_url": null,
+   "fetched_at": "2026-11-04T16:10:15.193931Z",
+   "raw_path": "/home/claude/finn/data/research_fixtures/attachments/SARANG_AR_FY26.pdf",
+   "sha256": "5ac8e48a9fb70d62e785f00be36bf7bb355e3472373d685c1a93e90f8ffd4833",
+   "pages": 3,
+   "status": "parsed",
+   "status_reason": null,
+   "fixture": true,
+   "parse": {
+    "attachment": "SARANG_AR_FY26.pdf",
+    "subcategory": "Annual Report",
+    "is_results_category": false,
+    "alternates": [],
+    "claims_rejected_by_gates": 0,
+    "complete": true,
+    "claims": {
+     "guidance": 0,
+     "assertion": 0,
+     "outlook": 1
+    }
+   }
+  },
+  {
+   "id": "d:1c00bc1138",
+   "kind": "results",
+   "title": "Financial Results for the quarter ended 30 June 2024",
+   "period": "Q1 FY25",
+   "period_basis": "quarter-end date in the filing subject",
+   "filed_at": "2024-07-30T18:05:00+05:30",
+   "source": "bse",
+   "source_id": "fx-sarang-003",
+   "url": null,
+   "listing_url": null,
+   "fetched_at": "2026-11-04T16:10:15.193145Z",
+   "raw_path": "/home/claude/finn/data/research_fixtures/attachments/SARANG_Q1FY25_results.pdf",
+   "sha256": "dc3dead3fc30650950ea4126dcf105710a74b28b9b424152ee90182391103d48",
+   "pages": 2,
+   "status": "parsed",
+   "status_reason": null,
+   "fixture": true,
+   "parse": {
+    "attachment": "SARANG_Q1FY25_results.pdf",
+    "subcategory": "Financial Results",
+    "is_results_category": true,
+    "alternates": [],
+    "basis": {
+     "P&L": "consolidated"
+    },
+    "unit": "crore",
+    "checks": [
+     {
+      "check": "PBT - tax = PAT (Q1 FY25)",
+      "ok": true,
+      "detail": "193.0 - 48.57 vs 144.43"
+     },
+     {
+      "check": "PBT - tax = PAT (Q4 FY24)",
+      "ok": true,
+      "detail": "184.0 - 46.32 vs 137.68"
+     },
+     {
+      "check": "PBT - tax = PAT (Q1 FY24)",
+      "ok": true,
+      "detail": "152.0 - 38.26 vs 113.74"
+     }
+    ],
+    "statements": [
+     "P&L"
+    ]
+   }
+  },
+  {
+   "id": "d:f1e4cf3603",
+   "kind": "results",
+   "title": "Financial Results for the quarter ended 30 June 2025",
+   "period": "Q1 FY26",
+   "period_basis": "quarter-end date in the filing subject",
+   "filed_at": "2025-07-29T18:00:00+05:30",
+   "source": "bse",
+   "source_id": "fx-sarang-019",
+   "url": null,
+   "listing_url": null,
+   "fetched_at": "2026-11-04T16:10:15.193339Z",
+   "raw_path": "/home/claude/finn/data/research_fixtures/attachments/SARANG_Q1FY26_results.pdf",
+   "sha256": "bb1a5c24b432e380c979a65148dcd5bc066392410dfbd109f4df60a6c40de594",
+   "pages": 2,
+   "status": "parsed",
+   "status_reason": null,
+   "fixture": true,
+   "parse": {
+    "attachment": "SARANG_Q1FY26_results.pdf",
+    "subcategory": "Financial Results",
+    "is_results_category": true,
+    "alternates": [],
+    "basis": {
+     "P&L": "consolidated"
+    },
+    "unit": "crore",
+    "checks": [
+     {
+      "check": "PBT - tax = PAT (Q1 FY26)",
+      "ok": true,
+      "detail": "238.0 - 59.91 vs 178.09"
+     },
+     {
+      "check": "PBT - tax = PAT (Q4 FY25)",
+      "ok": true,
+      "detail": "224.0 - 56.38 vs 167.62"
+     },
+     {
+      "check": "PBT - tax = PAT (Q1 FY25)",
+      "ok": true,
+      "detail": "193.0 - 48.57 vs 144.43"
+     }
+    ],
+    "statements": [
+     "P&L"
+    ]
+   }
+  },
+  {
+   "id": "d:521ed4109d",
+   "kind": "results",
+   "title": "Financial Results for the quarter ended 30 June 2026",
+   "period": "Q1 FY27",
+   "period_basis": "quarter-end date in the filing subject",
+   "filed_at": "2026-07-29T18:02:00+05:30",
+   "source": "bse",
+   "source_id": "fx-sarang-035",
+   "url": null,
+   "listing_url": null,
+   "fetched_at": "2026-11-04T16:10:15.193572Z",
+   "raw_path": "/home/claude/finn/data/research_fixtures/attachments/SARANG_Q1FY27_results.pdf",
+   "sha256": "3f9ee24356812990154f3d8ef5ff15db9937ef47208f50a060906efb8da94888",
+   "pages": 2,
+   "status": "parsed",
+   "status_reason": null,
+   "fixture": true,
+   "parse": {
+    "attachment": "SARANG_Q1FY27_results.pdf",
+    "subcategory": "Financial Results",
+    "is_results_category": true,
+    "alternates": [],
+    "basis": {
+     "P&L": "consolidated"
+    },
+    "unit": "crore",
+    "checks": [
+     {
+      "check": "PBT - tax = PAT (Q1 FY27)",
+      "ok": true,
+      "detail": "298.0 - 75.01 vs 222.99"
+     },
+     {
+      "check": "PBT - tax = PAT (Q4 FY26)",
+      "ok": true,
+      "detail": "299.0 - 75.25 vs 223.75"
+     },
+     {
+      "check": "PBT - tax = PAT (Q1 FY26)",
+      "ok": true,
+      "detail": "238.0 - 59.91 vs 178.09"
+     }
+    ],
+    "statements": [
+     "P&L"
+    ]
+   }
+  },
+  {
+   "id": "d:affc50e305",
+   "kind": "results",
+   "title": "Financial Results for the quarter ended 30 September 2024",
+   "period": "Q2 FY25",
+   "period_basis": "quarter-end date in the filing subject",
+   "filed_at": "2024-10-29T18:10:00+05:30",
+   "source": "bse",
+   "source_id": "fx-sarang-007",
+   "url": null,
+   "listing_url": null,
+   "fetched_at": "2026-11-04T16:10:15.193196Z",
+   "raw_path": "/home/claude/finn/data/research_fixtures/attachments/SARANG_Q2FY25_results.pdf",
+   "sha256": "0e569ef16f0e7d7ad5892211d44d130b9d8ce924548a92f629345e09b059256e",
+   "pages": 4,
+   "status": "parsed",
+   "status_reason": null,
+   "fixture": true,
+   "parse": {
+    "attachment": "SARANG_Q2FY25_results.pdf",
+    "subcategory": "Financial Results",
+    "is_results_category": true,
+    "alternates": [],
+    "basis": {
+     "P&L": "consolidated",
+     "Balance sheet": "consolidated",
+     "Cash flow": "consolidated"
+    },
+    "unit": "crore",
+    "checks": [
+     {
+      "check": "Total assets = total equity and liabilities (H1 FY25)",
+      "ok": true,
+      "detail": "19625.0 vs 19625.0"
+     },
+     {
+      "check": "Total assets = total equity and liabilities (FY24)",
+      "ok": true,
+      "detail": "17955.0 vs 17955.0"
+     },
+     {
+      "check": "PBT - tax = PAT (Q2 FY25)",
+      "ok": true,
+      "detail": "199.0 - 50.08 vs 148.92"
+     },
+     {
+      "check": "PBT - tax = PAT (Q1 FY25)",
+      "ok": true,
+      "detail": "193.0 - 48.57 vs 144.43"
+     },
+     {
+      "check": "PBT - tax = PAT (Q2 FY24)",
+      "ok": true,
+      "detail": "165.0 - 41.53 vs 123.47"
+     }
+    ],
+    "statements": [
+     "P&L",
+     "Balance sheet",
+     "Cash flow"
+    ]
+   }
+  },
+  {
+   "id": "d:d52c6e4208",
+   "kind": "results",
+   "title": "Financial Results for the quarter ended 30 September 2025",
+   "period": "Q2 FY26",
+   "period_basis": "quarter-end date in the filing subject",
+   "filed_at": "2025-10-29T18:05:00+05:30",
+   "source": "bse",
+   "source_id": "fx-sarang-023",
+   "url": null,
+   "listing_url": null,
+   "fetched_at": "2026-11-04T16:10:15.193377Z",
+   "raw_path": "/home/claude/finn/data/research_fixtures/attachments/SARANG_Q2FY26_results.pdf",
+   "sha256": "9305e4394bcb5fc3910018c277e83b935289cb550bbee434f60ced9df9a37a22",
+   "pages": 4,
+   "status": "parsed",
+   "status_reason": null,
+   "fixture": true,
+   "parse": {
+    "attachment": "SARANG_Q2FY26_results.pdf",
+    "subcategory": "Financial Results",
+    "is_results_category": true,
+    "alternates": [],
+    "basis": {
+     "P&L": "consolidated",
+     "Balance sheet": "consolidated",
+     "Cash flow": "consolidated"
+    },
+    "unit": "crore",
+    "checks": [
+     {
+      "check": "Total assets = total equity and liabilities (H1 FY26)",
+      "ok": true,
+      "detail": "23485.0 vs 23485.0"
+     },
+     {
+      "check": "Total assets = total equity and liabilities (FY25)",
+      "ok": true,
+      "detail": "21495.0 vs 21495.0"
+     },
+     {
+      "check": "PBT - tax = PAT (Q2 FY26)",
+      "ok": true,
+      "detail": "250.0 - 62.92 vs 187.08"
+     },
+     {
+      "check": "PBT - tax = PAT (Q1 FY26)",
+      "ok": true,
+      "detail": "238.0 - 59.91 vs 178.09"
+     },
+     {
+      "check": "PBT - tax = PAT (Q2 FY25)",
+      "ok": true,
+      "detail": "199.0 - 50.08 vs 148.92"
+     }
+    ],
+    "statements": [
+     "P&L",
+     "Balance sheet",
+     "Cash flow"
+    ]
+   }
+  },
+  {
+   "id": "d:89d574da9f",
+   "kind": "results",
+   "title": "Financial Results for the quarter ended 30 September 2026",
+   "period": "Q2 FY27",
+   "period_basis": "quarter-end date in the filing subject",
+   "filed_at": "2026-10-28T18:10:00+05:30",
+   "source": "bse",
+   "source_id": "fx-sarang-039",
+   "url": null,
+   "listing_url": null,
+   "fetched_at": "2026-11-04T16:10:15.193618Z",
+   "raw_path": "/home/claude/finn/data/research_fixtures/attachments/SARANG_Q2FY27_results.pdf",
+   "sha256": "0313c7c92cbabb9d8dbdcd2a6ec09e028173f58fd9f1ef50db364d4c07b02eee",
+   "pages": 4,
+   "status": "parsed",
+   "status_reason": null,
+   "fixture": true,
+   "parse": {
+    "attachment": "SARANG_Q2FY27_results.pdf",
+    "subcategory": "Financial Results",
+    "is_results_category": true,
+    "alternates": [],
+    "basis": {
+     "P&L": "consolidated",
+     "Balance sheet": "consolidated",
+     "Cash flow": "consolidated"
+    },
+    "unit": "crore",
+    "checks": [
+     {
+      "check": "Total assets = total equity and liabilities (H1 FY27)",
+      "ok": true,
+      "detail": "28095.0 vs 28095.0"
+     },
+     {
+      "check": "Total assets = total equity and liabilities (FY26)",
+      "ok": true,
+      "detail": "25855.0 vs 25855.0"
+     },
+     {
+      "check": "PBT - tax = PAT (Q2 FY27)",
+      "ok": true,
+      "detail": "288.0 - 72.49 vs 215.51"
+     },
+     {
+      "check": "PBT - tax = PAT (Q1 FY27)",
+      "ok": true,
+      "detail": "298.0 - 75.01 vs 222.99"
+     },
+     {
+      "check": "PBT - tax = PAT (Q2 FY26)",
+      "ok": true,
+      "detail": "250.0 - 62.92 vs 187.08"
+     }
+    ],
+    "statements": [
+     "P&L",
+     "Balance sheet",
+     "Cash flow"
+    ]
+   }
+  },
+  {
+   "id": "d:07f992f1f3",
+   "kind": "results",
+   "title": "Financial Results for the quarter ended 31 December 2024",
+   "period": "Q3 FY25",
+   "period_basis": "quarter-end date in the filing subject",
+   "filed_at": "2025-01-29T18:05:00+05:30",
+   "source": "bse",
+   "source_id": "fx-sarang-011",
+   "url": null,
+   "listing_url": null,
+   "fetched_at": "2026-11-04T16:10:15.193249Z",
+   "raw_path": "/home/claude/finn/data/research_fixtures/attachments/SARANG_Q3FY25_results.pdf",
+   "sha256": "41013f97fae117823b9521c001e7e3a63e89e2aba571eb89d4ba944dd0a86851",
+   "pages": 2,
+   "status": "parsed",
+   "status_reason": null,
+   "fixture": true,
+   "parse": {
+    "attachment": "SARANG_Q3FY25_results.pdf",
+    "subcategory": "Financial Results",
+    "is_results_category": true,
+    "alternates": [],
+    "basis": {
+     "P&L": "consolidated"
+    },
+    "unit": "crore",
+    "checks": [
+     {
+      "check": "PBT - tax = PAT (Q3 FY25)",
+      "ok": true,
+      "detail": "213.0 - 53.61 vs 159.39"
+     },
+     {
+      "check": "PBT - tax = PAT (Q2 FY25)",
+      "ok": true,
+      "detail": "199.0 - 50.08 vs 148.92"
+     },
+     {
+      "check": "PBT - tax = PAT (Q3 FY24)",
+      "ok": true,
+      "detail": "173.0 - 43.54 vs 129.46"
+     }
+    ],
+    "statements": [
+     "P&L"
+    ]
+   }
+  },
+  {
+   "id": "d:83aa9cee86",
+   "kind": "results",
+   "title": "Financial Results for the quarter ended 31 December 2025",
+   "period": "Q3 FY26",
+   "period_basis": "quarter-end date in the filing subject",
+   "filed_at": "2026-01-29T18:12:00+05:30",
+   "source": "bse",
+   "source_id": "fx-sarang-027",
+   "url": null,
+   "listing_url": null,
+   "fetched_at": "2026-11-04T16:10:15.193426Z",
+   "raw_path": "/home/claude/finn/data/research_fixtures/attachments/SARANG_Q3FY26_results.pdf",
+   "sha256": "9d1dab27f8de25eba730ec0fa75ab8830aa2f6f8214e371acc3ed3401337f408",
+   "pages": 2,
+   "status": "parsed",
+   "status_reason": null,
+   "fixture": true,
+   "parse": {
+    "attachment": "SARANG_Q3FY26_results.pdf",
+    "subcategory": "Financial Results",
+    "is_results_category": true,
+    "alternates": [],
+    "basis": {
+     "P&L": "consolidated"
+    },
+    "unit": "crore",
+    "checks": [
+     {
+      "check": "PBT - tax = PAT (Q3 FY26)",
+      "ok": true,
+      "detail": "261.0 - 65.7 vs 195.3"
+     },
+     {
+      "check": "PBT - tax = PAT (Q2 FY26)",
+      "ok": true,
+      "detail": "250.0 - 62.92 vs 187.08"
+     },
+     {
+      "check": "PBT - tax = PAT (Q3 FY25)",
+      "ok": true,
+      "detail": "213.0 - 53.61 vs 159.39"
+     }
+    ],
+    "statements": [
+     "P&L"
+    ]
+   }
+  },
+  {
+   "id": "d:5ba23d613a",
+   "kind": "results",
+   "title": "Financial Results for the quarter ended 31 March 2025",
+   "period": "Q4 FY25",
+   "period_basis": "quarter-end date in the filing subject",
+   "filed_at": "2025-04-30T18:15:00+05:30",
+   "source": "bse",
+   "source_id": "fx-sarang-015",
+   "url": null,
+   "listing_url": null,
+   "fetched_at": "2026-11-04T16:10:15.193290Z",
+   "raw_path": "/home/claude/finn/data/research_fixtures/attachments/SARANG_Q4FY25_results.pdf",
+   "sha256": "3fd6218979811b1e6a9c073ef459a5aa966cc76f79ea0d82e4a706df79407dba",
+   "pages": 4,
+   "status": "parsed",
+   "status_reason": null,
+   "fixture": true,
+   "parse": {
+    "attachment": "SARANG_Q4FY25_results.pdf",
+    "subcategory": "Financial Results",
+    "is_results_category": true,
+    "alternates": [],
+    "basis": {
+     "P&L": "consolidated",
+     "Balance sheet": "consolidated",
+     "Cash flow": "consolidated"
+    },
+    "unit": "crore",
+    "checks": [
+     {
+      "check": "Total assets = total equity and liabilities (FY25)",
+      "ok": true,
+      "detail": "21495.0 vs 21495.0"
+     },
+     {
+      "check": "Total assets = total equity and liabilities (FY24)",
+      "ok": true,
+      "detail": "17955.0 vs 17955.0"
+     },
+     {
+      "check": "PBT - tax = PAT (Q4 FY25)",
+      "ok": true,
+      "detail": "224.0 - 56.38 vs 167.62"
+     },
+     {
+      "check": "PBT - tax = PAT (Q3 FY25)",
+      "ok": true,
+      "detail": "213.0 - 53.61 vs 159.39"
+     },
+     {
+      "check": "PBT - tax = PAT (Q4 FY24)",
+      "ok": true,
+      "detail": "184.0 - 46.32 vs 137.68"
+     }
+    ],
+    "statements": [
+     "P&L",
+     "Balance sheet",
+     "Cash flow"
+    ]
+   }
+  },
+  {
+   "id": "d:7f713d9587",
+   "kind": "results",
+   "title": "Financial Results for the quarter ended 31 March 2026",
+   "period": "Q4 FY26",
+   "period_basis": "quarter-end date in the filing subject",
+   "filed_at": "2026-04-30T18:20:00+05:30",
+   "source": "bse",
+   "source_id": "fx-sarang-031",
+   "url": null,
+   "listing_url": null,
+   "fetched_at": "2026-11-04T16:10:15.193467Z",
+   "raw_path": "/home/claude/finn/data/research_fixtures/attachments/SARANG_Q4FY26_results.pdf",
+   "sha256": "1495492745aba79db4d5952ebbe3456e25c2cdd606aa2ed853809aafe08d5437",
+   "pages": 4,
+   "status": "parsed",
+   "status_reason": null,
+   "fixture": true,
+   "parse": {
+    "attachment": "SARANG_Q4FY26_results.pdf",
+    "subcategory": "Financial Results",
+    "is_results_category": true,
+    "alternates": [],
+    "basis": {
+     "P&L": "consolidated",
+     "Balance sheet": "consolidated",
+     "Cash flow": "consolidated"
+    },
+    "unit": "crore",
+    "checks": [
+     {
+      "check": "Total assets = total equity and liabilities (FY26)",
+      "ok": true,
+      "detail": "25855.0 vs 25855.0"
+     },
+     {
+      "check": "Total assets = total equity and liabilities (FY25)",
+      "ok": true,
+      "detail": "21495.0 vs 21495.0"
+     },
+     {
+      "check": "PBT - tax = PAT (Q4 FY26)",
+      "ok": true,
+      "detail": "299.0 - 75.25 vs 223.75"
+     },
+     {
+      "check": "PBT - tax = PAT (Q3 FY26)",
+      "ok": true,
+      "detail": "261.0 - 65.7 vs 195.3"
+     },
+     {
+      "check": "PBT - tax = PAT (Q4 FY25)",
+      "ok": true,
+      "detail": "224.0 - 56.38 vs 167.62"
+     }
+    ],
+    "statements": [
+     "P&L",
+     "Balance sheet",
+     "Cash flow"
+    ]
+   }
+  },
+  {
+   "id": "d:b57ed3abc3",
+   "kind": "transcript",
+   "title": "Transcript of Earnings Call for Q1 FY25",
+   "period": "Q1 FY25",
+   "period_basis": "stated in the filing subject",
+   "filed_at": "2024-08-05T17:30:00+05:30",
+   "source": "bse",
+   "source_id": "fx-sarang-006",
+   "url": null,
+   "listing_url": null,
+   "fetched_at": "2026-11-04T16:10:15.193668Z",
+   "raw_path": "/home/claude/finn/data/research_fixtures/attachments/SARANG_Q1FY25_transcript.pdf",
+   "sha256": "620e4fd8a6d4b438514a9bd51b3c2dd5137344a02b960f659f7effb75a9d41f3",
+   "pages": 1,
+   "status": "parsed",
+   "status_reason": null,
+   "fixture": true,
+   "parse": {
+    "attachment": "SARANG_Q1FY25_transcript.pdf",
+    "subcategory": "Earnings Call Transcript",
+    "is_results_category": false,
+    "alternates": [],
+    "turns": 15,
+    "management_turns": 5,
+    "analyst_turns": 4,
+    "labelled": true,
+    "call_date": "2024-07-31",
+    "claims_rejected_by_gates": 0,
+    "notes": [],
+    "complete": true,
+    "roster": [
+     "Rajiv Menon: Managing Director and Chief Executive Officer",
+     "Anita Desai: Chief Financial Officer"
+    ],
+    "claims": {
+     "guidance": 2,
+     "assertion": 0,
+     "outlook": 0
+    }
+   }
+  },
+  {
+   "id": "d:f87f40bd95",
+   "kind": "transcript",
+   "title": "Transcript of Earnings Call for Q1 FY26",
+   "period": "Q1 FY26",
+   "period_basis": "stated in the filing subject",
+   "filed_at": "2025-08-04T17:35:00+05:30",
+   "source": "bse",
+   "source_id": "fx-sarang-022",
+   "url": null,
+   "listing_url": null,
+   "fetched_at": "2026-11-04T16:10:15.193772Z",
+   "raw_path": "/home/claude/finn/data/research_fixtures/attachments/SARANG_Q1FY26_transcript.pdf",
+   "sha256": "6f745622f4bb25b05d2ec01782730943679cf41a9c737f546f9b1f771e81298e",
+   "pages": 2,
+   "status": "parsed",
+   "status_reason": null,
+   "fixture": true,
+   "parse": {
+    "attachment": "SARANG_Q1FY26_transcript.pdf",
+    "subcategory": "Earnings Call Transcript",
+    "is_results_category": false,
+    "alternates": [],
+    "turns": 18,
+    "management_turns": 6,
+    "analyst_turns": 5,
+    "labelled": true,
+    "call_date": "2025-07-30",
+    "claims_rejected_by_gates": 0,
+    "notes": [],
+    "complete": true,
+    "roster": [
+     "Rajiv Menon: Managing Director and Chief Executive Officer",
+     "Anita Desai: Chief Financial Officer"
+    ],
+    "claims": {
+     "guidance": 0,
+     "assertion": 0,
+     "outlook": 1
+    }
+   }
+  },
+  {
+   "id": "d:2c8bf2d95c",
+   "kind": "transcript",
+   "title": "Transcript of Earnings Call for Q1 FY27",
+   "period": "Q1 FY27",
+   "period_basis": "stated in the filing subject",
+   "filed_at": "2026-08-04T17:20:00+05:30",
+   "source": "bse",
+   "source_id": "fx-sarang-038",
+   "url": null,
+   "listing_url": null,
+   "fetched_at": "2026-11-04T16:10:15.193876Z",
+   "raw_path": "/home/claude/finn/data/research_fixtures/attachments/SARANG_Q1FY27_transcript.pdf",
+   "sha256": "bf3624406a1edf5be3e8cfd10b41fb63a26ec612b35ecd71a14871ef17ff7341",
+   "pages": 2,
+   "status": "parsed",
+   "status_reason": null,
+   "fixture": true,
+   "parse": {
+    "attachment": "SARANG_Q1FY27_transcript.pdf",
+    "subcategory": "Earnings Call Transcript",
+    "is_results_category": false,
+    "alternates": [],
+    "turns": 22,
+    "management_turns": 8,
+    "analyst_turns": 6,
+    "labelled": true,
+    "call_date": "2026-07-30",
+    "claims_rejected_by_gates": 0,
+    "notes": [],
+    "complete": true,
+    "roster": [
+     "Rajiv Menon: Managing Director and Chief Executive Officer",
+     "Anita Desai: Chief Financial Officer"
+    ],
+    "claims": {
+     "guidance": 1,
+     "assertion": 0,
+     "outlook": 2
+    }
+   }
+  },
+  {
+   "id": "d:8c2a1da8ea",
+   "kind": "transcript",
+   "title": "Transcript of Earnings Call for Q2 FY25",
+   "period": "Q2 FY25",
+   "period_basis": "stated in the filing subject",
+   "filed_at": "2024-11-04T17:25:00+05:30",
+   "source": "bse",
+   "source_id": "fx-sarang-010",
+   "url": null,
+   "listing_url": null,
+   "fetched_at": "2026-11-04T16:10:15.193693Z",
+   "raw_path": "/home/claude/finn/data/research_fixtures/attachments/SARANG_Q2FY25_transcript.pdf",
+   "sha256": "5f5588c6eab99ee6f657d9afa48e621c2ca0b8a034c13c96b551c1ddf2e95a54",
+   "pages": 2,
+   "status": "parsed",
+   "status_reason": null,
+   "fixture": true,
+   "parse": {
+    "attachment": "SARANG_Q2FY25_transcript.pdf",
+    "subcategory": "Earnings Call Transcript",
+    "is_results_category": false,
+    "alternates": [],
+    "turns": 18,
+    "management_turns": 6,
+    "analyst_turns": 5,
+    "labelled": true,
+    "call_date": "2024-10-30",
+    "claims_rejected_by_gates": 0,
+    "notes": [],
+    "complete": true,
+    "roster": [
+     "Rajiv Menon: Managing Director and Chief Executive Officer",
+     "Anita Desai: Chief Financial Officer"
+    ],
+    "claims": {
+     "guidance": 0,
+     "assertion": 0,
+     "outlook": 2
+    }
+   }
+  },
+  {
+   "id": "d:40720490c7",
+   "kind": "transcript",
+   "title": "Transcript of Earnings Call for Q2 FY26",
+   "period": "Q2 FY26",
+   "period_basis": "stated in the filing subject",
+   "filed_at": "2025-11-04T17:40:00+05:30",
+   "source": "bse",
+   "source_id": "fx-sarang-026",
+   "url": null,
+   "listing_url": null,
+   "fetched_at": "2026-11-04T16:10:15.193799Z",
+   "raw_path": "/home/claude/finn/data/research_fixtures/attachments/SARANG_Q2FY26_transcript.pdf",
+   "sha256": "62267559b3e6721464eb59f7ab657003f931f6080b161a69653a224490e9b8fb",
+   "pages": 2,
+   "status": "parsed",
+   "status_reason": null,
+   "fixture": true,
+   "parse": {
+    "attachment": "SARANG_Q2FY26_transcript.pdf",
+    "subcategory": "Earnings Call Transcript",
+    "is_results_category": false,
+    "alternates": [],
+    "turns": 21,
+    "management_turns": 7,
+    "analyst_turns": 6,
+    "labelled": true,
+    "call_date": "2025-10-30",
+    "claims_rejected_by_gates": 0,
+    "notes": [],
+    "complete": true,
+    "roster": [
+     "Rajiv Menon: Managing Director and Chief Executive Officer",
+     "Anita Desai: Chief Financial Officer"
+    ],
+    "claims": {
+     "guidance": 0,
+     "assertion": 0,
+     "outlook": 1
+    }
+   }
+  },
+  {
+   "id": "d:2e7c254dd9",
+   "kind": "transcript",
+   "title": "Transcript of Earnings Call for Q2 FY27",
+   "period": "Q2 FY27",
+   "period_basis": "stated in the filing subject",
+   "filed_at": "2026-11-02T17:35:00+05:30",
+   "source": "bse",
+   "source_id": "fx-sarang-042",
+   "url": null,
+   "listing_url": null,
+   "fetched_at": "2026-11-04T16:10:15.193904Z",
+   "raw_path": "/home/claude/finn/data/research_fixtures/attachments/SARANG_Q2FY27_transcript.pdf",
+   "sha256": "e8633325c0e4f68d9f51fc68720d8ec89b0f1a20cbc168ef2c4c7598b180935c",
+   "pages": 2,
+   "status": "parsed",
+   "status_reason": null,
+   "fixture": true,
+   "parse": {
+    "attachment": "SARANG_Q2FY27_transcript.pdf",
+    "subcategory": "Earnings Call Transcript",
+    "is_results_category": false,
+    "alternates": [],
+    "turns": 28,
+    "management_turns": 10,
+    "analyst_turns": 8,
+    "labelled": true,
+    "call_date": "2026-10-29",
+    "claims_rejected_by_gates": 0,
+    "notes": [],
+    "complete": true,
+    "roster": [
+     "Rajiv Menon: Managing Director and Chief Executive Officer",
+     "Anita Desai: Chief Financial Officer"
+    ],
+    "claims": {
+     "guidance": 1,
+     "assertion": 1,
+     "outlook": 1
+    }
+   }
+  },
+  {
+   "id": "d:fb2006658a",
+   "kind": "transcript",
+   "title": "Transcript of Earnings Call for Q3 FY25",
+   "period": "Q3 FY25",
+   "period_basis": "stated in the filing subject",
+   "filed_at": "2025-02-04T17:40:00+05:30",
+   "source": "bse",
+   "source_id": "fx-sarang-014",
+   "url": null,
+   "listing_url": null,
+   "fetched_at": "2026-11-04T16:10:15.193720Z",
+   "raw_path": "/home/claude/finn/data/research_fixtures/attachments/SARANG_Q3FY25_transcript.pdf",
+   "sha256": "b5ac269ec86bb31664fc15dfe73784c5eb6ad2915b87968ecd14c4e669867a09",
+   "pages": 2,
+   "status": "parsed",
+   "status_reason": null,
+   "fixture": true,
+   "parse": {
+    "attachment": "SARANG_Q3FY25_transcript.pdf",
+    "subcategory": "Earnings Call Transcript",
+    "is_results_category": false,
+    "alternates": [],
+    "turns": 21,
+    "management_turns": 7,
+    "analyst_turns": 6,
+    "labelled": true,
+    "call_date": "2025-01-30",
+    "claims_rejected_by_gates": 0,
+    "notes": [],
+    "complete": true,
+    "roster": [
+     "Rajiv Menon: Managing Director and Chief Executive Officer",
+     "Anita Desai: Chief Financial Officer"
+    ],
+    "claims": {
+     "guidance": 1,
+     "assertion": 0,
+     "outlook": 0
+    }
+   }
+  },
+  {
+   "id": "d:b5e0ec154f",
+   "kind": "transcript",
+   "title": "Transcript of Earnings Call for Q3 FY26",
+   "period": "Q3 FY26",
+   "period_basis": "stated in the filing subject",
+   "filed_at": "2026-02-04T17:30:00+05:30",
+   "source": "bse",
+   "source_id": "fx-sarang-030",
+   "url": null,
+   "listing_url": null,
+   "fetched_at": "2026-11-04T16:10:15.193825Z",
+   "raw_path": "/home/claude/finn/data/research_fixtures/attachments/SARANG_Q3FY26_transcript.pdf",
+   "sha256": "565d1b7134d35afb208e3d812f82e7cac05ad4cd627dedaf67ca3aeb8d532b1a",
+   "pages": 2,
+   "status": "parsed",
+   "status_reason": null,
+   "fixture": true,
+   "parse": {
+    "attachment": "SARANG_Q3FY26_transcript.pdf",
+    "subcategory": "Earnings Call Transcript",
+    "is_results_category": false,
+    "alternates": [],
+    "turns": 25,
+    "management_turns": 9,
+    "analyst_turns": 7,
+    "labelled": true,
+    "call_date": "2026-01-30",
+    "claims_rejected_by_gates": 0,
+    "notes": [],
+    "complete": true,
+    "roster": [
+     "Rajiv Menon: Managing Director and Chief Executive Officer",
+     "Anita Desai: Chief Financial Officer"
+    ],
+    "claims": {
+     "guidance": 1,
+     "assertion": 1,
+     "outlook": 3
+    }
+   }
+  },
+  {
+   "id": "d:60dbed2bcf",
+   "kind": "transcript",
+   "title": "Transcript of Earnings Call for Q4 FY25",
+   "period": "Q4 FY25",
+   "period_basis": "stated in the filing subject",
+   "filed_at": "2025-05-07T17:30:00+05:30",
+   "source": "bse",
+   "source_id": "fx-sarang-018",
+   "url": null,
+   "listing_url": null,
+   "fetched_at": "2026-11-04T16:10:15.193746Z",
+   "raw_path": "/home/claude/finn/data/research_fixtures/attachments/SARANG_Q4FY25_transcript.pdf",
+   "sha256": "c5ea2d17181f5111718cda2af492492bacf7430b079384887055aa13155d973a",
+   "pages": 2,
+   "status": "parsed",
+   "status_reason": null,
+   "fixture": true,
+   "parse": {
+    "attachment": "SARANG_Q4FY25_transcript.pdf",
+    "subcategory": "Earnings Call Transcript",
+    "is_results_category": false,
+    "alternates": [],
+    "turns": 24,
+    "management_turns": 8,
+    "analyst_turns": 7,
+    "labelled": true,
+    "call_date": "2025-05-02",
+    "claims_rejected_by_gates": 0,
+    "notes": [],
+    "complete": true,
+    "roster": [
+     "Rajiv Menon: Managing Director and Chief Executive Officer",
+     "Anita Desai: Chief Financial Officer"
+    ],
+    "claims": {
+     "guidance": 1,
+     "assertion": 1,
+     "outlook": 1
+    }
+   }
+  },
+  {
+   "id": "d:8698adcd82",
+   "kind": "transcript",
+   "title": "Transcript of Earnings Call for Q4 FY26",
+   "period": "Q4 FY26",
+   "period_basis": "stated in the filing subject",
+   "filed_at": "2026-05-07T17:45:00+05:30",
+   "source": "bse",
+   "source_id": "fx-sarang-034",
+   "url": null,
+   "listing_url": null,
+   "fetched_at": "2026-11-04T16:10:15.193852Z",
+   "raw_path": "/home/claude/finn/data/research_fixtures/attachments/SARANG_Q4FY26_transcript.pdf",
+   "sha256": "6b57213e607752381d2688a8f49d3061da50f7fe0fa593712edba80f0b385466",
+   "pages": 2,
+   "status": "parsed",
+   "status_reason": null,
+   "fixture": true,
+   "parse": {
+    "attachment": "SARANG_Q4FY26_transcript.pdf",
+    "subcategory": "Earnings Call Transcript",
+    "is_results_category": false,
+    "alternates": [],
+    "turns": 19,
+    "management_turns": 7,
+    "analyst_turns": 5,
+    "labelled": true,
+    "call_date": "2026-05-02",
+    "claims_rejected_by_gates": 0,
+    "notes": [],
+    "complete": true,
+    "roster": [
+     "Rajiv Menon: Managing Director and Chief Executive Officer",
+     "Anita Desai: Chief Financial Officer"
+    ],
+    "claims": {
+     "guidance": 2,
+     "assertion": 1,
+     "outlook": 1
+    }
+   }
+  }
+ ],
+ "counts": {
+  "documents": {
+   "results": 10,
+   "transcript": 10,
+   "presentation": 0,
+   "annual_report": 1,
+   "press_release": 0
+  },
+  "claims": {
+   "guidance": 9,
+   "assertion": 4,
+   "outlook": 13
+  },
+  "claims_rejected_by_gates": 0,
+  "verdicts": {
+   "missed": 2,
+   "ahead": 1,
+   "unverifiable": 3,
+   "dropped": 1,
+   "consistent": 2
+  }
+ },
+ "facts": {
+  "cl:1269fde9dbf0": {
+   "id": "cl:1269fde9dbf0",
+   "info_class": "guidance",
+   "label": "Guided: Credit cost, FY25",
+   "period": "Q1 FY25",
+   "doc_id": "d:b57ed3abc3",
+   "page": 1,
+   "section": "Prepared remarks",
+   "speaker": "Rajiv Menon, Managing Director and Chief Executive Officer",
+   "role": "management",
+   "quote": "We expect credit cost for FY25 to be in the range of 1.6% to 1.8%.",
+   "inputs": [],
+   "note": "'1.6% to 1.8%' read as 1.6 to 1.8%"
+  },
+  "cl:3685826fb5df": {
+   "id": "cl:3685826fb5df",
+   "info_class": "guidance",
+   "label": "Guided: Loan book growth, FY25",
+   "period": "Q1 FY25",
+   "doc_id": "d:b57ed3abc3",
+   "page": 1,
+   "section": "Prepared remarks",
+   "speaker": "Rajiv Menon, Managing Director and Chief Executive Officer",
+   "role": "management",
+   "quote": "We expect our loan book to grow 20% to 22% in FY25.",
+   "inputs": [],
+   "note": "'20% to 22%' read as 20 to 22%"
+  },
+  "cl:a9d0607b2ca2": {
+   "id": "cl:a9d0607b2ca2",
+   "info_class": "outlook",
+   "label": "Commentary: Asset quality",
+   "period": "Q2 FY25",
+   "doc_id": "d:8c2a1da8ea",
+   "page": 1,
+   "section": "Prepared remarks",
+   "speaker": "Rajiv Menon, Managing Director and Chief Executive Officer",
+   "role": "management",
+   "quote": "Asset quality remained stable.",
+   "inputs": []
+  },
+  "cl:9fe12a2d7f85": {
+   "id": "cl:9fe12a2d7f85",
+   "info_class": "outlook",
+   "label": "Commentary: Asset quality",
+   "period": "Q2 FY25",
+   "doc_id": "d:8c2a1da8ea",
+   "page": 1,
+   "section": "Prepared remarks",
+   "speaker": "Rajiv Menon, Managing Director and Chief Executive Officer",
+   "role": "management",
+   "quote": "Collection efficiency was healthy.",
+   "inputs": []
+  },
+  "cl:c271674a1039": {
+   "id": "cl:c271674a1039",
+   "info_class": "guidance",
+   "label": "Guided: Credit cost, FY25",
+   "period": "Q3 FY25",
+   "doc_id": "d:fb2006658a",
+   "page": 1,
+   "section": "Prepared remarks",
+   "speaker": "Rajiv Menon, Managing Director and Chief Executive Officer",
+   "role": "management",
+   "quote": "We now expect credit cost of 1.9% to 2.1% for FY25.",
+   "inputs": [],
+   "note": "'1.9% to 2.1%' read as 1.9 to 2.1%"
+  },
+  "cl:b703b4224ad4": {
+   "id": "cl:b703b4224ad4",
+   "info_class": "assertion",
+   "label": "Management said: Loan book growth",
+   "period": "Q4 FY25",
+   "doc_id": "d:60dbed2bcf",
+   "page": 1,
+   "section": "Prepared remarks",
+   "speaker": "Rajiv Menon, Managing Director and Chief Executive Officer",
+   "role": "management",
+   "quote": "Our loan book grew 22.7% in FY25.",
+   "inputs": [],
+   "note": "'22.7%' read as 22.7%"
+  },
+  "cl:a33259d6e8c4": {
+   "id": "cl:a33259d6e8c4",
+   "info_class": "outlook",
+   "label": "Commentary: Asset quality",
+   "period": "Q4 FY25",
+   "doc_id": "d:60dbed2bcf",
+   "page": 1,
+   "section": "Prepared remarks",
+   "speaker": "Rajiv Menon, Managing Director and Chief Executive Officer",
+   "role": "management",
+   "quote": "Asset quality remained stable.",
+   "inputs": []
+  },
+  "cl:9821325203d5": {
+   "id": "cl:9821325203d5",
+   "info_class": "guidance",
+   "label": "Guided: Credit cost, FY26",
+   "period": "Q4 FY25",
+   "doc_id": "d:60dbed2bcf",
+   "page": 1,
+   "section": "Prepared remarks",
+   "speaker": "Rajiv Menon, Managing Director and Chief Executive Officer",
+   "role": "management",
+   "quote": "For FY26 we expect credit cost of 1.8% to 2.0%.",
+   "inputs": [],
+   "note": "'1.8% to 2.0%' read as 1.8 to 2%"
+  },
+  "cl:0ac4352b03c8": {
+   "id": "cl:0ac4352b03c8",
+   "info_class": "outlook",
+   "label": "Commentary: Asset quality",
+   "period": "Q1 FY26",
+   "doc_id": "d:f87f40bd95",
+   "page": 1,
+   "section": "Prepared remarks",
+   "speaker": "Rajiv Menon, Managing Director and Chief Executive Officer",
+   "role": "management",
+   "quote": "Asset quality was stable and collections were healthy.",
+   "inputs": []
+  },
+  "cl:926779f1ac26": {
+   "id": "cl:926779f1ac26",
+   "info_class": "outlook",
+   "label": "Commentary: Asset quality",
+   "period": "Q2 FY26",
+   "doc_id": "d:40720490c7",
+   "page": 1,
+   "section": "Prepared remarks",
+   "speaker": "Anita Desai, Chief Financial Officer",
+   "role": "management",
+   "quote": "Collections were steady and our cost of funds was stable.",
+   "inputs": []
+  },
+  "cl:eb04cbf82174": {
+   "id": "cl:eb04cbf82174",
+   "info_class": "assertion",
+   "label": "Management said: Disbursements",
+   "period": "Q3 FY26",
+   "doc_id": "d:b5e0ec154f",
+   "page": 1,
+   "section": "Prepared remarks",
+   "speaker": "Rajiv Menon, Managing Director and Chief Executive Officer",
+   "role": "management",
+   "quote": "Disbursements grew 21% year-on-year in the quarter.",
+   "inputs": [],
+   "note": "'21%' read as 21%"
+  },
+  "cl:f1f711b34320": {
+   "id": "cl:f1f711b34320",
+   "info_class": "outlook",
+   "label": "Commentary: Asset quality",
+   "period": "Q3 FY26",
+   "doc_id": "d:b5e0ec154f",
+   "page": 1,
+   "section": "Prepared remarks",
+   "speaker": "Rajiv Menon, Managing Director and Chief Executive Officer",
+   "role": "management",
+   "quote": "Asset quality remained stable.",
+   "inputs": []
+  },
+  "cl:c6a036db731b": {
+   "id": "cl:c6a036db731b",
+   "info_class": "guidance",
+   "label": "Guided: Credit cost, FY26",
+   "period": "Q3 FY26",
+   "doc_id": "d:b5e0ec154f",
+   "page": 1,
+   "section": "Prepared remarks",
+   "speaker": "Rajiv Menon, Managing Director and Chief Executive Officer",
+   "role": "management",
+   "quote": "We expect credit cost for FY26 to be in the range of 1.8% to 2.0%.",
+   "inputs": [],
+   "note": "'1.8% to 2.0%' read as 1.8 to 2%"
+  },
+  "cl:1dcbeed70ded": {
+   "id": "cl:1dcbeed70ded",
+   "info_class": "outlook",
+   "label": "Commentary: Funding",
+   "period": "Q3 FY26",
+   "doc_id": "d:b5e0ec154f",
+   "page": 1,
+   "section": "Prepared remarks",
+   "speaker": "Anita Desai, Chief Financial Officer",
+   "role": "management",
+   "quote": "Our cost of funds was stable during the quarter.",
+   "inputs": []
+  },
+  "cl:2f1c53477002": {
+   "id": "cl:2f1c53477002",
+   "info_class": "outlook",
+   "label": "Commentary: Funding",
+   "period": "Q3 FY26",
+   "doc_id": "d:b5e0ec154f",
+   "page": 1,
+   "section": "Prepared remarks",
+   "speaker": "Anita Desai, Chief Financial Officer",
+   "role": "management",
+   "quote": "Liquidity remains comfortable.",
+   "inputs": []
+  },
+  "cl:085a9e4ed017": {
+   "id": "cl:085a9e4ed017",
+   "info_class": "outlook",
+   "label": "Commentary: Asset quality",
+   "period": "Q4 FY26",
+   "doc_id": "d:8698adcd82",
+   "page": 1,
+   "section": "Prepared remarks",
+   "speaker": "Rajiv Menon, Managing Director and Chief Executive Officer",
+   "role": "management",
+   "quote": "Collections were robust and we saw no stress in the portfolio.",
+   "inputs": []
+  },
+  "cl:9aa0ba36f7d5": {
+   "id": "cl:9aa0ba36f7d5",
+   "info_class": "guidance",
+   "label": "Guided: AUM growth, FY27",
+   "period": "Q4 FY26",
+   "doc_id": "d:8698adcd82",
+   "page": 1,
+   "section": "Prepared remarks",
+   "speaker": "Rajiv Menon, Managing Director and Chief Executive Officer",
+   "role": "management",
+   "quote": "For FY27 we expect AUM growth of 22% to 25%.",
+   "inputs": [],
+   "note": "'22% to 25%' read as 22 to 25%"
+  },
+  "cl:65a6ebbb396d": {
+   "id": "cl:65a6ebbb396d",
+   "info_class": "guidance",
+   "label": "Guided: Credit cost, FY27",
+   "period": "Q4 FY26",
+   "doc_id": "d:8698adcd82",
+   "page": 1,
+   "section": "Prepared remarks",
+   "speaker": "Rajiv Menon, Managing Director and Chief Executive Officer",
+   "role": "management",
+   "quote": "We expect credit cost of 1.9% to 2.1% for FY27.",
+   "inputs": [],
+   "note": "'1.9% to 2.1%' read as 1.9 to 2.1%"
+  },
+  "cl:d676bc5f551a": {
+   "id": "cl:d676bc5f551a",
+   "info_class": "assertion",
+   "label": "Management said: Net interest margin",
+   "period": "Q4 FY26",
+   "doc_id": "d:8698adcd82",
+   "page": 1,
+   "section": "Prepared remarks",
+   "speaker": "Anita Desai, Chief Financial Officer",
+   "role": "management",
+   "quote": "Net interest margin for the year was 8.1%.",
+   "inputs": [],
+   "note": "'8.1%' read as 8.1%"
+  },
+  "cl:b01bebc2c210": {
+   "id": "cl:b01bebc2c210",
+   "info_class": "outlook",
+   "label": "Commentary: Asset quality",
+   "period": "Q1 FY27",
+   "doc_id": "d:2c8bf2d95c",
+   "page": 1,
+   "section": "Prepared remarks",
+   "speaker": "Rajiv Menon, Managing Director and Chief Executive Officer",
+   "role": "management",
+   "quote": "Asset quality was stable and collection efficiency remained healthy at 98.6%.",
+   "inputs": []
+  },
+  "cl:c6b2e30517eb": {
+   "id": "cl:c6b2e30517eb",
+   "info_class": "guidance",
+   "label": "Guided: Credit cost, FY27",
+   "period": "Q1 FY27",
+   "doc_id": "d:2c8bf2d95c",
+   "page": 1,
+   "section": "Prepared remarks",
+   "speaker": "Rajiv Menon, Managing Director and Chief Executive Officer",
+   "role": "management",
+   "quote": "We are comfortable with our credit cost guidance for the year.",
+   "inputs": []
+  },
+  "cl:9eaae3557fb6": {
+   "id": "cl:9eaae3557fb6",
+   "info_class": "outlook",
+   "label": "Commentary: Funding",
+   "period": "Q1 FY27",
+   "doc_id": "d:2c8bf2d95c",
+   "page": 1,
+   "section": "Prepared remarks",
+   "speaker": "Anita Desai, Chief Financial Officer",
+   "role": "management",
+   "quote": "Cost of funds eased by 10 basis points sequentially.",
+   "inputs": []
+  },
+  "cl:c0bdb6d817fa": {
+   "id": "cl:c0bdb6d817fa",
+   "info_class": "outlook",
+   "label": "Commentary: Demand",
+   "period": "FY26",
+   "doc_id": "d:2e2be23d1d",
+   "page": 3,
+   "section": "Management discussion and analysis",
+   "speaker": "Company document",
+   "role": "company",
+   "quote": "The Company expects credit demand from small businesses to remain healthy in FY27.",
+   "inputs": []
+  },
+  "cl:78ebe8d041f0": {
+   "id": "cl:78ebe8d041f0",
+   "info_class": "outlook",
+   "label": "Commentary: Asset quality",
+   "period": "Q2 FY27",
+   "doc_id": "d:2e7c254dd9",
+   "page": 1,
+   "section": "Prepared remarks",
+   "speaker": "Rajiv Menon, Managing Director and Chief Executive Officer",
+   "role": "management",
+   "quote": "We have seen some stress in the unsecured personal loan portfolio and collection efficiency moderated.",
+   "inputs": []
+  },
+  "cl:88a1a2ebf6c2": {
+   "id": "cl:88a1a2ebf6c2",
+   "info_class": "assertion",
+   "label": "Management said: Loan book growth",
+   "period": "Q2 FY27",
+   "doc_id": "d:2e7c254dd9",
+   "page": 1,
+   "section": "Prepared remarks",
+   "speaker": "Rajiv Menon, Managing Director and Chief Executive Officer",
+   "role": "management",
+   "quote": "Our loan book grew 10.2% since March.",
+   "inputs": [],
+   "note": "'10.2%' read as 10.2%"
+  },
+  "cl:61901e898c79": {
+   "id": "cl:61901e898c79",
+   "info_class": "guidance",
+   "label": "Guided: Credit cost",
+   "period": "Q2 FY27",
+   "doc_id": "d:2e7c254dd9",
+   "page": 1,
+   "section": "Prepared remarks",
+   "speaker": "Rajiv Menon, Managing Director and Chief Executive Officer",
+   "role": "management",
+   "quote": "Given the uncertainty, we will not be giving credit cost guidance going forward.",
+   "inputs": []
+  },
+  "r:pl:FY25:impairment": {
+   "id": "r:pl:FY25:impairment",
+   "info_class": "reported",
+   "label": "Impairment on financial instruments, FY25",
+   "value": 381.0,
+   "unit": "cr",
+   "display": "\u20b9381.0 cr",
+   "period": "FY25",
+   "basis": "consolidated",
+   "doc_id": "d:7f713d9587",
+   "page": 1,
+   "section": "P&L",
+   "row_text": "(ii) Impairment on financial instruments 110.00 124.00 104.00 460.00 381.00",
+   "column": "31.03.2025",
+   "inputs": []
+  },
+  "r:bs:FY24:loans": {
+   "id": "r:bs:FY24:loans",
+   "info_class": "reported",
+   "label": "Loans, FY24",
+   "value": 15000.0,
+   "unit": "cr",
+   "display": "\u20b915,000.0 cr",
+   "period": "FY24",
+   "basis": "consolidated",
+   "doc_id": "d:5ba23d613a",
+   "page": 2,
+   "section": "Balance sheet",
+   "row_text": "(c) Loans 18,400.00 15,000.00",
+   "column": "31.03.2024",
+   "inputs": []
+  },
+  "r:bs:FY25:loans": {
+   "id": "r:bs:FY25:loans",
+   "info_class": "reported",
+   "label": "Loans, FY25",
+   "value": 18400.0,
+   "unit": "cr",
+   "display": "\u20b918,400.0 cr",
+   "period": "FY25",
+   "basis": "consolidated",
+   "doc_id": "d:7f713d9587",
+   "page": 2,
+   "section": "Balance sheet",
+   "row_text": "(c) Loans 22,600.00 18,400.00",
+   "column": "31.03.2025",
+   "inputs": []
+  },
+  "c:FY25:credit_cost": {
+   "id": "c:FY25:credit_cost",
+   "info_class": "computed",
+   "label": "Credit cost, FY25 (annualised)",
+   "value": 0.0228,
+   "unit": "pct",
+   "display": "2.3%",
+   "period": "FY25",
+   "basis": "consolidated",
+   "formula": "impairment \u00d7 4/4 \u00f7 average of opening and closing loans",
+   "inputs": [
+    "r:pl:FY25:impairment",
+    "r:bs:FY24:loans",
+    "r:bs:FY25:loans"
+   ],
+   "note": "On-book loans from the balance sheet; the company may quote credit cost on AUM."
+  },
+  "c:gap:lg:c4cbe82269": {
+   "id": "c:gap:lg:c4cbe82269",
+   "info_class": "computed",
+   "label": "Gap to the nearest edge of the target, FY25",
+   "value": 0.18,
+   "unit": "pp",
+   "display": "+0.2 pp",
+   "period": "FY25",
+   "basis": "consolidated",
+   "formula": "actual - upper edge of the target (2.1%)",
+   "inputs": [
+    "c:FY25:credit_cost",
+    "cl:c271674a1039"
+   ]
+  },
+  "c:FY25:loan_growth_ytd": {
+   "id": "c:FY25:loan_growth_ytd",
+   "info_class": "computed",
+   "label": "Loan book growth since March, FY25",
+   "value": 0.22666666666666657,
+   "unit": "growth",
+   "display": "+22.7%",
+   "period": "FY25",
+   "basis": "consolidated",
+   "formula": "closing loans \u00f7 opening (March) loans - 1",
+   "inputs": [
+    "r:bs:FY25:loans",
+    "r:bs:FY24:loans"
+   ]
+  },
+  "c:gap:lg:a778af4e77": {
+   "id": "c:gap:lg:a778af4e77",
+   "info_class": "computed",
+   "label": "Gap to the nearest edge of the target, FY25",
+   "value": 0.67,
+   "unit": "pp",
+   "display": "+0.7 pp",
+   "period": "FY25",
+   "basis": "consolidated",
+   "formula": "actual - upper edge of the target (22%)",
+   "inputs": [
+    "c:FY25:loan_growth_ytd",
+    "cl:3685826fb5df"
+   ]
+  },
+  "r:pl:FY26:impairment": {
+   "id": "r:pl:FY26:impairment",
+   "info_class": "reported",
+   "label": "Impairment on financial instruments, FY26",
+   "value": 460.0,
+   "unit": "cr",
+   "display": "\u20b9460.0 cr",
+   "period": "FY26",
+   "basis": "consolidated",
+   "doc_id": "d:89d574da9f",
+   "page": 1,
+   "section": "P&L",
+   "row_text": "(ii) Impairment on financial instruments 150.00 126.00 118.00 276.00 226.00 460.00",
+   "column": "31.03.2026",
+   "inputs": []
+  },
+  "r:bs:FY26:loans": {
+   "id": "r:bs:FY26:loans",
+   "info_class": "reported",
+   "label": "Loans, FY26",
+   "value": 22600.0,
+   "unit": "cr",
+   "display": "\u20b922,600.0 cr",
+   "period": "FY26",
+   "basis": "consolidated",
+   "doc_id": "d:89d574da9f",
+   "page": 2,
+   "section": "Balance sheet",
+   "row_text": "(c) Loans 24,900.00 22,600.00",
+   "column": "31.03.2026",
+   "inputs": []
+  },
+  "c:FY26:credit_cost": {
+   "id": "c:FY26:credit_cost",
+   "info_class": "computed",
+   "label": "Credit cost, FY26 (annualised)",
+   "value": 0.0224,
+   "unit": "pct",
+   "display": "2.2%",
+   "period": "FY26",
+   "basis": "consolidated",
+   "formula": "impairment \u00d7 4/4 \u00f7 average of opening and closing loans",
+   "inputs": [
+    "r:pl:FY26:impairment",
+    "r:bs:FY25:loans",
+    "r:bs:FY26:loans"
+   ],
+   "note": "On-book loans from the balance sheet; the company may quote credit cost on AUM."
+  },
+  "c:gap:lg:bda689a886": {
+   "id": "c:gap:lg:bda689a886",
+   "info_class": "computed",
+   "label": "Gap to the nearest edge of the target, FY26",
+   "value": 0.24,
+   "unit": "pp",
+   "display": "+0.2 pp",
+   "period": "FY26",
+   "basis": "consolidated",
+   "formula": "actual - upper edge of the target (2%)",
+   "inputs": [
+    "c:FY26:credit_cost",
+    "cl:c6a036db731b"
+   ]
+  },
+  "r:pl:H1FY27:impairment": {
+   "id": "r:pl:H1FY27:impairment",
+   "info_class": "reported",
+   "label": "Impairment on financial instruments, H1 FY27",
+   "value": 276.0,
+   "unit": "cr",
+   "display": "\u20b9276.0 cr",
+   "period": "H1 FY27",
+   "basis": "consolidated",
+   "doc_id": "d:89d574da9f",
+   "page": 1,
+   "section": "P&L",
+   "row_text": "(ii) Impairment on financial instruments 150.00 126.00 118.00 276.00 226.00 460.00",
+   "column": "30.09.2026",
+   "inputs": []
+  },
+  "r:bs:H1FY27:loans": {
+   "id": "r:bs:H1FY27:loans",
+   "info_class": "reported",
+   "label": "Loans, H1 FY27",
+   "value": 24900.0,
+   "unit": "cr",
+   "display": "\u20b924,900.0 cr",
+   "period": "H1 FY27",
+   "basis": "consolidated",
+   "doc_id": "d:89d574da9f",
+   "page": 2,
+   "section": "Balance sheet",
+   "row_text": "(c) Loans 24,900.00 22,600.00",
+   "column": "30.09.2026",
+   "inputs": []
+  },
+  "c:H1FY27:credit_cost": {
+   "id": "c:H1FY27:credit_cost",
+   "info_class": "computed",
+   "label": "Credit cost, H1 FY27 (annualised)",
+   "value": 0.0232,
+   "unit": "pct",
+   "display": "2.3%",
+   "period": "H1 FY27",
+   "basis": "consolidated",
+   "formula": "impairment \u00d7 4/2 \u00f7 average of opening and closing loans",
+   "inputs": [
+    "r:pl:H1FY27:impairment",
+    "r:bs:FY26:loans",
+    "r:bs:H1FY27:loans"
+   ],
+   "note": "On-book loans from the balance sheet; the company may quote credit cost on AUM."
+  },
+  "c:Q2FY27:loan_growth_ytd": {
+   "id": "c:Q2FY27:loan_growth_ytd",
+   "info_class": "computed",
+   "label": "Loan book growth since March, Q2 FY27",
+   "value": 0.10176991150442483,
+   "unit": "growth",
+   "display": "+10.2%",
+   "period": "Q2 FY27",
+   "basis": "consolidated",
+   "formula": "closing loans \u00f7 opening (March) loans - 1",
+   "inputs": [
+    "r:bs:H1FY27:loans",
+    "r:bs:FY26:loans"
+   ]
+  },
+  "r:pl:FY24:revenue": {
+   "id": "r:pl:FY24:revenue",
+   "info_class": "reported",
+   "label": "Revenue from operations, FY24",
+   "value": 2592.0,
+   "unit": "cr",
+   "display": "\u20b92,592.0 cr",
+   "period": "FY24",
+   "basis": "consolidated",
+   "doc_id": "d:5ba23d613a",
+   "page": 1,
+   "section": "P&L",
+   "row_text": "Total revenue from operations 852.00 815.00 701.00 3,176.00 2,592.00",
+   "column": "31.03.2024",
+   "inputs": []
+  },
+  "r:pl:FY25:revenue": {
+   "id": "r:pl:FY25:revenue",
+   "info_class": "reported",
+   "label": "Revenue from operations, FY25",
+   "value": 3176.0,
+   "unit": "cr",
+   "display": "\u20b93,176.0 cr",
+   "period": "FY25",
+   "basis": "consolidated",
+   "doc_id": "d:7f713d9587",
+   "page": 1,
+   "section": "P&L",
+   "row_text": "Total revenue from operations 1,020.00 975.00 852.00 3,820.00 3,176.00",
+   "column": "31.03.2025",
+   "inputs": []
+  },
+  "c:FY25:revenue_growth_FY24": {
+   "id": "c:FY25:revenue_growth_FY24",
+   "info_class": "computed",
+   "label": "Revenue growth, FY25 vs FY24",
+   "value": 0.22530864197530853,
+   "unit": "growth",
+   "display": "+22.5%",
+   "period": "FY25",
+   "basis": "consolidated",
+   "formula": "FY25 \u00f7 FY24 - 1",
+   "inputs": [
+    "r:pl:FY25:revenue",
+    "r:pl:FY24:revenue"
+   ]
+  },
+  "r:pl:FY26:revenue": {
+   "id": "r:pl:FY26:revenue",
+   "info_class": "reported",
+   "label": "Revenue from operations, FY26",
+   "value": 3820.0,
+   "unit": "cr",
+   "display": "\u20b93,820.0 cr",
+   "period": "FY26",
+   "basis": "consolidated",
+   "doc_id": "d:89d574da9f",
+   "page": 1,
+   "section": "P&L",
+   "row_text": "Total revenue from operations 1,090.00 1,056.00 934.00 2,146.00 1,825.00 3,820.00",
+   "column": "31.03.2026",
+   "inputs": []
+  },
+  "c:FY26:revenue_growth_FY25": {
+   "id": "c:FY26:revenue_growth_FY25",
+   "info_class": "computed",
+   "label": "Revenue growth, FY26 vs FY25",
+   "value": 0.2027707808564232,
+   "unit": "growth",
+   "display": "+20.3%",
+   "period": "FY26",
+   "basis": "consolidated",
+   "formula": "FY26 \u00f7 FY25 - 1",
+   "inputs": [
+    "r:pl:FY26:revenue",
+    "r:pl:FY25:revenue"
+   ]
+  },
+  "r:pl:H1FY24:impairment": {
+   "id": "r:pl:H1FY24:impairment",
+   "info_class": "reported",
+   "label": "Impairment on financial instruments, H1 FY24",
+   "value": 142.0,
+   "unit": "cr",
+   "display": "\u20b9142.0 cr",
+   "period": "H1 FY24",
+   "basis": "consolidated",
+   "doc_id": "d:affc50e305",
+   "page": 1,
+   "section": "P&L",
+   "row_text": "(ii) Impairment on financial instruments 92.00 85.00 72.00 177.00 142.00 297.00",
+   "column": "30.09.2023",
+   "inputs": []
+  },
+  "r:pl:FY24:impairment": {
+   "id": "r:pl:FY24:impairment",
+   "info_class": "reported",
+   "label": "Impairment on financial instruments, FY24",
+   "value": 297.0,
+   "unit": "cr",
+   "display": "\u20b9297.0 cr",
+   "period": "FY24",
+   "basis": "consolidated",
+   "doc_id": "d:5ba23d613a",
+   "page": 1,
+   "section": "P&L",
+   "row_text": "(ii) Impairment on financial instruments 104.00 100.00 80.00 381.00 297.00",
+   "column": "31.03.2024",
+   "inputs": []
+  },
+  "r:pl:H1FY25:impairment": {
+   "id": "r:pl:H1FY25:impairment",
+   "info_class": "reported",
+   "label": "Impairment on financial instruments, H1 FY25",
+   "value": 177.0,
+   "unit": "cr",
+   "display": "\u20b9177.0 cr",
+   "period": "H1 FY25",
+   "basis": "consolidated",
+   "doc_id": "d:d52c6e4208",
+   "page": 1,
+   "section": "P&L",
+   "row_text": "(ii) Impairment on financial instruments 118.00 108.00 92.00 226.00 177.00 381.00",
+   "column": "30.09.2024",
+   "inputs": []
+  },
+  "r:bs:H1FY25:loans": {
+   "id": "r:bs:H1FY25:loans",
+   "info_class": "reported",
+   "label": "Loans, H1 FY25",
+   "value": 16600.0,
+   "unit": "cr",
+   "display": "\u20b916,600.0 cr",
+   "period": "H1 FY25",
+   "basis": "consolidated",
+   "doc_id": "d:affc50e305",
+   "page": 2,
+   "section": "Balance sheet",
+   "row_text": "(c) Loans 16,600.00 15,000.00",
+   "column": "30.09.2024",
+   "inputs": []
+  },
+  "c:H1FY25:credit_cost": {
+   "id": "c:H1FY25:credit_cost",
+   "info_class": "computed",
+   "label": "Credit cost, H1 FY25 (annualised)",
+   "value": 0.0224,
+   "unit": "pct",
+   "display": "2.2%",
+   "period": "H1 FY25",
+   "basis": "consolidated",
+   "formula": "impairment \u00d7 4/2 \u00f7 average of opening and closing loans",
+   "inputs": [
+    "r:pl:H1FY25:impairment",
+    "r:bs:FY24:loans",
+    "r:bs:H1FY25:loans"
+   ],
+   "note": "On-book loans from the balance sheet; the company may quote credit cost on AUM."
+  },
+  "r:pl:H1FY26:impairment": {
+   "id": "r:pl:H1FY26:impairment",
+   "info_class": "reported",
+   "label": "Impairment on financial instruments, H1 FY26",
+   "value": 226.0,
+   "unit": "cr",
+   "display": "\u20b9226.0 cr",
+   "period": "H1 FY26",
+   "basis": "consolidated",
+   "doc_id": "d:89d574da9f",
+   "page": 1,
+   "section": "P&L",
+   "row_text": "(ii) Impairment on financial instruments 150.00 126.00 118.00 276.00 226.00 460.00",
+   "column": "30.09.2025",
+   "inputs": []
+  },
+  "r:bs:H1FY26:loans": {
+   "id": "r:bs:H1FY26:loans",
+   "info_class": "reported",
+   "label": "Loans, H1 FY26",
+   "value": 20300.0,
+   "unit": "cr",
+   "display": "\u20b920,300.0 cr",
+   "period": "H1 FY26",
+   "basis": "consolidated",
+   "doc_id": "d:d52c6e4208",
+   "page": 2,
+   "section": "Balance sheet",
+   "row_text": "(c) Loans 20,300.00 18,400.00",
+   "column": "30.09.2025",
+   "inputs": []
+  },
+  "c:H1FY26:credit_cost": {
+   "id": "c:H1FY26:credit_cost",
+   "info_class": "computed",
+   "label": "Credit cost, H1 FY26 (annualised)",
+   "value": 0.0234,
+   "unit": "pct",
+   "display": "2.3%",
+   "period": "H1 FY26",
+   "basis": "consolidated",
+   "formula": "impairment \u00d7 4/2 \u00f7 average of opening and closing loans",
+   "inputs": [
+    "r:pl:H1FY26:impairment",
+    "r:bs:FY25:loans",
+    "r:bs:H1FY26:loans"
+   ],
+   "note": "On-book loans from the balance sheet; the company may quote credit cost on AUM."
+  },
+  "c:H1FY25:loan_growth_ytd": {
+   "id": "c:H1FY25:loan_growth_ytd",
+   "info_class": "computed",
+   "label": "Loan book growth since March, H1 FY25",
+   "value": 0.10666666666666669,
+   "unit": "growth",
+   "display": "+10.7%",
+   "period": "H1 FY25",
+   "basis": "consolidated",
+   "formula": "closing loans \u00f7 opening (March) loans - 1",
+   "inputs": [
+    "r:bs:H1FY25:loans",
+    "r:bs:FY24:loans"
+   ]
+  },
+  "c:H1FY26:loan_growth_ytd": {
+   "id": "c:H1FY26:loan_growth_ytd",
+   "info_class": "computed",
+   "label": "Loan book growth since March, H1 FY26",
+   "value": 0.1032608695652173,
+   "unit": "growth",
+   "display": "+10.3%",
+   "period": "H1 FY26",
+   "basis": "consolidated",
+   "formula": "closing loans \u00f7 opening (March) loans - 1",
+   "inputs": [
+    "r:bs:H1FY26:loans",
+    "r:bs:FY25:loans"
+   ]
+  },
+  "c:FY26:loan_growth_ytd": {
+   "id": "c:FY26:loan_growth_ytd",
+   "info_class": "computed",
+   "label": "Loan book growth since March, FY26",
+   "value": 0.2282608695652173,
+   "unit": "growth",
+   "display": "+22.8%",
+   "period": "FY26",
+   "basis": "consolidated",
+   "formula": "closing loans \u00f7 opening (March) loans - 1",
+   "inputs": [
+    "r:bs:FY26:loans",
+    "r:bs:FY25:loans"
+   ]
+  },
+  "c:H1FY27:loan_growth_ytd": {
+   "id": "c:H1FY27:loan_growth_ytd",
+   "info_class": "computed",
+   "label": "Loan book growth since March, H1 FY27",
+   "value": 0.10176991150442483,
+   "unit": "growth",
+   "display": "+10.2%",
+   "period": "H1 FY27",
+   "basis": "consolidated",
+   "formula": "closing loans \u00f7 opening (March) loans - 1",
+   "inputs": [
+    "r:bs:H1FY27:loans",
+    "r:bs:FY26:loans"
+   ]
+  },
+  "r:cf:FY25:cfo": {
+   "id": "r:cf:FY25:cfo",
+   "info_class": "reported",
+   "label": "Net cash from operating activities, FY25",
+   "value": -2898.64,
+   "unit": "cr",
+   "display": "-\u20b92,898.6 cr",
+   "period": "FY25",
+   "basis": "consolidated",
+   "doc_id": "d:7f713d9587",
+   "page": 3,
+   "section": "Cash flow",
+   "row_text": "Net cash generated from / (used in) operating activities (A) (2,955.78) (2,898.64)",
+   "column": "31.03.2025",
+   "inputs": []
+  },
+  "r:cf:H1FY26:cfo": {
+   "id": "r:cf:H1FY26:cfo",
+   "info_class": "reported",
+   "label": "Net cash from operating activities, H1 FY26",
+   "value": -1308.83,
+   "unit": "cr",
+   "display": "-\u20b91,308.8 cr",
+   "period": "H1 FY26",
+   "basis": "consolidated",
+   "doc_id": "d:89d574da9f",
+   "page": 3,
+   "section": "Cash flow",
+   "row_text": "Net cash generated from / (used in) operating activities (A) (1,585.50) (1,308.83)",
+   "column": "30.09.2025",
+   "inputs": []
+  },
+  "r:cf:FY26:cfo": {
+   "id": "r:cf:FY26:cfo",
+   "info_class": "reported",
+   "label": "Net cash from operating activities, FY26",
+   "value": -2955.78,
+   "unit": "cr",
+   "display": "-\u20b92,955.8 cr",
+   "period": "FY26",
+   "basis": "consolidated",
+   "doc_id": "d:7f713d9587",
+   "page": 3,
+   "section": "Cash flow",
+   "row_text": "Net cash generated from / (used in) operating activities (A) (2,955.78) (2,898.64)",
+   "column": "31.03.2026",
+   "inputs": []
+  },
+  "r:cf:H1FY27:cfo": {
+   "id": "r:cf:H1FY27:cfo",
+   "info_class": "reported",
+   "label": "Net cash from operating activities, H1 FY27",
+   "value": -1585.5,
+   "unit": "cr",
+   "display": "-\u20b91,585.5 cr",
+   "period": "H1 FY27",
+   "basis": "consolidated",
+   "doc_id": "d:89d574da9f",
+   "page": 3,
+   "section": "Cash flow",
+   "row_text": "Net cash generated from / (used in) operating activities (A) (1,585.50) (1,308.83)",
+   "column": "30.09.2026",
+   "inputs": []
+  },
+  "q:overview:d:2e2be23d1d": {
+   "id": "q:overview:d:2e2be23d1d",
+   "info_class": "reported",
+   "label": "Business description (company's own words)",
+   "doc_id": "d:2e2be23d1d",
+   "page": 2,
+   "section": "About us",
+   "speaker": "Company document",
+   "role": "company",
+   "quote": "Sarang Finance is a non-banking finance company that lends to small businesses and salaried individuals. Its loan book is spread across secured business loans, loans against property and unsecured personal loans, originated through 412 branches in nine states.",
+   "inputs": []
+  },
+  "r:pl:Q2FY27:revenue": {
+   "id": "r:pl:Q2FY27:revenue",
+   "info_class": "reported",
+   "label": "Revenue from operations, Q2 FY27",
+   "value": 1090.0,
+   "unit": "cr",
+   "display": "\u20b91,090.0 cr",
+   "period": "Q2 FY27",
+   "basis": "consolidated",
+   "doc_id": "d:89d574da9f",
+   "page": 1,
+   "section": "P&L",
+   "row_text": "Total revenue from operations 1,090.00 1,056.00 934.00 2,146.00 1,825.00 3,820.00",
+   "column": "30.09.2026",
+   "inputs": []
+  },
+  "r:pl:Q1FY27:revenue": {
+   "id": "r:pl:Q1FY27:revenue",
+   "info_class": "reported",
+   "label": "Revenue from operations, Q1 FY27",
+   "value": 1056.0,
+   "unit": "cr",
+   "display": "\u20b91,056.0 cr",
+   "period": "Q1 FY27",
+   "basis": "consolidated",
+   "doc_id": "d:89d574da9f",
+   "page": 1,
+   "section": "P&L",
+   "row_text": "Total revenue from operations 1,090.00 1,056.00 934.00 2,146.00 1,825.00 3,820.00",
+   "column": "30.06.2026",
+   "inputs": []
+  },
+  "c:Q2FY27:revenue_growth_Q1FY27": {
+   "id": "c:Q2FY27:revenue_growth_Q1FY27",
+   "info_class": "computed",
+   "label": "Revenue growth, Q2 FY27 vs Q1 FY27",
+   "value": 0.032196969696969724,
+   "unit": "growth",
+   "display": "+3.2%",
+   "period": "Q2 FY27",
+   "basis": "consolidated",
+   "formula": "Q2 FY27 \u00f7 Q1 FY27 - 1",
+   "inputs": [
+    "r:pl:Q2FY27:revenue",
+    "r:pl:Q1FY27:revenue"
+   ]
+  },
+  "r:pl:Q2FY26:revenue": {
+   "id": "r:pl:Q2FY26:revenue",
+   "info_class": "reported",
+   "label": "Revenue from operations, Q2 FY26",
+   "value": 934.0,
+   "unit": "cr",
+   "display": "\u20b9934.0 cr",
+   "period": "Q2 FY26",
+   "basis": "consolidated",
+   "doc_id": "d:89d574da9f",
+   "page": 1,
+   "section": "P&L",
+   "row_text": "Total revenue from operations 1,090.00 1,056.00 934.00 2,146.00 1,825.00 3,820.00",
+   "column": "30.09.2025",
+   "inputs": []
+  },
+  "c:Q2FY27:revenue_growth_Q2FY26": {
+   "id": "c:Q2FY27:revenue_growth_Q2FY26",
+   "info_class": "computed",
+   "label": "Revenue growth, Q2 FY27 vs Q2 FY26",
+   "value": 0.16702355460385432,
+   "unit": "growth",
+   "display": "+16.7%",
+   "period": "Q2 FY27",
+   "basis": "consolidated",
+   "formula": "Q2 FY27 \u00f7 Q2 FY26 - 1",
+   "inputs": [
+    "r:pl:Q2FY27:revenue",
+    "r:pl:Q2FY26:revenue"
+   ]
+  },
+  "r:pl:Q2FY27:interest_income": {
+   "id": "r:pl:Q2FY27:interest_income",
+   "info_class": "reported",
+   "label": "Interest income, Q2 FY27",
+   "value": 1020.0,
+   "unit": "cr",
+   "display": "\u20b91,020.0 cr",
+   "period": "Q2 FY27",
+   "basis": "consolidated",
+   "doc_id": "d:89d574da9f",
+   "page": 1,
+   "section": "P&L",
+   "row_text": "(i) Interest income 1,020.00 985.00 870.00 2,005.00 1,700.00 3,560.00",
+   "column": "30.09.2026",
+   "inputs": []
+  },
+  "r:pl:Q2FY27:finance_cost": {
+   "id": "r:pl:Q2FY27:finance_cost",
+   "info_class": "reported",
+   "label": "Finance costs, Q2 FY27",
+   "value": 478.0,
+   "unit": "cr",
+   "display": "\u20b9478.0 cr",
+   "period": "Q2 FY27",
+   "basis": "consolidated",
+   "doc_id": "d:89d574da9f",
+   "page": 1,
+   "section": "P&L",
+   "row_text": "(i) Finance costs 478.00 462.00 412.00 940.00 807.00 1,685.00",
+   "column": "30.09.2026",
+   "inputs": []
+  },
+  "c:Q2FY27:nii": {
+   "id": "c:Q2FY27:nii",
+   "info_class": "computed",
+   "label": "Net interest income, Q2 FY27",
+   "value": 542.0,
+   "unit": "cr",
+   "display": "\u20b9542.0 cr",
+   "period": "Q2 FY27",
+   "basis": "consolidated",
+   "formula": "Interest income - finance costs",
+   "inputs": [
+    "r:pl:Q2FY27:interest_income",
+    "r:pl:Q2FY27:finance_cost"
+   ]
+  },
+  "r:pl:Q1FY27:interest_income": {
+   "id": "r:pl:Q1FY27:interest_income",
+   "info_class": "reported",
+   "label": "Interest income, Q1 FY27",
+   "value": 985.0,
+   "unit": "cr",
+   "display": "\u20b9985.0 cr",
+   "period": "Q1 FY27",
+   "basis": "consolidated",
+   "doc_id": "d:89d574da9f",
+   "page": 1,
+   "section": "P&L",
+   "row_text": "(i) Interest income 1,020.00 985.00 870.00 2,005.00 1,700.00 3,560.00",
+   "column": "30.06.2026",
+   "inputs": []
+  },
+  "r:pl:Q1FY27:finance_cost": {
+   "id": "r:pl:Q1FY27:finance_cost",
+   "info_class": "reported",
+   "label": "Finance costs, Q1 FY27",
+   "value": 462.0,
+   "unit": "cr",
+   "display": "\u20b9462.0 cr",
+   "period": "Q1 FY27",
+   "basis": "consolidated",
+   "doc_id": "d:89d574da9f",
+   "page": 1,
+   "section": "P&L",
+   "row_text": "(i) Finance costs 478.00 462.00 412.00 940.00 807.00 1,685.00",
+   "column": "30.06.2026",
+   "inputs": []
+  },
+  "c:Q1FY27:nii": {
+   "id": "c:Q1FY27:nii",
+   "info_class": "computed",
+   "label": "Net interest income, Q1 FY27",
+   "value": 523.0,
+   "unit": "cr",
+   "display": "\u20b9523.0 cr",
+   "period": "Q1 FY27",
+   "basis": "consolidated",
+   "formula": "Interest income - finance costs",
+   "inputs": [
+    "r:pl:Q1FY27:interest_income",
+    "r:pl:Q1FY27:finance_cost"
+   ]
+  },
+  "c:Q2FY27:nii_growth_Q1FY27": {
+   "id": "c:Q2FY27:nii_growth_Q1FY27",
+   "info_class": "computed",
+   "label": "NII growth, Q2 FY27 vs Q1 FY27",
+   "value": 0.03632887189292533,
+   "unit": "growth",
+   "display": "+3.6%",
+   "period": "Q2 FY27",
+   "basis": "consolidated",
+   "formula": "Q2 FY27 \u00f7 Q1 FY27 - 1",
+   "inputs": [
+    "c:Q2FY27:nii",
+    "c:Q1FY27:nii"
+   ]
+  },
+  "r:pl:Q2FY26:interest_income": {
+   "id": "r:pl:Q2FY26:interest_income",
+   "info_class": "reported",
+   "label": "Interest income, Q2 FY26",
+   "value": 870.0,
+   "unit": "cr",
+   "display": "\u20b9870.0 cr",
+   "period": "Q2 FY26",
+   "basis": "consolidated",
+   "doc_id": "d:89d574da9f",
+   "page": 1,
+   "section": "P&L",
+   "row_text": "(i) Interest income 1,020.00 985.00 870.00 2,005.00 1,700.00 3,560.00",
+   "column": "30.09.2025",
+   "inputs": []
+  },
+  "r:pl:Q2FY26:finance_cost": {
+   "id": "r:pl:Q2FY26:finance_cost",
+   "info_class": "reported",
+   "label": "Finance costs, Q2 FY26",
+   "value": 412.0,
+   "unit": "cr",
+   "display": "\u20b9412.0 cr",
+   "period": "Q2 FY26",
+   "basis": "consolidated",
+   "doc_id": "d:89d574da9f",
+   "page": 1,
+   "section": "P&L",
+   "row_text": "(i) Finance costs 478.00 462.00 412.00 940.00 807.00 1,685.00",
+   "column": "30.09.2025",
+   "inputs": []
+  },
+  "c:Q2FY26:nii": {
+   "id": "c:Q2FY26:nii",
+   "info_class": "computed",
+   "label": "Net interest income, Q2 FY26",
+   "value": 458.0,
+   "unit": "cr",
+   "display": "\u20b9458.0 cr",
+   "period": "Q2 FY26",
+   "basis": "consolidated",
+   "formula": "Interest income - finance costs",
+   "inputs": [
+    "r:pl:Q2FY26:interest_income",
+    "r:pl:Q2FY26:finance_cost"
+   ]
+  },
+  "c:Q2FY27:nii_growth_Q2FY26": {
+   "id": "c:Q2FY27:nii_growth_Q2FY26",
+   "info_class": "computed",
+   "label": "NII growth, Q2 FY27 vs Q2 FY26",
+   "value": 0.1834061135371179,
+   "unit": "growth",
+   "display": "+18.3%",
+   "period": "Q2 FY27",
+   "basis": "consolidated",
+   "formula": "Q2 FY27 \u00f7 Q2 FY26 - 1",
+   "inputs": [
+    "c:Q2FY27:nii",
+    "c:Q2FY26:nii"
+   ]
+  },
+  "r:pl:Q2FY27:pat": {
+   "id": "r:pl:Q2FY27:pat",
+   "info_class": "reported",
+   "label": "Profit after tax, Q2 FY27",
+   "value": 215.51,
+   "unit": "cr",
+   "display": "\u20b9215.5 cr",
+   "period": "Q2 FY27",
+   "basis": "consolidated",
+   "doc_id": "d:89d574da9f",
+   "page": 1,
+   "section": "P&L",
+   "row_text": "7 Net profit for the period (5-6) 215.51 222.99 187.08 438.50 365.17 784.22",
+   "column": "30.09.2026",
+   "inputs": []
+  },
+  "r:pl:Q1FY27:pat": {
+   "id": "r:pl:Q1FY27:pat",
+   "info_class": "reported",
+   "label": "Profit after tax, Q1 FY27",
+   "value": 222.99,
+   "unit": "cr",
+   "display": "\u20b9223.0 cr",
+   "period": "Q1 FY27",
+   "basis": "consolidated",
+   "doc_id": "d:89d574da9f",
+   "page": 1,
+   "section": "P&L",
+   "row_text": "7 Net profit for the period (5-6) 215.51 222.99 187.08 438.50 365.17 784.22",
+   "column": "30.06.2026",
+   "inputs": []
+  },
+  "c:Q2FY27:pat_growth_Q1FY27": {
+   "id": "c:Q2FY27:pat_growth_Q1FY27",
+   "info_class": "computed",
+   "label": "PAT growth, Q2 FY27 vs Q1 FY27",
+   "value": -0.03354410511682149,
+   "unit": "growth",
+   "display": "-3.4%",
+   "period": "Q2 FY27",
+   "basis": "consolidated",
+   "formula": "Q2 FY27 \u00f7 Q1 FY27 - 1",
+   "inputs": [
+    "r:pl:Q2FY27:pat",
+    "r:pl:Q1FY27:pat"
+   ]
+  },
+  "r:pl:Q2FY26:pat": {
+   "id": "r:pl:Q2FY26:pat",
+   "info_class": "reported",
+   "label": "Profit after tax, Q2 FY26",
+   "value": 187.08,
+   "unit": "cr",
+   "display": "\u20b9187.1 cr",
+   "period": "Q2 FY26",
+   "basis": "consolidated",
+   "doc_id": "d:89d574da9f",
+   "page": 1,
+   "section": "P&L",
+   "row_text": "7 Net profit for the period (5-6) 215.51 222.99 187.08 438.50 365.17 784.22",
+   "column": "30.09.2025",
+   "inputs": []
+  },
+  "c:Q2FY27:pat_growth_Q2FY26": {
+   "id": "c:Q2FY27:pat_growth_Q2FY26",
+   "info_class": "computed",
+   "label": "PAT growth, Q2 FY27 vs Q2 FY26",
+   "value": 0.1519670729099849,
+   "unit": "growth",
+   "display": "+15.2%",
+   "period": "Q2 FY27",
+   "basis": "consolidated",
+   "formula": "Q2 FY27 \u00f7 Q2 FY26 - 1",
+   "inputs": [
+    "r:pl:Q2FY27:pat",
+    "r:pl:Q2FY26:pat"
+   ]
+  },
+  "c:Q2FY27:pat_margin": {
+   "id": "c:Q2FY27:pat_margin",
+   "info_class": "computed",
+   "label": "PAT margin, Q2 FY27",
+   "value": 0.19771559633027522,
+   "unit": "pct",
+   "display": "19.8%",
+   "period": "Q2 FY27",
+   "basis": "consolidated",
+   "formula": "PAT \u00f7 revenue (summed over the period, never an average of quarterly margins)",
+   "inputs": [
+    "r:pl:Q2FY27:pat",
+    "r:pl:Q2FY27:revenue"
+   ]
+  },
+  "r:pl:Q3FY26:revenue": {
+   "id": "r:pl:Q3FY26:revenue",
+   "info_class": "reported",
+   "label": "Revenue from operations, Q3 FY26",
+   "value": 975.0,
+   "unit": "cr",
+   "display": "\u20b9975.0 cr",
+   "period": "Q3 FY26",
+   "basis": "consolidated",
+   "doc_id": "d:7f713d9587",
+   "page": 1,
+   "section": "P&L",
+   "row_text": "Total revenue from operations 1,020.00 975.00 852.00 3,820.00 3,176.00",
+   "column": "31.12.2025",
+   "inputs": []
+  },
+  "r:pl:Q4FY26:revenue": {
+   "id": "r:pl:Q4FY26:revenue",
+   "info_class": "reported",
+   "label": "Revenue from operations, Q4 FY26",
+   "value": 1020.0,
+   "unit": "cr",
+   "display": "\u20b91,020.0 cr",
+   "period": "Q4 FY26",
+   "basis": "consolidated",
+   "doc_id": "d:521ed4109d",
+   "page": 1,
+   "section": "P&L",
+   "row_text": "Total revenue from operations 1,056.00 1,020.00 891.00 3,820.00",
+   "column": "31.03.2026",
+   "inputs": []
+  },
+  "c:ttm:Q2FY27:revenue": {
+   "id": "c:ttm:Q2FY27:revenue",
+   "info_class": "computed",
+   "label": "Revenue, trailing twelve months to Q2 FY27",
+   "value": 4141.0,
+   "unit": "cr",
+   "display": "\u20b94,141.0 cr",
+   "period": "Q2 FY27",
+   "basis": "consolidated",
+   "formula": "Q3 FY26 + Q4 FY26 + Q1 FY27 + Q2 FY27",
+   "inputs": [
+    "r:pl:Q3FY26:revenue",
+    "r:pl:Q4FY26:revenue",
+    "r:pl:Q1FY27:revenue",
+    "r:pl:Q2FY27:revenue"
+   ]
+  },
+  "r:pl:Q3FY26:pat": {
+   "id": "r:pl:Q3FY26:pat",
+   "info_class": "reported",
+   "label": "Profit after tax, Q3 FY26",
+   "value": 195.3,
+   "unit": "cr",
+   "display": "\u20b9195.3 cr",
+   "period": "Q3 FY26",
+   "basis": "consolidated",
+   "doc_id": "d:7f713d9587",
+   "page": 1,
+   "section": "P&L",
+   "row_text": "7 Net profit for the period (5-6) 223.75 195.30 167.62 784.22 620.36",
+   "column": "31.12.2025",
+   "inputs": []
+  },
+  "r:pl:Q4FY26:pat": {
+   "id": "r:pl:Q4FY26:pat",
+   "info_class": "reported",
+   "label": "Profit after tax, Q4 FY26",
+   "value": 223.75,
+   "unit": "cr",
+   "display": "\u20b9223.8 cr",
+   "period": "Q4 FY26",
+   "basis": "consolidated",
+   "doc_id": "d:521ed4109d",
+   "page": 1,
+   "section": "P&L",
+   "row_text": "7 Net profit for the period (5-6) 222.99 223.75 178.09 784.22",
+   "column": "31.03.2026",
+   "inputs": []
+  },
+  "c:ttm:Q2FY27:pat": {
+   "id": "c:ttm:Q2FY27:pat",
+   "info_class": "computed",
+   "label": "PAT, trailing twelve months to Q2 FY27",
+   "value": 857.55,
+   "unit": "cr",
+   "display": "\u20b9857.5 cr",
+   "period": "Q2 FY27",
+   "basis": "consolidated",
+   "formula": "Q3 FY26 + Q4 FY26 + Q1 FY27 + Q2 FY27",
+   "inputs": [
+    "r:pl:Q3FY26:pat",
+    "r:pl:Q4FY26:pat",
+    "r:pl:Q1FY27:pat",
+    "r:pl:Q2FY27:pat"
+   ]
+  },
+  "r:bs:H1FY27:borrowings": {
+   "id": "r:bs:H1FY27:borrowings",
+   "info_class": "reported",
+   "label": "Borrowings (all), H1 FY27",
+   "value": 20850.0,
+   "unit": "cr",
+   "display": "\u20b920,850.0 cr",
+   "period": "H1 FY27",
+   "basis": "consolidated",
+   "doc_id": "d:89d574da9f",
+   "page": 2,
+   "section": "Balance sheet",
+   "row_text": "(a) Debt securities 8,300.00 7,600.00 | (b) Borrowings (other than debt securities) 11,700.00 10,400.00 | (c) Subordinated liabilities 850.00 800.00",
+   "column": "30.09.2026",
+   "inputs": []
+  },
+  "r:bs:H1FY27:total_equity": {
+   "id": "r:bs:H1FY27:total_equity",
+   "info_class": "reported",
+   "label": "Total equity, H1 FY27",
+   "value": 6715.0,
+   "unit": "cr",
+   "display": "\u20b96,715.0 cr",
+   "period": "H1 FY27",
+   "basis": "consolidated",
+   "doc_id": "d:89d574da9f",
+   "page": 2,
+   "section": "Balance sheet",
+   "row_text": "Total equity 6,715.00 6,525.00",
+   "column": "30.09.2026",
+   "inputs": []
+  },
+  "c:bs:H1FY27:de": {
+   "id": "c:bs:H1FY27:de",
+   "info_class": "computed",
+   "label": "Debt to equity, H1 FY27",
+   "value": 3.1,
+   "unit": "x",
+   "display": "3.10x",
+   "period": "H1 FY27",
+   "basis": "consolidated",
+   "formula": "Borrowings \u00f7 total equity",
+   "inputs": [
+    "r:bs:H1FY27:borrowings",
+    "r:bs:H1FY27:total_equity"
+   ]
+  },
+  "m:mcap": {
+   "id": "m:mcap",
+   "info_class": "reported",
+   "label": "Market capitalisation (BSE scrip list)",
+   "value": 18900.0,
+   "unit": "cr",
+   "display": "\u20b918,900 cr",
+   "inputs": [],
+   "note": "Exchange market data, BSE scrip list; not a company document."
+  },
+  "c:pe": {
+   "id": "c:pe",
+   "info_class": "computed",
+   "label": "Price to earnings (market cap \u00f7 TTM PAT to Q2 FY27)",
+   "value": 22.0,
+   "unit": "multiple",
+   "display": "22.0x",
+   "period": "Q2 FY27",
+   "basis": "consolidated",
+   "formula": "market cap \u00f7 trailing-twelve-month PAT",
+   "inputs": [
+    "m:mcap",
+    "c:ttm:Q2FY27:pat"
+   ]
+  },
+  "r:pl:Q3FY25:revenue": {
+   "id": "r:pl:Q3FY25:revenue",
+   "info_class": "reported",
+   "label": "Revenue from operations, Q3 FY25",
+   "value": 815.0,
+   "unit": "cr",
+   "display": "\u20b9815.0 cr",
+   "period": "Q3 FY25",
+   "basis": "consolidated",
+   "doc_id": "d:83aa9cee86",
+   "page": 1,
+   "section": "P&L",
+   "row_text": "Total revenue from operations 975.00 934.00 815.00 2,800.00 2,324.00 3,176.00",
+   "column": "31.12.2024",
+   "inputs": []
+  },
+  "r:pl:Q4FY25:revenue": {
+   "id": "r:pl:Q4FY25:revenue",
+   "info_class": "reported",
+   "label": "Revenue from operations, Q4 FY25",
+   "value": 852.0,
+   "unit": "cr",
+   "display": "\u20b9852.0 cr",
+   "period": "Q4 FY25",
+   "basis": "consolidated",
+   "doc_id": "d:7f713d9587",
+   "page": 1,
+   "section": "P&L",
+   "row_text": "Total revenue from operations 1,020.00 975.00 852.00 3,820.00 3,176.00",
+   "column": "31.03.2025",
+   "inputs": []
+  },
+  "r:pl:Q1FY26:revenue": {
+   "id": "r:pl:Q1FY26:revenue",
+   "info_class": "reported",
+   "label": "Revenue from operations, Q1 FY26",
+   "value": 891.0,
+   "unit": "cr",
+   "display": "\u20b9891.0 cr",
+   "period": "Q1 FY26",
+   "basis": "consolidated",
+   "doc_id": "d:521ed4109d",
+   "page": 1,
+   "section": "P&L",
+   "row_text": "Total revenue from operations 1,056.00 1,020.00 891.00 3,820.00",
+   "column": "30.06.2025",
+   "inputs": []
+  },
+  "r:pl:Q3FY25:pat": {
+   "id": "r:pl:Q3FY25:pat",
+   "info_class": "reported",
+   "label": "Profit after tax, Q3 FY25",
+   "value": 159.39,
+   "unit": "cr",
+   "display": "\u20b9159.4 cr",
+   "period": "Q3 FY25",
+   "basis": "consolidated",
+   "doc_id": "d:83aa9cee86",
+   "page": 1,
+   "section": "P&L",
+   "row_text": "7 Net profit for the period (5-6) 195.30 187.08 159.39 560.47 452.74 620.36",
+   "column": "31.12.2024",
+   "inputs": []
+  },
+  "r:pl:Q4FY25:pat": {
+   "id": "r:pl:Q4FY25:pat",
+   "info_class": "reported",
+   "label": "Profit after tax, Q4 FY25",
+   "value": 167.62,
+   "unit": "cr",
+   "display": "\u20b9167.6 cr",
+   "period": "Q4 FY25",
+   "basis": "consolidated",
+   "doc_id": "d:7f713d9587",
+   "page": 1,
+   "section": "P&L",
+   "row_text": "7 Net profit for the period (5-6) 223.75 195.30 167.62 784.22 620.36",
+   "column": "31.03.2025",
+   "inputs": []
+  },
+  "r:pl:Q1FY26:pat": {
+   "id": "r:pl:Q1FY26:pat",
+   "info_class": "reported",
+   "label": "Profit after tax, Q1 FY26",
+   "value": 178.09,
+   "unit": "cr",
+   "display": "\u20b9178.1 cr",
+   "period": "Q1 FY26",
+   "basis": "consolidated",
+   "doc_id": "d:521ed4109d",
+   "page": 1,
+   "section": "P&L",
+   "row_text": "7 Net profit for the period (5-6) 222.99 223.75 178.09 784.22",
+   "column": "30.06.2025",
+   "inputs": []
+  },
+  "r:pl:Q3FY24:revenue": {
+   "id": "r:pl:Q3FY24:revenue",
+   "info_class": "reported",
+   "label": "Revenue from operations, Q3 FY24",
+   "value": 662.0,
+   "unit": "cr",
+   "display": "\u20b9662.0 cr",
+   "period": "Q3 FY24",
+   "basis": "consolidated",
+   "doc_id": "d:07f992f1f3",
+   "page": 1,
+   "section": "P&L",
+   "row_text": "Total revenue from operations 815.00 771.00 662.00 2,324.00 1,891.00 2,592.00",
+   "column": "31.12.2023",
+   "inputs": []
+  },
+  "c:Q3FY25:revenue_growth_Q3FY24": {
+   "id": "c:Q3FY25:revenue_growth_Q3FY24",
+   "info_class": "computed",
+   "label": "Revenue growth, Q3 FY25 vs Q3 FY24",
+   "value": 0.2311178247734138,
+   "unit": "growth",
+   "display": "+23.1%",
+   "period": "Q3 FY25",
+   "basis": "consolidated",
+   "formula": "Q3 FY25 \u00f7 Q3 FY24 - 1",
+   "inputs": [
+    "r:pl:Q3FY25:revenue",
+    "r:pl:Q3FY24:revenue"
+   ]
+  },
+  "r:pl:Q4FY24:revenue": {
+   "id": "r:pl:Q4FY24:revenue",
+   "info_class": "reported",
+   "label": "Revenue from operations, Q4 FY24",
+   "value": 701.0,
+   "unit": "cr",
+   "display": "\u20b9701.0 cr",
+   "period": "Q4 FY24",
+   "basis": "consolidated",
+   "doc_id": "d:5ba23d613a",
+   "page": 1,
+   "section": "P&L",
+   "row_text": "Total revenue from operations 852.00 815.00 701.00 3,176.00 2,592.00",
+   "column": "31.03.2024",
+   "inputs": []
+  },
+  "c:Q4FY25:revenue_growth_Q4FY24": {
+   "id": "c:Q4FY25:revenue_growth_Q4FY24",
+   "info_class": "computed",
+   "label": "Revenue growth, Q4 FY25 vs Q4 FY24",
+   "value": 0.21540656205420827,
+   "unit": "growth",
+   "display": "+21.5%",
+   "period": "Q4 FY25",
+   "basis": "consolidated",
+   "formula": "Q4 FY25 \u00f7 Q4 FY24 - 1",
+   "inputs": [
+    "r:pl:Q4FY25:revenue",
+    "r:pl:Q4FY24:revenue"
+   ]
+  },
+  "r:pl:Q1FY25:revenue": {
+   "id": "r:pl:Q1FY25:revenue",
+   "info_class": "reported",
+   "label": "Revenue from operations, Q1 FY25",
+   "value": 738.0,
+   "unit": "cr",
+   "display": "\u20b9738.0 cr",
+   "period": "Q1 FY25",
+   "basis": "consolidated",
+   "doc_id": "d:f1e4cf3603",
+   "page": 1,
+   "section": "P&L",
+   "row_text": "Total revenue from operations 891.00 852.00 738.00 3,176.00",
+   "column": "30.06.2024",
+   "inputs": []
+  },
+  "c:Q1FY26:revenue_growth_Q1FY25": {
+   "id": "c:Q1FY26:revenue_growth_Q1FY25",
+   "info_class": "computed",
+   "label": "Revenue growth, Q1 FY26 vs Q1 FY25",
+   "value": 0.20731707317073167,
+   "unit": "growth",
+   "display": "+20.7%",
+   "period": "Q1 FY26",
+   "basis": "consolidated",
+   "formula": "Q1 FY26 \u00f7 Q1 FY25 - 1",
+   "inputs": [
+    "r:pl:Q1FY26:revenue",
+    "r:pl:Q1FY25:revenue"
+   ]
+  },
+  "r:pl:Q2FY25:revenue": {
+   "id": "r:pl:Q2FY25:revenue",
+   "info_class": "reported",
+   "label": "Revenue from operations, Q2 FY25",
+   "value": 771.0,
+   "unit": "cr",
+   "display": "\u20b9771.0 cr",
+   "period": "Q2 FY25",
+   "basis": "consolidated",
+   "doc_id": "d:d52c6e4208",
+   "page": 1,
+   "section": "P&L",
+   "row_text": "Total revenue from operations 934.00 891.00 771.00 1,825.00 1,509.00 3,176.00",
+   "column": "30.09.2024",
+   "inputs": []
+  },
+  "c:Q2FY26:revenue_growth_Q2FY25": {
+   "id": "c:Q2FY26:revenue_growth_Q2FY25",
+   "info_class": "computed",
+   "label": "Revenue growth, Q2 FY26 vs Q2 FY25",
+   "value": 0.21141374837872884,
+   "unit": "growth",
+   "display": "+21.1%",
+   "period": "Q2 FY26",
+   "basis": "consolidated",
+   "formula": "Q2 FY26 \u00f7 Q2 FY25 - 1",
+   "inputs": [
+    "r:pl:Q2FY26:revenue",
+    "r:pl:Q2FY25:revenue"
+   ]
+  },
+  "c:Q3FY26:revenue_growth_Q3FY25": {
+   "id": "c:Q3FY26:revenue_growth_Q3FY25",
+   "info_class": "computed",
+   "label": "Revenue growth, Q3 FY26 vs Q3 FY25",
+   "value": 0.19631901840490795,
+   "unit": "growth",
+   "display": "+19.6%",
+   "period": "Q3 FY26",
+   "basis": "consolidated",
+   "formula": "Q3 FY26 \u00f7 Q3 FY25 - 1",
+   "inputs": [
+    "r:pl:Q3FY26:revenue",
+    "r:pl:Q3FY25:revenue"
+   ]
+  },
+  "c:Q4FY26:revenue_growth_Q4FY25": {
+   "id": "c:Q4FY26:revenue_growth_Q4FY25",
+   "info_class": "computed",
+   "label": "Revenue growth, Q4 FY26 vs Q4 FY25",
+   "value": 0.19718309859154926,
+   "unit": "growth",
+   "display": "+19.7%",
+   "period": "Q4 FY26",
+   "basis": "consolidated",
+   "formula": "Q4 FY26 \u00f7 Q4 FY25 - 1",
+   "inputs": [
+    "r:pl:Q4FY26:revenue",
+    "r:pl:Q4FY25:revenue"
+   ]
+  },
+  "c:Q1FY27:revenue_growth_Q1FY26": {
+   "id": "c:Q1FY27:revenue_growth_Q1FY26",
+   "info_class": "computed",
+   "label": "Revenue growth, Q1 FY27 vs Q1 FY26",
+   "value": 0.18518518518518512,
+   "unit": "growth",
+   "display": "+18.5%",
+   "period": "Q1 FY27",
+   "basis": "consolidated",
+   "formula": "Q1 FY27 \u00f7 Q1 FY26 - 1",
+   "inputs": [
+    "r:pl:Q1FY27:revenue",
+    "r:pl:Q1FY26:revenue"
+   ]
+  },
+  "r:pl:Q3FY24:pat": {
+   "id": "r:pl:Q3FY24:pat",
+   "info_class": "reported",
+   "label": "Profit after tax, Q3 FY24",
+   "value": 129.46,
+   "unit": "cr",
+   "display": "\u20b9129.5 cr",
+   "period": "Q3 FY24",
+   "basis": "consolidated",
+   "doc_id": "d:07f992f1f3",
+   "page": 1,
+   "section": "P&L",
+   "row_text": "7 Net profit for the period (5-6) 159.39 148.92 129.46 452.74 366.67 504.35",
+   "column": "31.12.2023",
+   "inputs": []
+  },
+  "c:Q3FY25:pat_growth_Q3FY24": {
+   "id": "c:Q3FY25:pat_growth_Q3FY24",
+   "info_class": "computed",
+   "label": "PAT growth, Q3 FY25 vs Q3 FY24",
+   "value": 0.23119110149853217,
+   "unit": "growth",
+   "display": "+23.1%",
+   "period": "Q3 FY25",
+   "basis": "consolidated",
+   "formula": "Q3 FY25 \u00f7 Q3 FY24 - 1",
+   "inputs": [
+    "r:pl:Q3FY25:pat",
+    "r:pl:Q3FY24:pat"
+   ]
+  },
+  "r:pl:Q4FY24:pat": {
+   "id": "r:pl:Q4FY24:pat",
+   "info_class": "reported",
+   "label": "Profit after tax, Q4 FY24",
+   "value": 137.68,
+   "unit": "cr",
+   "display": "\u20b9137.7 cr",
+   "period": "Q4 FY24",
+   "basis": "consolidated",
+   "doc_id": "d:5ba23d613a",
+   "page": 1,
+   "section": "P&L",
+   "row_text": "7 Net profit for the period (5-6) 167.62 159.39 137.68 620.36 504.35",
+   "column": "31.03.2024",
+   "inputs": []
+  },
+  "c:Q4FY25:pat_growth_Q4FY24": {
+   "id": "c:Q4FY25:pat_growth_Q4FY24",
+   "info_class": "computed",
+   "label": "PAT growth, Q4 FY25 vs Q4 FY24",
+   "value": 0.21746077861708302,
+   "unit": "growth",
+   "display": "+21.7%",
+   "period": "Q4 FY25",
+   "basis": "consolidated",
+   "formula": "Q4 FY25 \u00f7 Q4 FY24 - 1",
+   "inputs": [
+    "r:pl:Q4FY25:pat",
+    "r:pl:Q4FY24:pat"
+   ]
+  },
+  "r:pl:Q1FY25:pat": {
+   "id": "r:pl:Q1FY25:pat",
+   "info_class": "reported",
+   "label": "Profit after tax, Q1 FY25",
+   "value": 144.43,
+   "unit": "cr",
+   "display": "\u20b9144.4 cr",
+   "period": "Q1 FY25",
+   "basis": "consolidated",
+   "doc_id": "d:f1e4cf3603",
+   "page": 1,
+   "section": "P&L",
+   "row_text": "7 Net profit for the period (5-6) 178.09 167.62 144.43 620.36",
+   "column": "30.06.2024",
+   "inputs": []
+  },
+  "c:Q1FY26:pat_growth_Q1FY25": {
+   "id": "c:Q1FY26:pat_growth_Q1FY25",
+   "info_class": "computed",
+   "label": "PAT growth, Q1 FY26 vs Q1 FY25",
+   "value": 0.23305407463823302,
+   "unit": "growth",
+   "display": "+23.3%",
+   "period": "Q1 FY26",
+   "basis": "consolidated",
+   "formula": "Q1 FY26 \u00f7 Q1 FY25 - 1",
+   "inputs": [
+    "r:pl:Q1FY26:pat",
+    "r:pl:Q1FY25:pat"
+   ]
+  },
+  "r:pl:Q2FY25:pat": {
+   "id": "r:pl:Q2FY25:pat",
+   "info_class": "reported",
+   "label": "Profit after tax, Q2 FY25",
+   "value": 148.92,
+   "unit": "cr",
+   "display": "\u20b9148.9 cr",
+   "period": "Q2 FY25",
+   "basis": "consolidated",
+   "doc_id": "d:d52c6e4208",
+   "page": 1,
+   "section": "P&L",
+   "row_text": "7 Net profit for the period (5-6) 187.08 178.09 148.92 365.17 293.35 620.36",
+   "column": "30.09.2024",
+   "inputs": []
+  },
+  "c:Q2FY26:pat_growth_Q2FY25": {
+   "id": "c:Q2FY26:pat_growth_Q2FY25",
+   "info_class": "computed",
+   "label": "PAT growth, Q2 FY26 vs Q2 FY25",
+   "value": 0.25624496373892036,
+   "unit": "growth",
+   "display": "+25.6%",
+   "period": "Q2 FY26",
+   "basis": "consolidated",
+   "formula": "Q2 FY26 \u00f7 Q2 FY25 - 1",
+   "inputs": [
+    "r:pl:Q2FY26:pat",
+    "r:pl:Q2FY25:pat"
+   ]
+  },
+  "c:Q3FY26:pat_growth_Q3FY25": {
+   "id": "c:Q3FY26:pat_growth_Q3FY25",
+   "info_class": "computed",
+   "label": "PAT growth, Q3 FY26 vs Q3 FY25",
+   "value": 0.2252964426877473,
+   "unit": "growth",
+   "display": "+22.5%",
+   "period": "Q3 FY26",
+   "basis": "consolidated",
+   "formula": "Q3 FY26 \u00f7 Q3 FY25 - 1",
+   "inputs": [
+    "r:pl:Q3FY26:pat",
+    "r:pl:Q3FY25:pat"
+   ]
+  },
+  "c:Q4FY26:pat_growth_Q4FY25": {
+   "id": "c:Q4FY26:pat_growth_Q4FY25",
+   "info_class": "computed",
+   "label": "PAT growth, Q4 FY26 vs Q4 FY25",
+   "value": 0.3348645746330987,
+   "unit": "growth",
+   "display": "+33.5%",
+   "period": "Q4 FY26",
+   "basis": "consolidated",
+   "formula": "Q4 FY26 \u00f7 Q4 FY25 - 1",
+   "inputs": [
+    "r:pl:Q4FY26:pat",
+    "r:pl:Q4FY25:pat"
+   ]
+  },
+  "c:Q1FY27:pat_growth_Q1FY26": {
+   "id": "c:Q1FY27:pat_growth_Q1FY26",
+   "info_class": "computed",
+   "label": "PAT growth, Q1 FY27 vs Q1 FY26",
+   "value": 0.2521197147509686,
+   "unit": "growth",
+   "display": "+25.2%",
+   "period": "Q1 FY27",
+   "basis": "consolidated",
+   "formula": "Q1 FY27 \u00f7 Q1 FY26 - 1",
+   "inputs": [
+    "r:pl:Q1FY27:pat",
+    "r:pl:Q1FY26:pat"
+   ]
+  },
+  "r:pl:Q3FY25:interest_income": {
+   "id": "r:pl:Q3FY25:interest_income",
+   "info_class": "reported",
+   "label": "Interest income, Q3 FY25",
+   "value": 760.0,
+   "unit": "cr",
+   "display": "\u20b9760.0 cr",
+   "period": "Q3 FY25",
+   "basis": "consolidated",
+   "doc_id": "d:83aa9cee86",
+   "page": 1,
+   "section": "P&L",
+   "row_text": "(i) Interest income 910.00 870.00 760.00 2,610.00 2,170.00 2,965.00",
+   "column": "31.12.2024",
+   "inputs": []
+  },
+  "r:pl:Q3FY25:finance_cost": {
+   "id": "r:pl:Q3FY25:finance_cost",
+   "info_class": "reported",
+   "label": "Finance costs, Q3 FY25",
+   "value": 362.0,
+   "unit": "cr",
+   "display": "\u20b9362.0 cr",
+   "period": "Q3 FY25",
+   "basis": "consolidated",
+   "doc_id": "d:83aa9cee86",
+   "page": 1,
+   "section": "P&L",
+   "row_text": "(i) Finance costs 430.00 412.00 362.00 1,237.00 1,037.00 1,415.00",
+   "column": "31.12.2024",
+   "inputs": []
+  },
+  "c:Q3FY25:nii": {
+   "id": "c:Q3FY25:nii",
+   "info_class": "computed",
+   "label": "Net interest income, Q3 FY25",
+   "value": 398.0,
+   "unit": "cr",
+   "display": "\u20b9398.0 cr",
+   "period": "Q3 FY25",
+   "basis": "consolidated",
+   "formula": "Interest income - finance costs",
+   "inputs": [
+    "r:pl:Q3FY25:interest_income",
+    "r:pl:Q3FY25:finance_cost"
+   ]
+  },
+  "r:pl:Q4FY25:interest_income": {
+   "id": "r:pl:Q4FY25:interest_income",
+   "info_class": "reported",
+   "label": "Interest income, Q4 FY25",
+   "value": 795.0,
+   "unit": "cr",
+   "display": "\u20b9795.0 cr",
+   "period": "Q4 FY25",
+   "basis": "consolidated",
+   "doc_id": "d:7f713d9587",
+   "page": 1,
+   "section": "P&L",
+   "row_text": "(i) Interest income 950.00 910.00 795.00 3,560.00 2,965.00",
+   "column": "31.03.2025",
+   "inputs": []
+  },
+  "r:pl:Q4FY25:finance_cost": {
+   "id": "r:pl:Q4FY25:finance_cost",
+   "info_class": "reported",
+   "label": "Finance costs, Q4 FY25",
+   "value": 378.0,
+   "unit": "cr",
+   "display": "\u20b9378.0 cr",
+   "period": "Q4 FY25",
+   "basis": "consolidated",
+   "doc_id": "d:7f713d9587",
+   "page": 1,
+   "section": "P&L",
+   "row_text": "(i) Finance costs 448.00 430.00 378.00 1,685.00 1,415.00",
+   "column": "31.03.2025",
+   "inputs": []
+  },
+  "c:Q4FY25:nii": {
+   "id": "c:Q4FY25:nii",
+   "info_class": "computed",
+   "label": "Net interest income, Q4 FY25",
+   "value": 417.0,
+   "unit": "cr",
+   "display": "\u20b9417.0 cr",
+   "period": "Q4 FY25",
+   "basis": "consolidated",
+   "formula": "Interest income - finance costs",
+   "inputs": [
+    "r:pl:Q4FY25:interest_income",
+    "r:pl:Q4FY25:finance_cost"
+   ]
+  },
+  "r:pl:Q1FY26:interest_income": {
+   "id": "r:pl:Q1FY26:interest_income",
+   "info_class": "reported",
+   "label": "Interest income, Q1 FY26",
+   "value": 830.0,
+   "unit": "cr",
+   "display": "\u20b9830.0 cr",
+   "period": "Q1 FY26",
+   "basis": "consolidated",
+   "doc_id": "d:521ed4109d",
+   "page": 1,
+   "section": "P&L",
+   "row_text": "(i) Interest income 985.00 950.00 830.00 3,560.00",
+   "column": "30.06.2025",
+   "inputs": []
+  },
+  "r:pl:Q1FY26:finance_cost": {
+   "id": "r:pl:Q1FY26:finance_cost",
+   "info_class": "reported",
+   "label": "Finance costs, Q1 FY26",
+   "value": 395.0,
+   "unit": "cr",
+   "display": "\u20b9395.0 cr",
+   "period": "Q1 FY26",
+   "basis": "consolidated",
+   "doc_id": "d:521ed4109d",
+   "page": 1,
+   "section": "P&L",
+   "row_text": "(i) Finance costs 462.00 448.00 395.00 1,685.00",
+   "column": "30.06.2025",
+   "inputs": []
+  },
+  "c:Q1FY26:nii": {
+   "id": "c:Q1FY26:nii",
+   "info_class": "computed",
+   "label": "Net interest income, Q1 FY26",
+   "value": 435.0,
+   "unit": "cr",
+   "display": "\u20b9435.0 cr",
+   "period": "Q1 FY26",
+   "basis": "consolidated",
+   "formula": "Interest income - finance costs",
+   "inputs": [
+    "r:pl:Q1FY26:interest_income",
+    "r:pl:Q1FY26:finance_cost"
+   ]
+  },
+  "r:pl:Q3FY26:interest_income": {
+   "id": "r:pl:Q3FY26:interest_income",
+   "info_class": "reported",
+   "label": "Interest income, Q3 FY26",
+   "value": 910.0,
+   "unit": "cr",
+   "display": "\u20b9910.0 cr",
+   "period": "Q3 FY26",
+   "basis": "consolidated",
+   "doc_id": "d:7f713d9587",
+   "page": 1,
+   "section": "P&L",
+   "row_text": "(i) Interest income 950.00 910.00 795.00 3,560.00 2,965.00",
+   "column": "31.12.2025",
+   "inputs": []
+  },
+  "r:pl:Q3FY26:finance_cost": {
+   "id": "r:pl:Q3FY26:finance_cost",
+   "info_class": "reported",
+   "label": "Finance costs, Q3 FY26",
+   "value": 430.0,
+   "unit": "cr",
+   "display": "\u20b9430.0 cr",
+   "period": "Q3 FY26",
+   "basis": "consolidated",
+   "doc_id": "d:7f713d9587",
+   "page": 1,
+   "section": "P&L",
+   "row_text": "(i) Finance costs 448.00 430.00 378.00 1,685.00 1,415.00",
+   "column": "31.12.2025",
+   "inputs": []
+  },
+  "c:Q3FY26:nii": {
+   "id": "c:Q3FY26:nii",
+   "info_class": "computed",
+   "label": "Net interest income, Q3 FY26",
+   "value": 480.0,
+   "unit": "cr",
+   "display": "\u20b9480.0 cr",
+   "period": "Q3 FY26",
+   "basis": "consolidated",
+   "formula": "Interest income - finance costs",
+   "inputs": [
+    "r:pl:Q3FY26:interest_income",
+    "r:pl:Q3FY26:finance_cost"
+   ]
+  },
+  "r:pl:Q4FY26:interest_income": {
+   "id": "r:pl:Q4FY26:interest_income",
+   "info_class": "reported",
+   "label": "Interest income, Q4 FY26",
+   "value": 950.0,
+   "unit": "cr",
+   "display": "\u20b9950.0 cr",
+   "period": "Q4 FY26",
+   "basis": "consolidated",
+   "doc_id": "d:521ed4109d",
+   "page": 1,
+   "section": "P&L",
+   "row_text": "(i) Interest income 985.00 950.00 830.00 3,560.00",
+   "column": "31.03.2026",
+   "inputs": []
+  },
+  "r:pl:Q4FY26:finance_cost": {
+   "id": "r:pl:Q4FY26:finance_cost",
+   "info_class": "reported",
+   "label": "Finance costs, Q4 FY26",
+   "value": 448.0,
+   "unit": "cr",
+   "display": "\u20b9448.0 cr",
+   "period": "Q4 FY26",
+   "basis": "consolidated",
+   "doc_id": "d:521ed4109d",
+   "page": 1,
+   "section": "P&L",
+   "row_text": "(i) Finance costs 462.00 448.00 395.00 1,685.00",
+   "column": "31.03.2026",
+   "inputs": []
+  },
+  "c:Q4FY26:nii": {
+   "id": "c:Q4FY26:nii",
+   "info_class": "computed",
+   "label": "Net interest income, Q4 FY26",
+   "value": 502.0,
+   "unit": "cr",
+   "display": "\u20b9502.0 cr",
+   "period": "Q4 FY26",
+   "basis": "consolidated",
+   "formula": "Interest income - finance costs",
+   "inputs": [
+    "r:pl:Q4FY26:interest_income",
+    "r:pl:Q4FY26:finance_cost"
+   ]
+  },
+  "r:pl:Q3FY25:impairment": {
+   "id": "r:pl:Q3FY25:impairment",
+   "info_class": "reported",
+   "label": "Impairment on financial instruments, Q3 FY25",
+   "value": 100.0,
+   "unit": "cr",
+   "display": "\u20b9100.0 cr",
+   "period": "Q3 FY25",
+   "basis": "consolidated",
+   "doc_id": "d:83aa9cee86",
+   "page": 1,
+   "section": "P&L",
+   "row_text": "(ii) Impairment on financial instruments 124.00 118.00 100.00 350.00 277.00 381.00",
+   "column": "31.12.2024",
+   "inputs": []
+  },
+  "r:pl:Q4FY25:impairment": {
+   "id": "r:pl:Q4FY25:impairment",
+   "info_class": "reported",
+   "label": "Impairment on financial instruments, Q4 FY25",
+   "value": 104.0,
+   "unit": "cr",
+   "display": "\u20b9104.0 cr",
+   "period": "Q4 FY25",
+   "basis": "consolidated",
+   "doc_id": "d:7f713d9587",
+   "page": 1,
+   "section": "P&L",
+   "row_text": "(ii) Impairment on financial instruments 110.00 124.00 104.00 460.00 381.00",
+   "column": "31.03.2025",
+   "inputs": []
+  },
+  "r:pl:Q1FY26:impairment": {
+   "id": "r:pl:Q1FY26:impairment",
+   "info_class": "reported",
+   "label": "Impairment on financial instruments, Q1 FY26",
+   "value": 108.0,
+   "unit": "cr",
+   "display": "\u20b9108.0 cr",
+   "period": "Q1 FY26",
+   "basis": "consolidated",
+   "doc_id": "d:521ed4109d",
+   "page": 1,
+   "section": "P&L",
+   "row_text": "(ii) Impairment on financial instruments 126.00 110.00 108.00 460.00",
+   "column": "30.06.2025",
+   "inputs": []
+  },
+  "r:pl:Q2FY26:impairment": {
+   "id": "r:pl:Q2FY26:impairment",
+   "info_class": "reported",
+   "label": "Impairment on financial instruments, Q2 FY26",
+   "value": 118.0,
+   "unit": "cr",
+   "display": "\u20b9118.0 cr",
+   "period": "Q2 FY26",
+   "basis": "consolidated",
+   "doc_id": "d:89d574da9f",
+   "page": 1,
+   "section": "P&L",
+   "row_text": "(ii) Impairment on financial instruments 150.00 126.00 118.00 276.00 226.00 460.00",
+   "column": "30.09.2025",
+   "inputs": []
+  },
+  "r:pl:Q3FY26:impairment": {
+   "id": "r:pl:Q3FY26:impairment",
+   "info_class": "reported",
+   "label": "Impairment on financial instruments, Q3 FY26",
+   "value": 124.0,
+   "unit": "cr",
+   "display": "\u20b9124.0 cr",
+   "period": "Q3 FY26",
+   "basis": "consolidated",
+   "doc_id": "d:7f713d9587",
+   "page": 1,
+   "section": "P&L",
+   "row_text": "(ii) Impairment on financial instruments 110.00 124.00 104.00 460.00 381.00",
+   "column": "31.12.2025",
+   "inputs": []
+  },
+  "r:pl:Q4FY26:impairment": {
+   "id": "r:pl:Q4FY26:impairment",
+   "info_class": "reported",
+   "label": "Impairment on financial instruments, Q4 FY26",
+   "value": 110.0,
+   "unit": "cr",
+   "display": "\u20b9110.0 cr",
+   "period": "Q4 FY26",
+   "basis": "consolidated",
+   "doc_id": "d:521ed4109d",
+   "page": 1,
+   "section": "P&L",
+   "row_text": "(ii) Impairment on financial instruments 126.00 110.00 108.00 460.00",
+   "column": "31.03.2026",
+   "inputs": []
+  },
+  "r:pl:Q1FY27:impairment": {
+   "id": "r:pl:Q1FY27:impairment",
+   "info_class": "reported",
+   "label": "Impairment on financial instruments, Q1 FY27",
+   "value": 126.0,
+   "unit": "cr",
+   "display": "\u20b9126.0 cr",
+   "period": "Q1 FY27",
+   "basis": "consolidated",
+   "doc_id": "d:89d574da9f",
+   "page": 1,
+   "section": "P&L",
+   "row_text": "(ii) Impairment on financial instruments 150.00 126.00 118.00 276.00 226.00 460.00",
+   "column": "30.06.2026",
+   "inputs": []
+  },
+  "r:pl:Q2FY27:impairment": {
+   "id": "r:pl:Q2FY27:impairment",
+   "info_class": "reported",
+   "label": "Impairment on financial instruments, Q2 FY27",
+   "value": 150.0,
+   "unit": "cr",
+   "display": "\u20b9150.0 cr",
+   "period": "Q2 FY27",
+   "basis": "consolidated",
+   "doc_id": "d:89d574da9f",
+   "page": 1,
+   "section": "P&L",
+   "row_text": "(ii) Impairment on financial instruments 150.00 126.00 118.00 276.00 226.00 460.00",
+   "column": "30.09.2026",
+   "inputs": []
+  },
+  "r:pl:FY24:pat": {
+   "id": "r:pl:FY24:pat",
+   "info_class": "reported",
+   "label": "Profit after tax, FY24",
+   "value": 504.35,
+   "unit": "cr",
+   "display": "\u20b9504.4 cr",
+   "period": "FY24",
+   "basis": "consolidated",
+   "doc_id": "d:5ba23d613a",
+   "page": 1,
+   "section": "P&L",
+   "row_text": "7 Net profit for the period (5-6) 167.62 159.39 137.68 620.36 504.35",
+   "column": "31.03.2024",
+   "inputs": []
+  },
+  "r:pl:FY25:pat": {
+   "id": "r:pl:FY25:pat",
+   "info_class": "reported",
+   "label": "Profit after tax, FY25",
+   "value": 620.36,
+   "unit": "cr",
+   "display": "\u20b9620.4 cr",
+   "period": "FY25",
+   "basis": "consolidated",
+   "doc_id": "d:7f713d9587",
+   "page": 1,
+   "section": "P&L",
+   "row_text": "7 Net profit for the period (5-6) 223.75 195.30 167.62 784.22 620.36",
+   "column": "31.03.2025",
+   "inputs": []
+  },
+  "r:pl:FY26:pat": {
+   "id": "r:pl:FY26:pat",
+   "info_class": "reported",
+   "label": "Profit after tax, FY26",
+   "value": 784.22,
+   "unit": "cr",
+   "display": "\u20b9784.2 cr",
+   "period": "FY26",
+   "basis": "consolidated",
+   "doc_id": "d:89d574da9f",
+   "page": 1,
+   "section": "P&L",
+   "row_text": "7 Net profit for the period (5-6) 215.51 222.99 187.08 438.50 365.17 784.22",
+   "column": "31.03.2026",
+   "inputs": []
+  },
+  "r:bs:H1FY26:borrowings": {
+   "id": "r:bs:H1FY26:borrowings",
+   "info_class": "reported",
+   "label": "Borrowings (all), H1 FY26",
+   "value": 16950.0,
+   "unit": "cr",
+   "display": "\u20b916,950.0 cr",
+   "period": "H1 FY26",
+   "basis": "consolidated",
+   "doc_id": "d:d52c6e4208",
+   "page": 2,
+   "section": "Balance sheet",
+   "row_text": "(a) Debt securities 6,900.00 6,200.00 | (b) Borrowings (other than debt securities) 9,300.00 8,300.00 | (c) Subordinated liabilities 750.00 700.00",
+   "column": "30.09.2025",
+   "inputs": []
+  },
+  "r:bs:FY26:borrowings": {
+   "id": "r:bs:FY26:borrowings",
+   "info_class": "reported",
+   "label": "Borrowings (all), FY26",
+   "value": 18800.0,
+   "unit": "cr",
+   "display": "\u20b918,800.0 cr",
+   "period": "FY26",
+   "basis": "consolidated",
+   "doc_id": "d:89d574da9f",
+   "page": 2,
+   "section": "Balance sheet",
+   "row_text": "(a) Debt securities 8,300.00 7,600.00 | (b) Borrowings (other than debt securities) 11,700.00 10,400.00 | (c) Subordinated liabilities 850.00 800.00",
+   "column": "31.03.2026",
+   "inputs": []
+  },
+  "r:bs:H1FY26:total_equity": {
+   "id": "r:bs:H1FY26:total_equity",
+   "info_class": "reported",
+   "label": "Total equity, H1 FY26",
+   "value": 6005.0,
+   "unit": "cr",
+   "display": "\u20b96,005.0 cr",
+   "period": "H1 FY26",
+   "basis": "consolidated",
+   "doc_id": "d:d52c6e4208",
+   "page": 2,
+   "section": "Balance sheet",
+   "row_text": "Total equity 6,005.00 5,765.00",
+   "column": "30.09.2025",
+   "inputs": []
+  },
+  "r:bs:FY26:total_equity": {
+   "id": "r:bs:FY26:total_equity",
+   "info_class": "reported",
+   "label": "Total equity, FY26",
+   "value": 6525.0,
+   "unit": "cr",
+   "display": "\u20b96,525.0 cr",
+   "period": "FY26",
+   "basis": "consolidated",
+   "doc_id": "d:89d574da9f",
+   "page": 2,
+   "section": "Balance sheet",
+   "row_text": "Total equity 6,715.00 6,525.00",
+   "column": "31.03.2026",
+   "inputs": []
+  },
+  "r:bs:H1FY26:cash": {
+   "id": "r:bs:H1FY26:cash",
+   "info_class": "reported",
+   "label": "Cash and cash equivalents, H1 FY26",
+   "value": 900.0,
+   "unit": "cr",
+   "display": "\u20b9900.0 cr",
+   "period": "H1 FY26",
+   "basis": "consolidated",
+   "doc_id": "d:d52c6e4208",
+   "page": 2,
+   "section": "Balance sheet",
+   "row_text": "(a) Cash and cash equivalents 900.00 820.00",
+   "column": "30.09.2025",
+   "inputs": []
+  },
+  "r:bs:FY26:cash": {
+   "id": "r:bs:FY26:cash",
+   "info_class": "reported",
+   "label": "Cash and cash equivalents, FY26",
+   "value": 960.0,
+   "unit": "cr",
+   "display": "\u20b9960.0 cr",
+   "period": "FY26",
+   "basis": "consolidated",
+   "doc_id": "d:89d574da9f",
+   "page": 2,
+   "section": "Balance sheet",
+   "row_text": "(a) Cash and cash equivalents 880.00 960.00",
+   "column": "31.03.2026",
+   "inputs": []
+  },
+  "r:bs:H1FY27:cash": {
+   "id": "r:bs:H1FY27:cash",
+   "info_class": "reported",
+   "label": "Cash and cash equivalents, H1 FY27",
+   "value": 880.0,
+   "unit": "cr",
+   "display": "\u20b9880.0 cr",
+   "period": "H1 FY27",
+   "basis": "consolidated",
+   "doc_id": "d:89d574da9f",
+   "page": 2,
+   "section": "Balance sheet",
+   "row_text": "(a) Cash and cash equivalents 880.00 960.00",
+   "column": "30.09.2026",
+   "inputs": []
+  },
+  "c:bs:H1FY26:de": {
+   "id": "c:bs:H1FY26:de",
+   "info_class": "computed",
+   "label": "Debt to equity, H1 FY26",
+   "value": 2.82,
+   "unit": "x",
+   "display": "2.82x",
+   "period": "H1 FY26",
+   "basis": "consolidated",
+   "formula": "Borrowings \u00f7 total equity",
+   "inputs": [
+    "r:bs:H1FY26:borrowings",
+    "r:bs:H1FY26:total_equity"
+   ]
+  },
+  "c:bs:FY26:de": {
+   "id": "c:bs:FY26:de",
+   "info_class": "computed",
+   "label": "Debt to equity, FY26",
+   "value": 2.88,
+   "unit": "x",
+   "display": "2.88x",
+   "period": "FY26",
+   "basis": "consolidated",
+   "formula": "Borrowings \u00f7 total equity",
+   "inputs": [
+    "r:bs:FY26:borrowings",
+    "r:bs:FY26:total_equity"
+   ]
+  }
+ },
+ "claims": [
+  {
+   "id": "cl:1269fde9dbf0",
+   "kind": "guidance",
+   "metric": "credit_cost",
+   "metric_label": "Credit cost",
+   "quote": "We expect credit cost for FY25 to be in the range of 1.6% to 1.8%.",
+   "doc_id": "d:b57ed3abc3",
+   "doc_kind": "transcript",
+   "call_period": "Q1 FY25",
+   "page": 1,
+   "section": "Prepared remarks",
+   "speaker": "Rajiv Menon, Managing Director and Chief Executive Officer",
+   "role": "management",
+   "target": {
+    "kind": "range",
+    "low": 1.6,
+    "high": 1.8,
+    "unit": "pct",
+    "text": "1.6% to 1.8%",
+    "reading": "'1.6% to 1.8%' read as 1.6 to 1.8%"
+   },
+   "period_text": "fy25",
+   "period": "FY25",
+   "hedge": "expected",
+   "reaffirms": false,
+   "withdraws": false,
+   "confirmed_analyst_figure": false,
+   "theme": "Asset quality",
+   "tone": "neutral",
+   "method": "rules",
+   "gates": {
+    "quote_on_page": true,
+    "speaker": "management",
+    "numbers_in_quote": true,
+    "period_stated": true
+   },
+   "fact_id": "cl:1269fde9dbf0",
+   "explicit": true
+  },
+  {
+   "id": "cl:3685826fb5df",
+   "kind": "guidance",
+   "metric": "loan_growth",
+   "metric_label": "Loan book growth",
+   "quote": "We expect our loan book to grow 20% to 22% in FY25.",
+   "doc_id": "d:b57ed3abc3",
+   "doc_kind": "transcript",
+   "call_period": "Q1 FY25",
+   "page": 1,
+   "section": "Prepared remarks",
+   "speaker": "Rajiv Menon, Managing Director and Chief Executive Officer",
+   "role": "management",
+   "target": {
+    "kind": "range",
+    "low": 20.0,
+    "high": 22.0,
+    "unit": "pct",
+    "text": "20% to 22%",
+    "reading": "'20% to 22%' read as 20 to 22%"
+   },
+   "period_text": "fy25",
+   "period": "FY25",
+   "hedge": "expected",
+   "reaffirms": false,
+   "withdraws": false,
+   "confirmed_analyst_figure": false,
+   "tone": "neutral",
+   "method": "rules",
+   "gates": {
+    "quote_on_page": true,
+    "speaker": "management",
+    "numbers_in_quote": true,
+    "period_stated": true
+   },
+   "fact_id": "cl:3685826fb5df",
+   "explicit": true
+  },
+  {
+   "id": "cl:a9d0607b2ca2",
+   "kind": "outlook",
+   "quote": "Asset quality remained stable.",
+   "doc_id": "d:8c2a1da8ea",
+   "doc_kind": "transcript",
+   "call_period": "Q2 FY25",
+   "page": 1,
+   "section": "Prepared remarks",
+   "speaker": "Rajiv Menon, Managing Director and Chief Executive Officer",
+   "role": "management",
+   "reaffirms": false,
+   "withdraws": false,
+   "confirmed_analyst_figure": false,
+   "theme": "Asset quality",
+   "tone": "positive",
+   "method": "rules",
+   "gates": {
+    "quote_on_page": true,
+    "speaker": "management",
+    "numbers_in_quote": true
+   },
+   "fact_id": "cl:a9d0607b2ca2",
+   "explicit": false
+  },
+  {
+   "id": "cl:9fe12a2d7f85",
+   "kind": "outlook",
+   "quote": "Collection efficiency was healthy.",
+   "doc_id": "d:8c2a1da8ea",
+   "doc_kind": "transcript",
+   "call_period": "Q2 FY25",
+   "page": 1,
+   "section": "Prepared remarks",
+   "speaker": "Rajiv Menon, Managing Director and Chief Executive Officer",
+   "role": "management",
+   "reaffirms": false,
+   "withdraws": false,
+   "confirmed_analyst_figure": false,
+   "theme": "Asset quality",
+   "tone": "positive",
+   "method": "rules",
+   "gates": {
+    "quote_on_page": true,
+    "speaker": "management",
+    "numbers_in_quote": true
+   },
+   "fact_id": "cl:9fe12a2d7f85",
+   "explicit": false
+  },
+  {
+   "id": "cl:c271674a1039",
+   "kind": "guidance",
+   "metric": "credit_cost",
+   "metric_label": "Credit cost",
+   "quote": "We now expect credit cost of 1.9% to 2.1% for FY25.",
+   "doc_id": "d:fb2006658a",
+   "doc_kind": "transcript",
+   "call_period": "Q3 FY25",
+   "page": 1,
+   "section": "Prepared remarks",
+   "speaker": "Rajiv Menon, Managing Director and Chief Executive Officer",
+   "role": "management",
+   "target": {
+    "kind": "range",
+    "low": 1.9,
+    "high": 2.1,
+    "unit": "pct",
+    "text": "1.9% to 2.1%",
+    "reading": "'1.9% to 2.1%' read as 1.9 to 2.1%"
+   },
+   "period_text": "fy25",
+   "period": "FY25",
+   "hedge": "expected",
+   "reaffirms": false,
+   "withdraws": false,
+   "confirmed_analyst_figure": false,
+   "theme": "Asset quality",
+   "tone": "neutral",
+   "method": "rules",
+   "gates": {
+    "quote_on_page": true,
+    "speaker": "management",
+    "numbers_in_quote": true,
+    "period_stated": true
+   },
+   "fact_id": "cl:c271674a1039",
+   "explicit": true
+  },
+  {
+   "id": "cl:b703b4224ad4",
+   "kind": "assertion",
+   "metric": "loan_growth",
+   "metric_label": "Loan book growth",
+   "quote": "Our loan book grew 22.7% in FY25.",
+   "doc_id": "d:60dbed2bcf",
+   "doc_kind": "transcript",
+   "call_period": "Q4 FY25",
+   "page": 1,
+   "section": "Prepared remarks",
+   "speaker": "Rajiv Menon, Managing Director and Chief Executive Officer",
+   "role": "management",
+   "target": {
+    "kind": "point",
+    "low": 22.7,
+    "high": 22.7,
+    "unit": "pct",
+    "text": "22.7%",
+    "reading": "'22.7%' read as 22.7%"
+   },
+   "period_text": "fy25",
+   "period": "FY25",
+   "reaffirms": false,
+   "withdraws": false,
+   "confirmed_analyst_figure": false,
+   "tone": "neutral",
+   "method": "rules",
+   "gates": {
+    "quote_on_page": true,
+    "speaker": "management",
+    "numbers_in_quote": true
+   },
+   "fact_id": "cl:b703b4224ad4",
+   "explicit": false
+  },
+  {
+   "id": "cl:a33259d6e8c4",
+   "kind": "outlook",
+   "quote": "Asset quality remained stable.",
+   "doc_id": "d:60dbed2bcf",
+   "doc_kind": "transcript",
+   "call_period": "Q4 FY25",
+   "page": 1,
+   "section": "Prepared remarks",
+   "speaker": "Rajiv Menon, Managing Director and Chief Executive Officer",
+   "role": "management",
+   "reaffirms": false,
+   "withdraws": false,
+   "confirmed_analyst_figure": false,
+   "theme": "Asset quality",
+   "tone": "positive",
+   "method": "rules",
+   "gates": {
+    "quote_on_page": true,
+    "speaker": "management",
+    "numbers_in_quote": true
+   },
+   "fact_id": "cl:a33259d6e8c4",
+   "explicit": false
+  },
+  {
+   "id": "cl:9821325203d5",
+   "kind": "guidance",
+   "metric": "credit_cost",
+   "metric_label": "Credit cost",
+   "quote": "For FY26 we expect credit cost of 1.8% to 2.0%.",
+   "doc_id": "d:60dbed2bcf",
+   "doc_kind": "transcript",
+   "call_period": "Q4 FY25",
+   "page": 1,
+   "section": "Prepared remarks",
+   "speaker": "Rajiv Menon, Managing Director and Chief Executive Officer",
+   "role": "management",
+   "target": {
+    "kind": "range",
+    "low": 1.8,
+    "high": 2.0,
+    "unit": "pct",
+    "text": "1.8% to 2.0%",
+    "reading": "'1.8% to 2.0%' read as 1.8 to 2%"
+   },
+   "period_text": "fy26",
+   "period": "FY26",
+   "hedge": "expected",
+   "reaffirms": false,
+   "withdraws": false,
+   "confirmed_analyst_figure": false,
+   "theme": "Asset quality",
+   "tone": "neutral",
+   "method": "rules",
+   "gates": {
+    "quote_on_page": true,
+    "speaker": "management",
+    "numbers_in_quote": true,
+    "period_stated": true
+   },
+   "fact_id": "cl:9821325203d5",
+   "explicit": true
+  },
+  {
+   "id": "cl:0ac4352b03c8",
+   "kind": "outlook",
+   "quote": "Asset quality was stable and collections were healthy.",
+   "doc_id": "d:f87f40bd95",
+   "doc_kind": "transcript",
+   "call_period": "Q1 FY26",
+   "page": 1,
+   "section": "Prepared remarks",
+   "speaker": "Rajiv Menon, Managing Director and Chief Executive Officer",
+   "role": "management",
+   "reaffirms": false,
+   "withdraws": false,
+   "confirmed_analyst_figure": false,
+   "theme": "Asset quality",
+   "tone": "positive",
+   "method": "rules",
+   "gates": {
+    "quote_on_page": true,
+    "speaker": "management",
+    "numbers_in_quote": true
+   },
+   "fact_id": "cl:0ac4352b03c8",
+   "explicit": false
+  },
+  {
+   "id": "cl:926779f1ac26",
+   "kind": "outlook",
+   "quote": "Collections were steady and our cost of funds was stable.",
+   "doc_id": "d:40720490c7",
+   "doc_kind": "transcript",
+   "call_period": "Q2 FY26",
+   "page": 1,
+   "section": "Prepared remarks",
+   "speaker": "Anita Desai, Chief Financial Officer",
+   "role": "management",
+   "reaffirms": false,
+   "withdraws": false,
+   "confirmed_analyst_figure": false,
+   "theme": "Asset quality",
+   "tone": "positive",
+   "method": "rules",
+   "gates": {
+    "quote_on_page": true,
+    "speaker": "management",
+    "numbers_in_quote": true
+   },
+   "fact_id": "cl:926779f1ac26",
+   "explicit": false
+  },
+  {
+   "id": "cl:eb04cbf82174",
+   "kind": "assertion",
+   "metric": "disbursement",
+   "metric_label": "Disbursements",
+   "quote": "Disbursements grew 21% year-on-year in the quarter.",
+   "doc_id": "d:b5e0ec154f",
+   "doc_kind": "transcript",
+   "call_period": "Q3 FY26",
+   "page": 1,
+   "section": "Prepared remarks",
+   "speaker": "Rajiv Menon, Managing Director and Chief Executive Officer",
+   "role": "management",
+   "target": {
+    "kind": "point",
+    "low": 21.0,
+    "high": 21.0,
+    "unit": "pct",
+    "text": "21%",
+    "reading": "'21%' read as 21%"
+   },
+   "period": "Q3 FY26",
+   "reaffirms": false,
+   "withdraws": false,
+   "confirmed_analyst_figure": false,
+   "basis_hint": "yoy",
+   "tone": "neutral",
+   "method": "rules",
+   "gates": {
+    "quote_on_page": true,
+    "speaker": "management",
+    "numbers_in_quote": true
+   },
+   "fact_id": "cl:eb04cbf82174",
+   "explicit": false
+  },
+  {
+   "id": "cl:f1f711b34320",
+   "kind": "outlook",
+   "quote": "Asset quality remained stable.",
+   "doc_id": "d:b5e0ec154f",
+   "doc_kind": "transcript",
+   "call_period": "Q3 FY26",
+   "page": 1,
+   "section": "Prepared remarks",
+   "speaker": "Rajiv Menon, Managing Director and Chief Executive Officer",
+   "role": "management",
+   "reaffirms": false,
+   "withdraws": false,
+   "confirmed_analyst_figure": false,
+   "theme": "Asset quality",
+   "tone": "positive",
+   "method": "rules",
+   "gates": {
+    "quote_on_page": true,
+    "speaker": "management",
+    "numbers_in_quote": true
+   },
+   "fact_id": "cl:f1f711b34320",
+   "explicit": false
+  },
+  {
+   "id": "cl:c6a036db731b",
+   "kind": "guidance",
+   "metric": "credit_cost",
+   "metric_label": "Credit cost",
+   "quote": "We expect credit cost for FY26 to be in the range of 1.8% to 2.0%.",
+   "doc_id": "d:b5e0ec154f",
+   "doc_kind": "transcript",
+   "call_period": "Q3 FY26",
+   "page": 1,
+   "section": "Prepared remarks",
+   "speaker": "Rajiv Menon, Managing Director and Chief Executive Officer",
+   "role": "management",
+   "target": {
+    "kind": "range",
+    "low": 1.8,
+    "high": 2.0,
+    "unit": "pct",
+    "text": "1.8% to 2.0%",
+    "reading": "'1.8% to 2.0%' read as 1.8 to 2%"
+   },
+   "period_text": "fy26",
+   "period": "FY26",
+   "hedge": "expected",
+   "reaffirms": false,
+   "withdraws": false,
+   "confirmed_analyst_figure": false,
+   "theme": "Asset quality",
+   "tone": "neutral",
+   "method": "rules",
+   "gates": {
+    "quote_on_page": true,
+    "speaker": "management",
+    "numbers_in_quote": true,
+    "period_stated": true
+   },
+   "fact_id": "cl:c6a036db731b",
+   "explicit": true
+  },
+  {
+   "id": "cl:1dcbeed70ded",
+   "kind": "outlook",
+   "quote": "Our cost of funds was stable during the quarter.",
+   "doc_id": "d:b5e0ec154f",
+   "doc_kind": "transcript",
+   "call_period": "Q3 FY26",
+   "page": 1,
+   "section": "Prepared remarks",
+   "speaker": "Anita Desai, Chief Financial Officer",
+   "role": "management",
+   "reaffirms": false,
+   "withdraws": false,
+   "confirmed_analyst_figure": false,
+   "theme": "Funding",
+   "tone": "positive",
+   "method": "rules",
+   "gates": {
+    "quote_on_page": true,
+    "speaker": "management",
+    "numbers_in_quote": true
+   },
+   "fact_id": "cl:1dcbeed70ded",
+   "explicit": false
+  },
+  {
+   "id": "cl:2f1c53477002",
+   "kind": "outlook",
+   "quote": "Liquidity remains comfortable.",
+   "doc_id": "d:b5e0ec154f",
+   "doc_kind": "transcript",
+   "call_period": "Q3 FY26",
+   "page": 1,
+   "section": "Prepared remarks",
+   "speaker": "Anita Desai, Chief Financial Officer",
+   "role": "management",
+   "reaffirms": false,
+   "withdraws": false,
+   "confirmed_analyst_figure": false,
+   "theme": "Funding",
+   "tone": "positive",
+   "method": "rules",
+   "gates": {
+    "quote_on_page": true,
+    "speaker": "management",
+    "numbers_in_quote": true
+   },
+   "fact_id": "cl:2f1c53477002",
+   "explicit": false
+  },
+  {
+   "id": "cl:085a9e4ed017",
+   "kind": "outlook",
+   "quote": "Collections were robust and we saw no stress in the portfolio.",
+   "doc_id": "d:8698adcd82",
+   "doc_kind": "transcript",
+   "call_period": "Q4 FY26",
+   "page": 1,
+   "section": "Prepared remarks",
+   "speaker": "Rajiv Menon, Managing Director and Chief Executive Officer",
+   "role": "management",
+   "reaffirms": false,
+   "withdraws": false,
+   "confirmed_analyst_figure": false,
+   "theme": "Asset quality",
+   "tone": "positive",
+   "method": "rules",
+   "gates": {
+    "quote_on_page": true,
+    "speaker": "management",
+    "numbers_in_quote": true
+   },
+   "fact_id": "cl:085a9e4ed017",
+   "explicit": false
+  },
+  {
+   "id": "cl:9aa0ba36f7d5",
+   "kind": "guidance",
+   "metric": "aum_growth",
+   "metric_label": "AUM growth",
+   "quote": "For FY27 we expect AUM growth of 22% to 25%.",
+   "doc_id": "d:8698adcd82",
+   "doc_kind": "transcript",
+   "call_period": "Q4 FY26",
+   "page": 1,
+   "section": "Prepared remarks",
+   "speaker": "Rajiv Menon, Managing Director and Chief Executive Officer",
+   "role": "management",
+   "target": {
+    "kind": "range",
+    "low": 22.0,
+    "high": 25.0,
+    "unit": "pct",
+    "text": "22% to 25%",
+    "reading": "'22% to 25%' read as 22 to 25%"
+   },
+   "period_text": "fy27",
+   "period": "FY27",
+   "hedge": "expected",
+   "reaffirms": false,
+   "withdraws": false,
+   "confirmed_analyst_figure": false,
+   "tone": "neutral",
+   "method": "rules",
+   "gates": {
+    "quote_on_page": true,
+    "speaker": "management",
+    "numbers_in_quote": true,
+    "period_stated": true
+   },
+   "fact_id": "cl:9aa0ba36f7d5",
+   "explicit": true
+  },
+  {
+   "id": "cl:65a6ebbb396d",
+   "kind": "guidance",
+   "metric": "credit_cost",
+   "metric_label": "Credit cost",
+   "quote": "We expect credit cost of 1.9% to 2.1% for FY27.",
+   "doc_id": "d:8698adcd82",
+   "doc_kind": "transcript",
+   "call_period": "Q4 FY26",
+   "page": 1,
+   "section": "Prepared remarks",
+   "speaker": "Rajiv Menon, Managing Director and Chief Executive Officer",
+   "role": "management",
+   "target": {
+    "kind": "range",
+    "low": 1.9,
+    "high": 2.1,
+    "unit": "pct",
+    "text": "1.9% to 2.1%",
+    "reading": "'1.9% to 2.1%' read as 1.9 to 2.1%"
+   },
+   "period_text": "fy27",
+   "period": "FY27",
+   "hedge": "expected",
+   "reaffirms": false,
+   "withdraws": false,
+   "confirmed_analyst_figure": false,
+   "theme": "Asset quality",
+   "tone": "neutral",
+   "method": "rules",
+   "gates": {
+    "quote_on_page": true,
+    "speaker": "management",
+    "numbers_in_quote": true,
+    "period_stated": true
+   },
+   "fact_id": "cl:65a6ebbb396d",
+   "explicit": true
+  },
+  {
+   "id": "cl:d676bc5f551a",
+   "kind": "assertion",
+   "metric": "nim",
+   "metric_label": "Net interest margin",
+   "quote": "Net interest margin for the year was 8.1%.",
+   "doc_id": "d:8698adcd82",
+   "doc_kind": "transcript",
+   "call_period": "Q4 FY26",
+   "page": 1,
+   "section": "Prepared remarks",
+   "speaker": "Anita Desai, Chief Financial Officer",
+   "role": "management",
+   "target": {
+    "kind": "point",
+    "low": 8.1,
+    "high": 8.1,
+    "unit": "pct",
+    "text": "8.1%",
+    "reading": "'8.1%' read as 8.1%"
+   },
+   "period_text": "for the year",
+   "period": "FY26",
+   "reaffirms": false,
+   "withdraws": false,
+   "confirmed_analyst_figure": false,
+   "theme": "Margins",
+   "tone": "neutral",
+   "method": "rules",
+   "gates": {
+    "quote_on_page": true,
+    "speaker": "management",
+    "numbers_in_quote": true
+   },
+   "fact_id": "cl:d676bc5f551a",
+   "explicit": false
+  },
+  {
+   "id": "cl:b01bebc2c210",
+   "kind": "outlook",
+   "quote": "Asset quality was stable and collection efficiency remained healthy at 98.6%.",
+   "doc_id": "d:2c8bf2d95c",
+   "doc_kind": "transcript",
+   "call_period": "Q1 FY27",
+   "page": 1,
+   "section": "Prepared remarks",
+   "speaker": "Rajiv Menon, Managing Director and Chief Executive Officer",
+   "role": "management",
+   "reaffirms": false,
+   "withdraws": false,
+   "confirmed_analyst_figure": false,
+   "theme": "Asset quality",
+   "tone": "positive",
+   "method": "rules",
+   "gates": {
+    "quote_on_page": true,
+    "speaker": "management",
+    "numbers_in_quote": true
+   },
+   "fact_id": "cl:b01bebc2c210",
+   "explicit": false
+  },
+  {
+   "id": "cl:c6b2e30517eb",
+   "kind": "guidance",
+   "metric": "credit_cost",
+   "metric_label": "Credit cost",
+   "quote": "We are comfortable with our credit cost guidance for the year.",
+   "doc_id": "d:2c8bf2d95c",
+   "doc_kind": "transcript",
+   "call_period": "Q1 FY27",
+   "page": 1,
+   "section": "Prepared remarks",
+   "speaker": "Rajiv Menon, Managing Director and Chief Executive Officer",
+   "role": "management",
+   "period_text": "for the year",
+   "period": "FY27",
+   "hedge": "firm",
+   "reaffirms": true,
+   "withdraws": false,
+   "confirmed_analyst_figure": false,
+   "theme": "Asset quality",
+   "tone": "neutral",
+   "method": "rules",
+   "gates": {
+    "quote_on_page": true,
+    "speaker": "management",
+    "numbers_in_quote": true
+   },
+   "fact_id": "cl:c6b2e30517eb",
+   "explicit": false
+  },
+  {
+   "id": "cl:9eaae3557fb6",
+   "kind": "outlook",
+   "quote": "Cost of funds eased by 10 basis points sequentially.",
+   "doc_id": "d:2c8bf2d95c",
+   "doc_kind": "transcript",
+   "call_period": "Q1 FY27",
+   "page": 1,
+   "section": "Prepared remarks",
+   "speaker": "Anita Desai, Chief Financial Officer",
+   "role": "management",
+   "reaffirms": false,
+   "withdraws": false,
+   "confirmed_analyst_figure": false,
+   "theme": "Funding",
+   "tone": "positive",
+   "method": "rules",
+   "gates": {
+    "quote_on_page": true,
+    "speaker": "management",
+    "numbers_in_quote": true
+   },
+   "fact_id": "cl:9eaae3557fb6",
+   "explicit": false
+  },
+  {
+   "id": "cl:c0bdb6d817fa",
+   "kind": "outlook",
+   "quote": "The Company expects credit demand from small businesses to remain healthy in FY27.",
+   "doc_id": "d:2e2be23d1d",
+   "doc_kind": "annual_report",
+   "call_period": "FY26",
+   "page": 3,
+   "section": "Management discussion and analysis",
+   "speaker": "Company document",
+   "role": "company",
+   "reaffirms": false,
+   "withdraws": false,
+   "confirmed_analyst_figure": false,
+   "theme": "Demand",
+   "tone": "positive",
+   "method": "rules",
+   "gates": {
+    "quote_on_page": true,
+    "speaker": "company",
+    "numbers_in_quote": true
+   },
+   "fact_id": "cl:c0bdb6d817fa",
+   "explicit": false
+  },
+  {
+   "id": "cl:78ebe8d041f0",
+   "kind": "outlook",
+   "quote": "We have seen some stress in the unsecured personal loan portfolio and collection efficiency moderated.",
+   "doc_id": "d:2e7c254dd9",
+   "doc_kind": "transcript",
+   "call_period": "Q2 FY27",
+   "page": 1,
+   "section": "Prepared remarks",
+   "speaker": "Rajiv Menon, Managing Director and Chief Executive Officer",
+   "role": "management",
+   "reaffirms": false,
+   "withdraws": false,
+   "confirmed_analyst_figure": false,
+   "theme": "Asset quality",
+   "tone": "negative",
+   "method": "rules",
+   "gates": {
+    "quote_on_page": true,
+    "speaker": "management",
+    "numbers_in_quote": true
+   },
+   "fact_id": "cl:78ebe8d041f0",
+   "explicit": false
+  },
+  {
+   "id": "cl:88a1a2ebf6c2",
+   "kind": "assertion",
+   "metric": "loan_growth",
+   "metric_label": "Loan book growth",
+   "quote": "Our loan book grew 10.2% since March.",
+   "doc_id": "d:2e7c254dd9",
+   "doc_kind": "transcript",
+   "call_period": "Q2 FY27",
+   "page": 1,
+   "section": "Prepared remarks",
+   "speaker": "Rajiv Menon, Managing Director and Chief Executive Officer",
+   "role": "management",
+   "target": {
+    "kind": "point",
+    "low": 10.2,
+    "high": 10.2,
+    "unit": "pct",
+    "text": "10.2%",
+    "reading": "'10.2%' read as 10.2%"
+   },
+   "period": "Q2 FY27",
+   "reaffirms": false,
+   "withdraws": false,
+   "confirmed_analyst_figure": false,
+   "tone": "neutral",
+   "method": "rules",
+   "gates": {
+    "quote_on_page": true,
+    "speaker": "management",
+    "numbers_in_quote": true
+   },
+   "fact_id": "cl:88a1a2ebf6c2",
+   "explicit": false
+  },
+  {
+   "id": "cl:61901e898c79",
+   "kind": "guidance",
+   "metric": "credit_cost",
+   "metric_label": "Credit cost",
+   "quote": "Given the uncertainty, we will not be giving credit cost guidance going forward.",
+   "doc_id": "d:2e7c254dd9",
+   "doc_kind": "transcript",
+   "call_period": "Q2 FY27",
+   "page": 1,
+   "section": "Prepared remarks",
+   "speaker": "Rajiv Menon, Managing Director and Chief Executive Officer",
+   "role": "management",
+   "reaffirms": false,
+   "withdraws": true,
+   "confirmed_analyst_figure": false,
+   "theme": "Asset quality",
+   "tone": "negative",
+   "method": "rules",
+   "gates": {
+    "quote_on_page": true,
+    "speaker": "management",
+    "numbers_in_quote": true
+   },
+   "fact_id": "cl:61901e898c79",
+   "explicit": false
+  }
+ ],
+ "ledger": [
+  {
+   "id": "lg:c4cbe82269",
+   "kind": "guidance",
+   "metric": "credit_cost",
+   "metric_label": "Credit cost",
+   "period": "FY25",
+   "target": "1.9\u20132.1%",
+   "reading": "'1.9% to 2.1%' read as 1.9 to 2.1%",
+   "hedge": "expected",
+   "explicit": true,
+   "better": "down",
+   "target_kind": "range",
+   "verdict": "missed",
+   "detail": "FY25 actual 2.3% against 1.9\u20132.1%: +0.2 pp from the upper edge (2.1%).",
+   "severity": 3,
+   "actual_fact": "c:FY25:credit_cost",
+   "required_fact": "c:gap:lg:c4cbe82269",
+   "evidence": [
+    "cl:1269fde9dbf0",
+    "cl:c271674a1039",
+    "c:FY25:credit_cost",
+    "c:gap:lg:c4cbe82269"
+   ],
+   "history": [
+    {
+     "call": "Q1 FY25",
+     "doc_id": "d:b57ed3abc3",
+     "claim_id": "cl:1269fde9dbf0",
+     "change": "first",
+     "target": "1.6\u20131.8%",
+     "fact_id": "cl:1269fde9dbf0",
+     "date": "2024-07-31",
+     "band": {
+      "kind": "range",
+      "low": 1.6,
+      "high": 1.8,
+      "unit": "pct"
+     }
+    },
+    {
+     "call": "Q3 FY25",
+     "doc_id": "d:fb2006658a",
+     "claim_id": "cl:c271674a1039",
+     "change": "raised",
+     "target": "1.9\u20132.1%",
+     "fact_id": "cl:c271674a1039",
+     "date": "2025-01-30",
+     "band": {
+      "kind": "range",
+      "low": 1.9,
+      "high": 2.1,
+      "unit": "pct"
+     }
+    }
+   ]
+  },
+  {
+   "id": "lg:a778af4e77",
+   "kind": "guidance",
+   "metric": "loan_growth",
+   "metric_label": "Loan book growth",
+   "period": "FY25",
+   "target": "20\u201322%",
+   "reading": "'20% to 22%' read as 20 to 22%",
+   "hedge": "expected",
+   "explicit": true,
+   "better": "up",
+   "target_kind": "range",
+   "verdict": "ahead",
+   "detail": "FY25 actual +22.7% against 20\u201322%: +0.7 pp from the upper edge (22%).",
+   "severity": 0,
+   "actual_fact": "c:FY25:loan_growth_ytd",
+   "required_fact": "c:gap:lg:a778af4e77",
+   "evidence": [
+    "cl:3685826fb5df",
+    "c:FY25:loan_growth_ytd",
+    "c:gap:lg:a778af4e77"
+   ],
+   "history": [
+    {
+     "call": "Q1 FY25",
+     "doc_id": "d:b57ed3abc3",
+     "claim_id": "cl:3685826fb5df",
+     "change": "first",
+     "target": "20\u201322%",
+     "fact_id": "cl:3685826fb5df",
+     "date": "2024-07-31",
+     "band": {
+      "kind": "range",
+      "low": 20.0,
+      "high": 22.0,
+      "unit": "pct"
+     }
+    },
+    {
+     "call": "Q2 FY25",
+     "doc_id": "d:8c2a1da8ea",
+     "change": "not repeated",
+     "date": "2024-10-30"
+    },
+    {
+     "call": "Q3 FY25",
+     "doc_id": "d:fb2006658a",
+     "change": "not repeated",
+     "date": "2025-01-30"
+    }
+   ]
+  },
+  {
+   "id": "lg:bda689a886",
+   "kind": "guidance",
+   "metric": "credit_cost",
+   "metric_label": "Credit cost",
+   "period": "FY26",
+   "target": "1.8\u20132.0%",
+   "reading": "'1.8% to 2.0%' read as 1.8 to 2%",
+   "hedge": "expected",
+   "explicit": true,
+   "better": "down",
+   "target_kind": "range",
+   "verdict": "missed",
+   "detail": "FY26 actual 2.2% against 1.8\u20132.0%: +0.2 pp from the upper edge (2%).",
+   "severity": 3,
+   "actual_fact": "c:FY26:credit_cost",
+   "required_fact": "c:gap:lg:bda689a886",
+   "evidence": [
+    "cl:9821325203d5",
+    "cl:c6a036db731b",
+    "c:FY26:credit_cost",
+    "c:gap:lg:bda689a886"
+   ],
+   "history": [
+    {
+     "call": "Q4 FY25",
+     "doc_id": "d:60dbed2bcf",
+     "claim_id": "cl:9821325203d5",
+     "change": "first",
+     "target": "1.8\u20132.0%",
+     "fact_id": "cl:9821325203d5",
+     "date": "2025-05-02",
+     "band": {
+      "kind": "range",
+      "low": 1.8,
+      "high": 2.0,
+      "unit": "pct"
+     }
+    },
+    {
+     "call": "Q3 FY26",
+     "doc_id": "d:b5e0ec154f",
+     "claim_id": "cl:c6a036db731b",
+     "change": "reiterated",
+     "target": "1.8\u20132.0%",
+     "fact_id": "cl:c6a036db731b",
+     "date": "2026-01-30",
+     "band": {
+      "kind": "range",
+      "low": 1.8,
+      "high": 2.0,
+      "unit": "pct"
+     }
+    }
+   ]
+  },
+  {
+   "id": "lg:e0e92c4dda",
+   "kind": "guidance",
+   "metric": "aum_growth",
+   "metric_label": "AUM growth",
+   "period": "FY27",
+   "target": "22\u201325%",
+   "reading": "'22% to 25%' read as 22 to 25%",
+   "hedge": "expected",
+   "explicit": true,
+   "better": "up",
+   "target_kind": "range",
+   "verdict": "unverifiable",
+   "detail": "AUM includes off-book loans; the balance sheet reports on-book loans only.",
+   "severity": 0,
+   "evidence": [
+    "cl:9aa0ba36f7d5"
+   ],
+   "history": [
+    {
+     "call": "Q4 FY26",
+     "doc_id": "d:8698adcd82",
+     "claim_id": "cl:9aa0ba36f7d5",
+     "change": "first",
+     "target": "22\u201325%",
+     "fact_id": "cl:9aa0ba36f7d5",
+     "date": "2026-05-02",
+     "band": {
+      "kind": "range",
+      "low": 22.0,
+      "high": 25.0,
+      "unit": "pct"
+     }
+    },
+    {
+     "call": "Q1 FY27",
+     "doc_id": "d:2c8bf2d95c",
+     "change": "not repeated",
+     "date": "2026-07-30"
+    },
+    {
+     "call": "Q2 FY27",
+     "doc_id": "d:2e7c254dd9",
+     "change": "not repeated",
+     "date": "2026-10-29"
+    }
+   ]
+  },
+  {
+   "id": "lg:c6600ff396",
+   "kind": "guidance",
+   "metric": "credit_cost",
+   "metric_label": "Credit cost",
+   "period": "FY27",
+   "target": "1.9\u20132.1%",
+   "reading": "'1.9% to 2.1%' read as 1.9 to 2.1%",
+   "hedge": "expected",
+   "explicit": true,
+   "better": "down",
+   "target_kind": "range",
+   "verdict": "dropped",
+   "status_note": "withdrawn; behind",
+   "detail": "Management withdrew this guidance on the Q2 FY27 call. At that point H1 FY27 stood at 2.3% against 1.9\u20132.1%, outside the range.",
+   "severity": 3,
+   "actual_fact": "c:H1FY27:credit_cost",
+   "evidence": [
+    "cl:65a6ebbb396d",
+    "cl:c6b2e30517eb",
+    "cl:61901e898c79",
+    "c:H1FY27:credit_cost"
+   ],
+   "history": [
+    {
+     "call": "Q4 FY26",
+     "doc_id": "d:8698adcd82",
+     "claim_id": "cl:65a6ebbb396d",
+     "change": "first",
+     "target": "1.9\u20132.1%",
+     "fact_id": "cl:65a6ebbb396d",
+     "date": "2026-05-02",
+     "band": {
+      "kind": "range",
+      "low": 1.9,
+      "high": 2.1,
+      "unit": "pct"
+     }
+    },
+    {
+     "call": "Q1 FY27",
+     "doc_id": "d:2c8bf2d95c",
+     "claim_id": "cl:c6b2e30517eb",
+     "change": "reiterated",
+     "target": "1.9\u20132.1%",
+     "fact_id": "cl:c6b2e30517eb",
+     "date": "2026-07-30",
+     "band": {
+      "kind": "range",
+      "low": 1.9,
+      "high": 2.1,
+      "unit": "pct"
+     }
+    },
+    {
+     "call": "Q2 FY27",
+     "doc_id": "d:2e7c254dd9",
+     "claim_id": "cl:61901e898c79",
+     "change": "withdrawn",
+     "fact_id": "cl:61901e898c79",
+     "date": "2026-10-29"
+    }
+   ]
+  },
+  {
+   "id": "as:b703b4224ad4",
+   "kind": "assertion",
+   "metric": "loan_growth",
+   "metric_label": "Loan book growth",
+   "period": "FY25",
+   "target": "22.7%",
+   "reading": "'22.7%' read as 22.7%",
+   "explicit": true,
+   "better": "up",
+   "verdict": "consistent",
+   "detail": "Checked against reported figures (year on year: +22.7%).",
+   "severity": 0,
+   "actual_fact": "c:FY25:loan_growth_ytd",
+   "evidence": [
+    "cl:b703b4224ad4",
+    "c:FY25:loan_growth_ytd"
+   ],
+   "history": []
+  },
+  {
+   "id": "as:eb04cbf82174",
+   "kind": "assertion",
+   "metric": "disbursement",
+   "metric_label": "Disbursements",
+   "period": "Q3 FY26",
+   "target": "21%",
+   "reading": "'21%' read as 21%",
+   "explicit": true,
+   "better": "up",
+   "verdict": "unverifiable",
+   "detail": "Disbursements aren't in the financial statements.",
+   "severity": 0,
+   "evidence": [
+    "cl:eb04cbf82174"
+   ],
+   "history": []
+  },
+  {
+   "id": "as:d676bc5f551a",
+   "kind": "assertion",
+   "metric": "nim",
+   "metric_label": "Net interest margin",
+   "period": "FY26",
+   "target": "8.1%",
+   "reading": "'8.1%' read as 8.1%",
+   "explicit": true,
+   "better": "up",
+   "verdict": "unverifiable",
+   "detail": "Lenders quote NIM on average AUM or earning assets; the statements give only on-book loans, so the two aren't compared.",
+   "severity": 0,
+   "evidence": [
+    "cl:d676bc5f551a"
+   ],
+   "history": []
+  },
+  {
+   "id": "as:88a1a2ebf6c2",
+   "kind": "assertion",
+   "metric": "loan_growth",
+   "metric_label": "Loan book growth",
+   "period": "Q2 FY27",
+   "target": "10.2%",
+   "reading": "'10.2%' read as 10.2%",
+   "explicit": true,
+   "better": "up",
+   "verdict": "consistent",
+   "detail": "Checked against reported figures (year on year: +10.2%).",
+   "severity": 0,
+   "actual_fact": "c:Q2FY27:loan_growth_ytd",
+   "evidence": [
+    "cl:88a1a2ebf6c2",
+    "c:Q2FY27:loan_growth_ytd"
+   ],
+   "history": []
+  }
+ ],
+ "sections": {
+  "business": {
+   "description": "q:overview:d:2e2be23d1d",
+   "industry": "Non Banking Financial Company (NBFC)",
+   "segments": [],
+   "segment_period": null,
+   "gaps": [
+    {
+     "area": "Segments",
+     "detail": "The results filings read have no segment note (single-segment company, or the note wasn't found)."
+    }
+   ]
+  },
+  "snapshot": {
+   "period": "Q2 FY27",
+   "basis": "consolidated",
+   "rows": [
+    {
+     "key": "revenue",
+     "label": "Revenue",
+     "value": "r:pl:Q2FY27:revenue",
+     "qoq": "c:Q2FY27:revenue_growth_Q1FY27",
+     "yoy": "c:Q2FY27:revenue_growth_Q2FY26"
+    },
+    {
+     "key": "nii",
+     "label": "Net interest income",
+     "value": "c:Q2FY27:nii",
+     "qoq": "c:Q2FY27:nii_growth_Q1FY27",
+     "yoy": "c:Q2FY27:nii_growth_Q2FY26"
+    },
+    {
+     "key": "pat",
+     "label": "Profit after tax",
+     "value": "r:pl:Q2FY27:pat",
+     "qoq": "c:Q2FY27:pat_growth_Q1FY27",
+     "yoy": "c:Q2FY27:pat_growth_Q2FY26"
+    }
+   ],
+   "margins": [
+    {
+     "label": "PAT margin",
+     "value": "c:Q2FY27:pat_margin",
+     "yoy_change": null
+    }
+   ],
+   "ttm": [
+    {
+     "label": "Revenue (TTM)",
+     "value": "c:ttm:Q2FY27:revenue"
+    },
+    {
+     "label": "PAT (TTM)",
+     "value": "c:ttm:Q2FY27:pat"
+    }
+   ],
+   "balance": [
+    {
+     "label": "Loans, H1 FY27",
+     "value": "r:bs:H1FY27:loans"
+    },
+    {
+     "label": "Debt to equity, H1 FY27",
+     "value": "c:bs:H1FY27:de"
+    }
+   ],
+   "market": [
+    {
+     "label": "Market cap",
+     "value": "m:mcap"
+    },
+    {
+     "label": "P/E (TTM)",
+     "value": "c:pe"
+    }
+   ],
+   "gaps": []
+  },
+  "trajectory": {
+   "quarters": [
+    "Q3 FY25",
+    "Q4 FY25",
+    "Q1 FY26",
+    "Q2 FY26",
+    "Q3 FY26",
+    "Q4 FY26",
+    "Q1 FY27",
+    "Q2 FY27"
+   ],
+   "series": {
+    "revenue": [
+     "r:pl:Q3FY25:revenue",
+     "r:pl:Q4FY25:revenue",
+     "r:pl:Q1FY26:revenue",
+     "r:pl:Q2FY26:revenue",
+     "r:pl:Q3FY26:revenue",
+     "r:pl:Q4FY26:revenue",
+     "r:pl:Q1FY27:revenue",
+     "r:pl:Q2FY27:revenue"
+    ],
+    "pat": [
+     "r:pl:Q3FY25:pat",
+     "r:pl:Q4FY25:pat",
+     "r:pl:Q1FY26:pat",
+     "r:pl:Q2FY26:pat",
+     "r:pl:Q3FY26:pat",
+     "r:pl:Q4FY26:pat",
+     "r:pl:Q1FY27:pat",
+     "r:pl:Q2FY27:pat"
+    ],
+    "revenue_yoy": [
+     "c:Q3FY25:revenue_growth_Q3FY24",
+     "c:Q4FY25:revenue_growth_Q4FY24",
+     "c:Q1FY26:revenue_growth_Q1FY25",
+     "c:Q2FY26:revenue_growth_Q2FY25",
+     "c:Q3FY26:revenue_growth_Q3FY25",
+     "c:Q4FY26:revenue_growth_Q4FY25",
+     "c:Q1FY27:revenue_growth_Q1FY26",
+     "c:Q2FY27:revenue_growth_Q2FY26"
+    ],
+    "pat_yoy": [
+     "c:Q3FY25:pat_growth_Q3FY24",
+     "c:Q4FY25:pat_growth_Q4FY24",
+     "c:Q1FY26:pat_growth_Q1FY25",
+     "c:Q2FY26:pat_growth_Q2FY25",
+     "c:Q3FY26:pat_growth_Q3FY25",
+     "c:Q4FY26:pat_growth_Q4FY25",
+     "c:Q1FY27:pat_growth_Q1FY26",
+     "c:Q2FY27:pat_growth_Q2FY26"
+    ],
+    "nii": [
+     "c:Q3FY25:nii",
+     "c:Q4FY25:nii",
+     "c:Q1FY26:nii",
+     "c:Q2FY26:nii",
+     "c:Q3FY26:nii",
+     "c:Q4FY26:nii",
+     "c:Q1FY27:nii",
+     "c:Q2FY27:nii"
+    ],
+    "impairment": [
+     "r:pl:Q3FY25:impairment",
+     "r:pl:Q4FY25:impairment",
+     "r:pl:Q1FY26:impairment",
+     "r:pl:Q2FY26:impairment",
+     "r:pl:Q3FY26:impairment",
+     "r:pl:Q4FY26:impairment",
+     "r:pl:Q1FY27:impairment",
+     "r:pl:Q2FY27:impairment"
+    ]
+   },
+   "annual": [
+    {
+     "period": "FY24",
+     "revenue": "r:pl:FY24:revenue",
+     "pat": "r:pl:FY24:pat",
+     "ebitda": null,
+     "ebitda_margin": null,
+     "revenue_growth": null
+    },
+    {
+     "period": "FY25",
+     "revenue": "r:pl:FY25:revenue",
+     "pat": "r:pl:FY25:pat",
+     "ebitda": null,
+     "ebitda_margin": null,
+     "revenue_growth": "c:FY25:revenue_growth_FY24"
+    },
+    {
+     "period": "FY26",
+     "revenue": "r:pl:FY26:revenue",
+     "pat": "r:pl:FY26:pat",
+     "ebitda": null,
+     "ebitda_margin": null,
+     "revenue_growth": "c:FY26:revenue_growth_FY25"
+    }
+   ],
+   "restated": [],
+   "gaps": []
+  },
+  "balance_sheet": {
+   "dates": [
+    "H1 FY26",
+    "FY26",
+    "H1 FY27"
+   ],
+   "basis": "consolidated",
+   "rows": [
+    {
+     "label": "Loans",
+     "values": [
+      "r:bs:H1FY26:loans",
+      "r:bs:FY26:loans",
+      "r:bs:H1FY27:loans"
+     ]
+    },
+    {
+     "label": "Borrowings (all)",
+     "values": [
+      "r:bs:H1FY26:borrowings",
+      "r:bs:FY26:borrowings",
+      "r:bs:H1FY27:borrowings"
+     ]
+    },
+    {
+     "label": "Total equity",
+     "values": [
+      "r:bs:H1FY26:total_equity",
+      "r:bs:FY26:total_equity",
+      "r:bs:H1FY27:total_equity"
+     ]
+    },
+    {
+     "label": "Cash and cash equivalents",
+     "values": [
+      "r:bs:H1FY26:cash",
+      "r:bs:FY26:cash",
+      "r:bs:H1FY27:cash"
+     ]
+    },
+    {
+     "label": "Borrowings \u00f7 equity",
+     "values": [
+      "c:bs:H1FY26:de",
+      "c:bs:FY26:de",
+      "c:bs:H1FY27:de"
+     ]
+    },
+    {
+     "label": "Loan growth since March",
+     "values": [
+      "c:H1FY26:loan_growth_ytd",
+      null,
+      "c:H1FY27:loan_growth_ytd"
+     ]
+    }
+   ],
+   "checks": [
+    {
+     "check": "Total assets = total equity and liabilities (H1 FY27)",
+     "ok": true,
+     "detail": "28095.0 vs 28095.0",
+     "doc": "d:89d574da9f"
+    },
+    {
+     "check": "Total assets = total equity and liabilities (FY26)",
+     "ok": true,
+     "detail": "25855.0 vs 25855.0",
+     "doc": "d:89d574da9f"
+    },
+    {
+     "check": "Total assets = total equity and liabilities (FY26)",
+     "ok": true,
+     "detail": "25855.0 vs 25855.0",
+     "doc": "d:7f713d9587"
+    },
+    {
+     "check": "Total assets = total equity and liabilities (FY25)",
+     "ok": true,
+     "detail": "21495.0 vs 21495.0",
+     "doc": "d:7f713d9587"
+    },
+    {
+     "check": "Total assets = total equity and liabilities (H1 FY26)",
+     "ok": true,
+     "detail": "23485.0 vs 23485.0",
+     "doc": "d:d52c6e4208"
+    },
+    {
+     "check": "Total assets = total equity and liabilities (FY25)",
+     "ok": true,
+     "detail": "21495.0 vs 21495.0",
+     "doc": "d:d52c6e4208"
+    },
+    {
+     "check": "Total assets = total equity and liabilities (FY25)",
+     "ok": true,
+     "detail": "21495.0 vs 21495.0",
+     "doc": "d:5ba23d613a"
+    },
+    {
+     "check": "Total assets = total equity and liabilities (FY24)",
+     "ok": true,
+     "detail": "17955.0 vs 17955.0",
+     "doc": "d:5ba23d613a"
+    },
+    {
+     "check": "Total assets = total equity and liabilities (H1 FY25)",
+     "ok": true,
+     "detail": "19625.0 vs 19625.0",
+     "doc": "d:affc50e305"
+    },
+    {
+     "check": "Total assets = total equity and liabilities (FY24)",
+     "ok": true,
+     "detail": "17955.0 vs 17955.0",
+     "doc": "d:affc50e305"
+    }
+   ],
+   "gaps": []
+  },
+  "cash_quality": {
+   "periods": [
+    "FY25",
+    "H1 FY26",
+    "FY26",
+    "H1 FY27"
+   ],
+   "rows": [
+    {
+     "label": "Operating cash flow",
+     "values": [
+      "r:cf:FY25:cfo",
+      "r:cf:H1FY26:cfo",
+      "r:cf:FY26:cfo",
+      "r:cf:H1FY27:cfo"
+     ]
+    }
+   ],
+   "flags": [],
+   "note": "For a lender, operating cash flow includes the growth of the loan book, so it is negative while loans grow; FINN doesn't compute free cash flow or conversion ratios for lenders.",
+   "gaps": []
+  },
+  "nvn": {
+   "entries": [
+    "lg:c4cbe82269",
+    "lg:bda689a886",
+    "lg:c6600ff396",
+    "lg:a778af4e77",
+    "lg:e0e92c4dda",
+    "as:b703b4224ad4",
+    "as:eb04cbf82174",
+    "as:d676bc5f551a",
+    "as:88a1a2ebf6c2"
+   ],
+   "shifts": [
+    {
+     "id": "sh:45e4a34d0b",
+     "theme": "Asset quality",
+     "from_call": "Q1 FY27",
+     "to_call": "Q2 FY27",
+     "from_tone": "positive",
+     "to_tone": "negative",
+     "detail": "Management's tone on asset quality turned negative between the Q1 FY27 and Q2 FY27 calls.",
+     "evidence": [
+      "cl:b01bebc2c210",
+      "cl:78ebe8d041f0"
+     ]
+    }
+   ],
+   "discrepancies": [
+    {
+     "id": "d:lg:c4cbe82269",
+     "text": "Credit cost guidance of 1.9\u20132.1% for FY25 was missed. FY25 actual 2.3% against 1.9\u20132.1%: +0.2 pp from the upper edge (2.1%).",
+     "evidence": [
+      "cl:1269fde9dbf0",
+      "cl:c271674a1039",
+      "c:FY25:credit_cost",
+      "c:gap:lg:c4cbe82269"
+     ],
+     "rule": "guidance_missed",
+     "severity": 3,
+     "implication": "A missed explicit target lowers the weight to put on the next one; check whether the miss was explained on the call that followed."
+    },
+    {
+     "id": "d:lg:bda689a886",
+     "text": "Credit cost guidance of 1.8\u20132.0% for FY26 was missed. FY26 actual 2.2% against 1.8\u20132.0%: +0.2 pp from the upper edge (2%).",
+     "evidence": [
+      "cl:9821325203d5",
+      "cl:c6a036db731b",
+      "c:FY26:credit_cost",
+      "c:gap:lg:bda689a886"
+     ],
+     "rule": "guidance_missed",
+     "severity": 3,
+     "implication": "A missed explicit target lowers the weight to put on the next one; check whether the miss was explained on the call that followed."
+    },
+    {
+     "id": "d:lg:c6600ff396",
+     "text": "Credit cost guidance of 1.9\u20132.1% for FY27: Management withdrew this guidance on the Q2 FY27 call. At that point H1 FY27 stood at 2.3% against 1.9\u20132.1%, outside the range.",
+     "evidence": [
+      "cl:65a6ebbb396d",
+      "cl:c6b2e30517eb",
+      "cl:61901e898c79",
+      "c:H1FY27:credit_cost"
+     ],
+     "rule": "guidance_dropped",
+     "severity": 3,
+     "implication": "Guidance that goes quiet while the numbers fall short usually precedes a reset; ask on the next call whether the target still stands."
+    },
+    {
+     "id": "d:sh:45e4a34d0b",
+     "text": "Management's tone on asset quality turned negative between the Q1 FY27 and Q2 FY27 calls.",
+     "evidence": [
+      "cl:b01bebc2c210",
+      "cl:78ebe8d041f0"
+     ],
+     "rule": "narrative_shift",
+     "severity": 1,
+     "implication": "A change in tone often leads the numbers by a quarter or two; watch the metrics this theme drives."
+    }
+   ],
+   "calls": [
+    {
+     "doc_id": "d:b57ed3abc3",
+     "period": "Q1 FY25",
+     "complete": true
+    },
+    {
+     "doc_id": "d:8c2a1da8ea",
+     "period": "Q2 FY25",
+     "complete": true
+    },
+    {
+     "doc_id": "d:fb2006658a",
+     "period": "Q3 FY25",
+     "complete": true
+    },
+    {
+     "doc_id": "d:60dbed2bcf",
+     "period": "Q4 FY25",
+     "complete": true
+    },
+    {
+     "doc_id": "d:f87f40bd95",
+     "period": "Q1 FY26",
+     "complete": true
+    },
+    {
+     "doc_id": "d:40720490c7",
+     "period": "Q2 FY26",
+     "complete": true
+    },
+    {
+     "doc_id": "d:b5e0ec154f",
+     "period": "Q3 FY26",
+     "complete": true
+    },
+    {
+     "doc_id": "d:8698adcd82",
+     "period": "Q4 FY26",
+     "complete": true
+    },
+    {
+     "doc_id": "d:2c8bf2d95c",
+     "period": "Q1 FY27",
+     "complete": true
+    },
+    {
+     "doc_id": "d:2e7c254dd9",
+     "period": "Q2 FY27",
+     "complete": true
+    }
+   ]
+  },
+  "guidance": {
+   "entries": [
+    "lg:c4cbe82269",
+    "lg:a778af4e77",
+    "lg:bda689a886",
+    "lg:e0e92c4dda",
+    "lg:c6600ff396"
+   ],
+   "commentary": [
+    {
+     "theme": "Asset quality",
+     "facts": [
+      "cl:a9d0607b2ca2",
+      "cl:9fe12a2d7f85",
+      "cl:a33259d6e8c4",
+      "cl:0ac4352b03c8",
+      "cl:926779f1ac26",
+      "cl:f1f711b34320"
+     ]
+    },
+    {
+     "theme": "Funding",
+     "facts": [
+      "cl:1dcbeed70ded",
+      "cl:2f1c53477002",
+      "cl:9eaae3557fb6"
+     ]
+    },
+    {
+     "theme": "Demand",
+     "facts": [
+      "cl:c0bdb6d817fa"
+     ]
+    }
+   ]
+  },
+  "bull_bear": {
+   "bull": [
+    {
+     "id": "b:rev",
+     "text": "Revenue grew 16.7% year on year in Q2 FY27.",
+     "evidence": [
+      "c:Q2FY27:revenue_growth_Q2FY26"
+     ],
+     "rule": "revenue_growth\u226510%",
+     "severity": 0,
+     "implication": null
+    },
+    {
+     "id": "b:pat",
+     "text": "Profit after tax grew 15.2% year on year in Q2 FY27.",
+     "evidence": [
+      "c:Q2FY27:pat_growth_Q2FY26"
+     ],
+     "rule": "pat_growth\u226515%",
+     "severity": 0,
+     "implication": null
+    },
+    {
+     "id": "b:kept",
+     "text": "Management met 1 of 3 explicit targets whose period has closed.",
+     "evidence": [
+      "cl:3685826fb5df",
+      "c:FY25:loan_growth_ytd"
+     ],
+     "rule": "guidance_kept",
+     "severity": 0,
+     "implication": null
+    }
+   ],
+   "bear": [
+    {
+     "id": "x:d:lg:c4cbe82269",
+     "text": "Credit cost guidance of 1.9\u20132.1% for FY25 was missed. FY25 actual 2.3% against 1.9\u20132.1%: +0.2 pp from the upper edge (2.1%).",
+     "evidence": [
+      "cl:1269fde9dbf0",
+      "cl:c271674a1039",
+      "c:FY25:credit_cost",
+      "c:gap:lg:c4cbe82269"
+     ],
+     "rule": "guidance_missed",
+     "severity": 3,
+     "implication": null
+    },
+    {
+     "id": "x:d:lg:bda689a886",
+     "text": "Credit cost guidance of 1.8\u20132.0% for FY26 was missed. FY26 actual 2.2% against 1.8\u20132.0%: +0.2 pp from the upper edge (2%).",
+     "evidence": [
+      "cl:9821325203d5",
+      "cl:c6a036db731b",
+      "c:FY26:credit_cost",
+      "c:gap:lg:bda689a886"
+     ],
+     "rule": "guidance_missed",
+     "severity": 3,
+     "implication": null
+    },
+    {
+     "id": "x:d:lg:c6600ff396",
+     "text": "Credit cost guidance of 1.9\u20132.1% for FY27: Management withdrew this guidance on the Q2 FY27 call. At that point H1 FY27 stood at 2.3% against 1.9\u20132.1%, outside the range.",
+     "evidence": [
+      "cl:65a6ebbb396d",
+      "cl:c6b2e30517eb",
+      "cl:61901e898c79",
+      "c:H1FY27:credit_cost"
+     ],
+     "rule": "guidance_dropped",
+     "severity": 3,
+     "implication": null
+    }
+   ],
+   "note": "Rule-based: each point is a fixed test over the cited facts, and every number in it comes from those facts. A side with nothing listed means no rule fired on the evidence available, not that there is nothing to say."
+  }
+ },
+ "credibility": {
+  "window": {
+   "calls": 10,
+   "first_call": "Q1 FY25",
+   "last_call": "Q2 FY27",
+   "results": 10,
+   "closed_years": [
+    "FY25",
+    "FY26"
+   ]
+  },
+  "rules": {
+   "min_closed": 4,
+   "min_years": 2,
+   "no_score": "FINN doesn't combine these indicators into a trust score: any weighting would be a judgement, not a measurement."
+  },
+  "indicators": [
+   {
+    "id": "delivery",
+    "title": "Guidance delivery",
+    "question": "When management gave a number, did the reported figure land within it?",
+    "status": "insufficient",
+    "n": 3,
+    "years": [
+     "FY25",
+     "FY26"
+    ],
+    "headline": "3 explicit targets have closed (FY25\u2013FY26): 1 kept. FINN states a rate only from 4 closed targets across 2 fiscal years.",
+    "stat": {
+     "kept": 1,
+     "missed": 2,
+     "rate": null
+    },
+    "by_family": [
+     {
+      "family": "Asset quality",
+      "kept": 0,
+      "missed": 2
+     },
+     {
+      "family": "Loan growth",
+      "kept": 1,
+      "missed": 0
+     }
+    ],
+    "rows": [
+     {
+      "ledger": "lg:c4cbe82269",
+      "metric": "Credit cost",
+      "period": "FY25",
+      "target": "1.9\u20132.1%",
+      "first_target": "1.6\u20131.8%",
+      "stated_on": "2024-07-31",
+      "verdict": "missed",
+      "actual": "c:FY25:credit_cost",
+      "evidence": [
+       "cl:1269fde9dbf0",
+       "cl:c271674a1039",
+       "c:FY25:credit_cost",
+       "c:gap:lg:c4cbe82269"
+      ]
+     },
+     {
+      "ledger": "lg:a778af4e77",
+      "metric": "Loan book growth",
+      "period": "FY25",
+      "target": "20\u201322%",
+      "first_target": "20\u201322%",
+      "stated_on": "2024-07-31",
+      "verdict": "ahead",
+      "actual": "c:FY25:loan_growth_ytd",
+      "evidence": [
+       "cl:3685826fb5df",
+       "c:FY25:loan_growth_ytd",
+       "c:gap:lg:a778af4e77"
+      ]
+     },
+     {
+      "ledger": "lg:bda689a886",
+      "metric": "Credit cost",
+      "period": "FY26",
+      "target": "1.8\u20132.0%",
+      "first_target": "1.8\u20132.0%",
+      "stated_on": "2025-05-02",
+      "verdict": "missed",
+      "actual": "c:FY26:credit_cost",
+      "evidence": [
+       "cl:9821325203d5",
+       "cl:c6a036db731b",
+       "c:FY26:credit_cost",
+       "c:gap:lg:bda689a886"
+      ]
+     }
+    ],
+    "method": "Closed explicit targets only. Kept = delivered or ahead; the ledger's tolerance applies. A rate needs at least 4 targets across 2 fiscal years."
+   },
+   {
+    "id": "landing",
+    "title": "Where results landed in the range",
+    "question": "Does management guide conservatively, or tend to land short of the middle?",
+    "status": "insufficient",
+    "n": 3,
+    "headline": "3 closed targets with a range to compare; too few to call a tendency.",
+    "stat": null,
+    "rows": [
+     {
+      "ledger": "lg:c4cbe82269",
+      "metric": "Credit cost",
+      "period": "FY25",
+      "target": "1.9\u20132.1%",
+      "first_target": "1.6\u20131.8%",
+      "stated_on": "2024-07-31",
+      "verdict": "missed",
+      "actual": "c:FY25:credit_cost",
+      "evidence": [
+       "cl:1269fde9dbf0",
+       "cl:c271674a1039",
+       "c:FY25:credit_cost",
+       "c:gap:lg:c4cbe82269"
+      ],
+      "midpoint": 2.0,
+      "offset": 0.28,
+      "offset_display": "+0.3 pp",
+      "side": "adverse"
+     },
+     {
+      "ledger": "lg:a778af4e77",
+      "metric": "Loan book growth",
+      "period": "FY25",
+      "target": "20\u201322%",
+      "first_target": "20\u201322%",
+      "stated_on": "2024-07-31",
+      "verdict": "ahead",
+      "actual": "c:FY25:loan_growth_ytd",
+      "evidence": [
+       "cl:3685826fb5df",
+       "c:FY25:loan_growth_ytd",
+       "c:gap:lg:a778af4e77"
+      ],
+      "midpoint": 21.0,
+      "offset": 1.6667,
+      "offset_display": "+1.7 pp",
+      "side": "favourable"
+     },
+     {
+      "ledger": "lg:bda689a886",
+      "metric": "Credit cost",
+      "period": "FY26",
+      "target": "1.8\u20132.0%",
+      "first_target": "1.8\u20132.0%",
+      "stated_on": "2025-05-02",
+      "verdict": "missed",
+      "actual": "c:FY26:credit_cost",
+      "evidence": [
+       "cl:9821325203d5",
+       "cl:c6a036db731b",
+       "c:FY26:credit_cost",
+       "c:gap:lg:bda689a886"
+      ],
+      "midpoint": 1.9,
+      "offset": 0.34,
+      "offset_display": "+0.3 pp",
+      "side": "adverse"
+     }
+    ],
+    "method": "Ranges and 'around' figures only. Offset = actual - midpoint, in percentage points for growth and margins, and as a share of the midpoint for amounts. 'Favourable' depends on the metric: above the midpoint for growth, margins and capex; below it for credit cost and debt. Within 0.15 pp or 2% counts as at the midpoint. Counts are shown only from 4 targets across 2 years."
+   },
+   {
+    "id": "revisions",
+    "title": "Guidance revisions",
+    "question": "How often were targets changed mid-period, and in which direction?",
+    "status": "observed",
+    "n": 1,
+    "headline": "1 of 5 explicit targets were changed before their period closed; 1 of those changes went against the company.",
+    "rows": [
+     {
+      "ledger": "lg:c4cbe82269",
+      "metric": "Credit cost",
+      "period": "FY25",
+      "target": "1.9\u20132.1%",
+      "first_target": "1.6\u20131.8%",
+      "stated_on": "2024-07-31",
+      "verdict": "missed",
+      "actual": "c:FY25:credit_cost",
+      "evidence": [
+       "cl:1269fde9dbf0",
+       "cl:c271674a1039",
+       "c:FY25:credit_cost",
+       "c:gap:lg:c4cbe82269"
+      ],
+      "changes": [
+       {
+        "call": "Q3 FY25",
+        "date": "2025-01-30",
+        "change": "raised",
+        "target": "1.9\u20132.1%",
+        "fact": "cl:c271674a1039"
+       }
+      ],
+      "adverse": 1,
+      "first_target_met": false
+     }
+    ],
+    "repeated": [],
+    "met_only_after_revision": [],
+    "method": "A revision is a later statement with a different number for the same metric and period. 'Against the company' means lowered for growth, margins and capex, raised for credit cost and debt. Two documents disagreeing in the same quarter are reported as a contradiction, not counted as a revision."
+   },
+   {
+    "id": "capex",
+    "title": "Capex execution",
+    "question": "Did the company spend what it said it would?",
+    "status": "none",
+    "n": 0,
+    "headline": "Management gave no capex figure in the documents read.",
+    "rows": [],
+    "method": "Capex = purchase of property, plant and equipment in the cash flow statement (year-end filing). The plan is the first figure stated for the year, so mid-year cuts don't hide under-spending."
+   },
+   {
+    "id": "revenue",
+    "title": "Revenue growth against what was guided",
+    "question": "How did revenue growth compare with what management said to expect?",
+    "status": "none",
+    "n": 0,
+    "headline": "Management gave no revenue guidance in the documents read.",
+    "rows": [],
+    "path": [
+     {
+      "period": "FY25",
+      "fact": "c:FY25:revenue_growth_FY24"
+     },
+     {
+      "period": "FY26",
+      "fact": "c:FY26:revenue_growth_FY25"
+     }
+    ],
+    "method": "Each statement is shown with the reported figure for its period. Constant-currency and worded statements are listed but not scored."
+   },
+   {
+    "id": "margins",
+    "title": "Margin progression",
+    "question": "Did margins move the way management said they would?",
+    "status": "none",
+    "n": 0,
+    "headline": "Management gave no margin guidance in the documents read.",
+    "rows": [],
+    "path": [],
+    "method": "Each statement is shown with the reported figure for its period. Constant-currency and worded statements are listed but not scored."
+   },
+   {
+    "id": "cash",
+    "title": "Cash generation against profit",
+    "question": "Does reported profit turn into cash?",
+    "status": "none",
+    "n": 0,
+    "headline": "Not meaningful for a lender: operating cash flow includes the growth of the loan book.",
+    "rows": [],
+    "method": "",
+    "management_said": [],
+    "contradictions": []
+   },
+   {
+    "id": "silence",
+    "title": "Targets that went quiet",
+    "question": "Does management stop mentioning targets it is going to miss?",
+    "status": "observed",
+    "n": 1,
+    "headline": "1 explicit target went quiet (not repeated, withdrawn or restated in words) without being met.",
+    "rows": [
+     {
+      "ledger": "lg:c6600ff396",
+      "metric": "Credit cost",
+      "period": "FY27",
+      "target": "1.9\u20132.1%",
+      "first_target": "1.9\u20132.1%",
+      "stated_on": "2026-05-02",
+      "verdict": "dropped",
+      "actual": "c:H1FY27:credit_cost",
+      "evidence": [
+       "cl:65a6ebbb396d",
+       "cl:c6b2e30517eb",
+       "cl:61901e898c79",
+       "c:H1FY27:credit_cost"
+      ],
+      "quiet": [
+       {
+        "call": "Q2 FY27",
+        "date": "2026-10-29",
+        "change": "withdrawn"
+       }
+      ],
+      "outcome": "withdrawn",
+      "behind": true
+     }
+    ],
+    "method": "A target goes quiet when a later complete call transcript doesn't mention it before its period ends, when it is withdrawn, or when the number is restated only in words."
+   },
+   {
+    "id": "quoted",
+    "title": "Figures quoted on calls",
+    "question": "When management describes a reported quarter, do the statements agree?",
+    "status": "observed",
+    "n": 2,
+    "headline": "2 of 2 figures management quoted about reported periods match the statements.",
+    "stat": {
+     "consistent": 2,
+     "partial": 0,
+     "contradicted": 0
+    },
+    "rows": [
+     {
+      "ledger": "as:b703b4224ad4",
+      "metric": "Loan book growth",
+      "period": "FY25",
+      "verdict": "consistent",
+      "evidence": [
+       "cl:b703b4224ad4",
+       "c:FY25:loan_growth_ytd"
+      ]
+     },
+     {
+      "ledger": "as:88a1a2ebf6c2",
+      "metric": "Loan book growth",
+      "period": "Q2 FY27",
+      "verdict": "consistent",
+      "evidence": [
+       "cl:88a1a2ebf6c2",
+       "c:Q2FY27:loan_growth_ytd"
+      ]
+     }
+    ],
+    "method": "Checked on every plausible basis (year on year, sequential, level) before a figure is called contradicted."
+   }
+  ],
+  "lanes": [
+   {
+    "id": "lane:credit_cost:",
+    "metric": "credit_cost",
+    "label": "Credit cost",
+    "unit": "pct",
+    "better": "down",
+    "kind": "level",
+    "checkable": true,
+    "reason": null,
+    "statements": [
+     {
+      "ledger": "lg:c4cbe82269",
+      "period": "FY25",
+      "period_end": "2025-03-31",
+      "date": "2024-07-31",
+      "until": "2025-01-30",
+      "change": "first",
+      "target": "1.6\u20131.8%",
+      "band": {
+       "kind": "range",
+       "low": 1.6,
+       "high": 1.8,
+       "unit": "pct"
+      },
+      "fact": "cl:1269fde9dbf0",
+      "call": "Q1 FY25",
+      "kind": "explicit"
+     },
+     {
+      "ledger": "lg:c4cbe82269",
+      "period": "FY25",
+      "period_end": "2025-03-31",
+      "date": "2025-01-30",
+      "until": "2025-03-31",
+      "change": "raised",
+      "target": "1.9\u20132.1%",
+      "band": {
+       "kind": "range",
+       "low": 1.9,
+       "high": 2.1,
+       "unit": "pct"
+      },
+      "fact": "cl:c271674a1039",
+      "call": "Q3 FY25",
+      "kind": "explicit"
+     },
+     {
+      "ledger": "lg:bda689a886",
+      "period": "FY26",
+      "period_end": "2026-03-31",
+      "date": "2025-05-02",
+      "until": "2026-01-30",
+      "change": "first",
+      "target": "1.8\u20132.0%",
+      "band": {
+       "kind": "range",
+       "low": 1.8,
+       "high": 2.0,
+       "unit": "pct"
+      },
+      "fact": "cl:9821325203d5",
+      "call": "Q4 FY25",
+      "kind": "explicit"
+     },
+     {
+      "ledger": "lg:bda689a886",
+      "period": "FY26",
+      "period_end": "2026-03-31",
+      "date": "2026-01-30",
+      "until": "2026-03-31",
+      "change": "reiterated",
+      "target": "1.8\u20132.0%",
+      "band": {
+       "kind": "range",
+       "low": 1.8,
+       "high": 2.0,
+       "unit": "pct"
+      },
+      "fact": "cl:c6a036db731b",
+      "call": "Q3 FY26",
+      "kind": "explicit"
+     },
+     {
+      "ledger": "lg:c6600ff396",
+      "period": "FY27",
+      "period_end": "2027-03-31",
+      "date": "2026-05-02",
+      "until": "2026-07-30",
+      "change": "first",
+      "target": "1.9\u20132.1%",
+      "band": {
+       "kind": "range",
+       "low": 1.9,
+       "high": 2.1,
+       "unit": "pct"
+      },
+      "fact": "cl:65a6ebbb396d",
+      "call": "Q4 FY26",
+      "kind": "explicit"
+     },
+     {
+      "ledger": "lg:c6600ff396",
+      "period": "FY27",
+      "period_end": "2027-03-31",
+      "date": "2026-07-30",
+      "until": "2026-10-29",
+      "change": "reiterated",
+      "target": "1.9\u20132.1%",
+      "band": {
+       "kind": "range",
+       "low": 1.9,
+       "high": 2.1,
+       "unit": "pct"
+      },
+      "fact": "cl:c6b2e30517eb",
+      "call": "Q1 FY27",
+      "kind": "explicit"
+     },
+     {
+      "ledger": "lg:c6600ff396",
+      "period": "FY27",
+      "period_end": "2027-03-31",
+      "date": "2026-10-29",
+      "until": "2027-03-31",
+      "change": "withdrawn",
+      "target": null,
+      "band": null,
+      "fact": "cl:61901e898c79",
+      "call": "Q2 FY27",
+      "kind": "silence"
+     }
+    ],
+    "actuals": [
+     {
+      "period": "H1 FY25",
+      "date": "2024-09-30",
+      "fact": "c:H1FY25:credit_cost",
+      "value": 2.2399999999999998,
+      "kind": "ytd"
+     },
+     {
+      "period": "FY25",
+      "date": "2025-03-31",
+      "fact": "c:FY25:credit_cost",
+      "value": 2.2800000000000002,
+      "kind": "year"
+     },
+     {
+      "period": "H1 FY26",
+      "date": "2025-09-30",
+      "fact": "c:H1FY26:credit_cost",
+      "value": 2.34,
+      "kind": "ytd"
+     },
+     {
+      "period": "FY26",
+      "date": "2026-03-31",
+      "fact": "c:FY26:credit_cost",
+      "value": 2.2399999999999998,
+      "kind": "year"
+     },
+     {
+      "period": "H1 FY27",
+      "date": "2026-09-30",
+      "fact": "c:H1FY27:credit_cost",
+      "value": 2.32,
+      "kind": "ytd"
+     }
+    ],
+    "outcomes": [
+     {
+      "ledger": "lg:c4cbe82269",
+      "period": "FY25",
+      "date": "2025-03-31",
+      "verdict": "missed",
+      "status_note": null,
+      "fact": "c:FY25:credit_cost",
+      "value": 2.2800000000000002,
+      "closed": true,
+      "ytd": null
+     },
+     {
+      "ledger": "lg:bda689a886",
+      "period": "FY26",
+      "date": "2026-03-31",
+      "verdict": "missed",
+      "status_note": null,
+      "fact": "c:FY26:credit_cost",
+      "value": 2.2399999999999998,
+      "closed": true,
+      "ytd": null
+     },
+     {
+      "ledger": "lg:c6600ff396",
+      "period": "FY27",
+      "date": "2026-09-30",
+      "verdict": "dropped",
+      "status_note": "withdrawn; behind",
+      "fact": "c:H1FY27:credit_cost",
+      "value": 2.32,
+      "closed": false,
+      "ytd": "H1 FY27"
+     }
+    ]
+   },
+   {
+    "id": "lane:loan_growth:",
+    "metric": "loan_growth",
+    "label": "Loan book growth",
+    "unit": "pct",
+    "better": "up",
+    "kind": "growth",
+    "checkable": true,
+    "reason": null,
+    "statements": [
+     {
+      "ledger": "lg:a778af4e77",
+      "period": "FY25",
+      "period_end": "2025-03-31",
+      "date": "2024-07-31",
+      "until": "2024-10-30",
+      "change": "first",
+      "target": "20\u201322%",
+      "band": {
+       "kind": "range",
+       "low": 20.0,
+       "high": 22.0,
+       "unit": "pct"
+      },
+      "fact": "cl:3685826fb5df",
+      "call": "Q1 FY25",
+      "kind": "explicit"
+     },
+     {
+      "ledger": "lg:a778af4e77",
+      "period": "FY25",
+      "period_end": "2025-03-31",
+      "date": "2024-10-30",
+      "until": "2025-01-30",
+      "change": "not repeated",
+      "target": null,
+      "band": null,
+      "fact": null,
+      "call": "Q2 FY25",
+      "kind": "silence"
+     },
+     {
+      "ledger": "lg:a778af4e77",
+      "period": "FY25",
+      "period_end": "2025-03-31",
+      "date": "2025-01-30",
+      "until": "2025-03-31",
+      "change": "not repeated",
+      "target": null,
+      "band": null,
+      "fact": null,
+      "call": "Q3 FY25",
+      "kind": "silence"
+     }
+    ],
+    "actuals": [
+     {
+      "period": "H1 FY25",
+      "date": "2024-09-30",
+      "fact": "c:H1FY25:loan_growth_ytd",
+      "value": 10.666666666666668,
+      "kind": "since March"
+     },
+     {
+      "period": "FY25",
+      "date": "2025-03-31",
+      "fact": "c:FY25:loan_growth_ytd",
+      "value": 22.666666666666657,
+      "kind": "since March"
+     },
+     {
+      "period": "H1 FY26",
+      "date": "2025-09-30",
+      "fact": "c:H1FY26:loan_growth_ytd",
+      "value": 10.32608695652173,
+      "kind": "since March"
+     },
+     {
+      "period": "FY26",
+      "date": "2026-03-31",
+      "fact": "c:FY26:loan_growth_ytd",
+      "value": 22.826086956521728,
+      "kind": "since March"
+     },
+     {
+      "period": "H1 FY27",
+      "date": "2026-09-30",
+      "fact": "c:H1FY27:loan_growth_ytd",
+      "value": 10.176991150442483,
+      "kind": "since March"
+     }
+    ],
+    "outcomes": [
+     {
+      "ledger": "lg:a778af4e77",
+      "period": "FY25",
+      "date": "2025-03-31",
+      "verdict": "ahead",
+      "status_note": null,
+      "fact": "c:FY25:loan_growth_ytd",
+      "value": 22.666666666666657,
+      "closed": true,
+      "ytd": null
+     }
+    ]
+   },
+   {
+    "id": "lane:aum_growth:",
+    "metric": "aum_growth",
+    "label": "AUM growth",
+    "unit": "pct",
+    "better": "up",
+    "kind": "growth",
+    "checkable": false,
+    "reason": "AUM includes off-book loans; the balance sheet reports on-book loans only.",
+    "statements": [
+     {
+      "ledger": "lg:e0e92c4dda",
+      "period": "FY27",
+      "period_end": "2027-03-31",
+      "date": "2026-05-02",
+      "until": "2026-07-30",
+      "change": "first",
+      "target": "22\u201325%",
+      "band": {
+       "kind": "range",
+       "low": 22.0,
+       "high": 25.0,
+       "unit": "pct"
+      },
+      "fact": "cl:9aa0ba36f7d5",
+      "call": "Q4 FY26",
+      "kind": "explicit"
+     },
+     {
+      "ledger": "lg:e0e92c4dda",
+      "period": "FY27",
+      "period_end": "2027-03-31",
+      "date": "2026-07-30",
+      "until": "2026-10-29",
+      "change": "not repeated",
+      "target": null,
+      "band": null,
+      "fact": null,
+      "call": "Q1 FY27",
+      "kind": "silence"
+     },
+     {
+      "ledger": "lg:e0e92c4dda",
+      "period": "FY27",
+      "period_end": "2027-03-31",
+      "date": "2026-10-29",
+      "until": "2027-03-31",
+      "change": "not repeated",
+      "target": null,
+      "band": null,
+      "fact": null,
+      "call": "Q2 FY27",
+      "kind": "silence"
+     }
+    ],
+    "actuals": [],
+    "outcomes": []
+   }
+  ],
+  "interpretation": [
+   {
+    "id": "i:history",
+    "rule": "insufficient_history",
+    "evidence": [
+     "cl:1269fde9dbf0",
+     "cl:c271674a1039",
+     "c:FY25:credit_cost",
+     "cl:3685826fb5df",
+     "c:FY25:loan_growth_ytd",
+     "c:gap:lg:a778af4e77",
+     "cl:9821325203d5",
+     "cl:c6a036db731b",
+     "c:FY26:credit_cost"
+    ],
+    "text": "There isn't enough closed history to judge delivery: 3 explicit targets closed in the documents read, against the 4 across 2 years FINN requires.",
+    "method": "rules"
+   },
+   {
+    "id": "i:miss:credit_cost",
+    "rule": "repeated_miss_same_metric",
+    "evidence": [
+     "cl:1269fde9dbf0",
+     "cl:c271674a1039",
+     "c:FY25:credit_cost",
+     "cl:9821325203d5",
+     "cl:c6a036db731b",
+     "c:FY26:credit_cost"
+    ],
+    "text": "Credit cost missed the guided range in 2 closed years, each time above it (FY25: 2.3% against 1.9\u20132.1%; FY26: 2.2% against 1.8\u20132.0%).",
+    "method": "rules"
+   },
+   {
+    "id": "i:current",
+    "rule": "current_behind",
+    "evidence": [
+     "cl:65a6ebbb396d",
+     "cl:c6b2e30517eb"
+    ],
+    "text": "The one explicit target still open is behind on the latest reported figures.",
+    "method": "rules"
+   }
+  ],
+  "contradictions": []
+ },
+ "cost_lines": {},
+ "audit": {
+  "reported": 80,
+  "quotes": 27,
+  "computed": 51,
+  "market": 1,
+  "points": 13,
+  "ok": true
+ },
+ "restatements": [],
+ "checks": [
+  {
+   "check": "Total assets = total equity and liabilities (H1 FY27)",
+   "ok": true,
+   "detail": "28095.0 vs 28095.0",
+   "doc": "d:89d574da9f"
+  },
+  {
+   "check": "Total assets = total equity and liabilities (FY26)",
+   "ok": true,
+   "detail": "25855.0 vs 25855.0",
+   "doc": "d:89d574da9f"
+  },
+  {
+   "check": "PBT - tax = PAT (Q2 FY27)",
+   "ok": true,
+   "detail": "288.0 - 72.49 vs 215.51",
+   "doc": "d:89d574da9f"
+  },
+  {
+   "check": "PBT - tax = PAT (Q1 FY27)",
+   "ok": true,
+   "detail": "298.0 - 75.01 vs 222.99",
+   "doc": "d:89d574da9f"
+  },
+  {
+   "check": "PBT - tax = PAT (Q2 FY26)",
+   "ok": true,
+   "detail": "250.0 - 62.92 vs 187.08",
+   "doc": "d:89d574da9f"
+  },
+  {
+   "check": "PBT - tax = PAT (Q1 FY27)",
+   "ok": true,
+   "detail": "298.0 - 75.01 vs 222.99",
+   "doc": "d:521ed4109d"
+  },
+  {
+   "check": "PBT - tax = PAT (Q4 FY26)",
+   "ok": true,
+   "detail": "299.0 - 75.25 vs 223.75",
+   "doc": "d:521ed4109d"
+  },
+  {
+   "check": "PBT - tax = PAT (Q1 FY26)",
+   "ok": true,
+   "detail": "238.0 - 59.91 vs 178.09",
+   "doc": "d:521ed4109d"
+  },
+  {
+   "check": "Total assets = total equity and liabilities (FY26)",
+   "ok": true,
+   "detail": "25855.0 vs 25855.0",
+   "doc": "d:7f713d9587"
+  },
+  {
+   "check": "Total assets = total equity and liabilities (FY25)",
+   "ok": true,
+   "detail": "21495.0 vs 21495.0",
+   "doc": "d:7f713d9587"
+  },
+  {
+   "check": "PBT - tax = PAT (Q4 FY26)",
+   "ok": true,
+   "detail": "299.0 - 75.25 vs 223.75",
+   "doc": "d:7f713d9587"
+  },
+  {
+   "check": "PBT - tax = PAT (Q3 FY26)",
+   "ok": true,
+   "detail": "261.0 - 65.7 vs 195.3",
+   "doc": "d:7f713d9587"
+  },
+  {
+   "check": "PBT - tax = PAT (Q4 FY25)",
+   "ok": true,
+   "detail": "224.0 - 56.38 vs 167.62",
+   "doc": "d:7f713d9587"
+  },
+  {
+   "check": "PBT - tax = PAT (Q3 FY26)",
+   "ok": true,
+   "detail": "261.0 - 65.7 vs 195.3",
+   "doc": "d:83aa9cee86"
+  },
+  {
+   "check": "PBT - tax = PAT (Q2 FY26)",
+   "ok": true,
+   "detail": "250.0 - 62.92 vs 187.08",
+   "doc": "d:83aa9cee86"
+  },
+  {
+   "check": "PBT - tax = PAT (Q3 FY25)",
+   "ok": true,
+   "detail": "213.0 - 53.61 vs 159.39",
+   "doc": "d:83aa9cee86"
+  },
+  {
+   "check": "Total assets = total equity and liabilities (H1 FY26)",
+   "ok": true,
+   "detail": "23485.0 vs 23485.0",
+   "doc": "d:d52c6e4208"
+  },
+  {
+   "check": "Total assets = total equity and liabilities (FY25)",
+   "ok": true,
+   "detail": "21495.0 vs 21495.0",
+   "doc": "d:d52c6e4208"
+  },
+  {
+   "check": "PBT - tax = PAT (Q2 FY26)",
+   "ok": true,
+   "detail": "250.0 - 62.92 vs 187.08",
+   "doc": "d:d52c6e4208"
+  },
+  {
+   "check": "PBT - tax = PAT (Q1 FY26)",
+   "ok": true,
+   "detail": "238.0 - 59.91 vs 178.09",
+   "doc": "d:d52c6e4208"
+  },
+  {
+   "check": "PBT - tax = PAT (Q2 FY25)",
+   "ok": true,
+   "detail": "199.0 - 50.08 vs 148.92",
+   "doc": "d:d52c6e4208"
+  },
+  {
+   "check": "PBT - tax = PAT (Q1 FY26)",
+   "ok": true,
+   "detail": "238.0 - 59.91 vs 178.09",
+   "doc": "d:f1e4cf3603"
+  },
+  {
+   "check": "PBT - tax = PAT (Q4 FY25)",
+   "ok": true,
+   "detail": "224.0 - 56.38 vs 167.62",
+   "doc": "d:f1e4cf3603"
+  },
+  {
+   "check": "PBT - tax = PAT (Q1 FY25)",
+   "ok": true,
+   "detail": "193.0 - 48.57 vs 144.43",
+   "doc": "d:f1e4cf3603"
+  },
+  {
+   "check": "Total assets = total equity and liabilities (FY25)",
+   "ok": true,
+   "detail": "21495.0 vs 21495.0",
+   "doc": "d:5ba23d613a"
+  },
+  {
+   "check": "Total assets = total equity and liabilities (FY24)",
+   "ok": true,
+   "detail": "17955.0 vs 17955.0",
+   "doc": "d:5ba23d613a"
+  },
+  {
+   "check": "PBT - tax = PAT (Q4 FY25)",
+   "ok": true,
+   "detail": "224.0 - 56.38 vs 167.62",
+   "doc": "d:5ba23d613a"
+  },
+  {
+   "check": "PBT - tax = PAT (Q3 FY25)",
+   "ok": true,
+   "detail": "213.0 - 53.61 vs 159.39",
+   "doc": "d:5ba23d613a"
+  },
+  {
+   "check": "PBT - tax = PAT (Q4 FY24)",
+   "ok": true,
+   "detail": "184.0 - 46.32 vs 137.68",
+   "doc": "d:5ba23d613a"
+  },
+  {
+   "check": "PBT - tax = PAT (Q3 FY25)",
+   "ok": true,
+   "detail": "213.0 - 53.61 vs 159.39",
+   "doc": "d:07f992f1f3"
+  },
+  {
+   "check": "PBT - tax = PAT (Q2 FY25)",
+   "ok": true,
+   "detail": "199.0 - 50.08 vs 148.92",
+   "doc": "d:07f992f1f3"
+  },
+  {
+   "check": "PBT - tax = PAT (Q3 FY24)",
+   "ok": true,
+   "detail": "173.0 - 43.54 vs 129.46",
+   "doc": "d:07f992f1f3"
+  },
+  {
+   "check": "Total assets = total equity and liabilities (H1 FY25)",
+   "ok": true,
+   "detail": "19625.0 vs 19625.0",
+   "doc": "d:affc50e305"
+  },
+  {
+   "check": "Total assets = total equity and liabilities (FY24)",
+   "ok": true,
+   "detail": "17955.0 vs 17955.0",
+   "doc": "d:affc50e305"
+  },
+  {
+   "check": "PBT - tax = PAT (Q2 FY25)",
+   "ok": true,
+   "detail": "199.0 - 50.08 vs 148.92",
+   "doc": "d:affc50e305"
+  },
+  {
+   "check": "PBT - tax = PAT (Q1 FY25)",
+   "ok": true,
+   "detail": "193.0 - 48.57 vs 144.43",
+   "doc": "d:affc50e305"
+  },
+  {
+   "check": "PBT - tax = PAT (Q2 FY24)",
+   "ok": true,
+   "detail": "165.0 - 41.53 vs 123.47",
+   "doc": "d:affc50e305"
+  },
+  {
+   "check": "PBT - tax = PAT (Q1 FY25)",
+   "ok": true,
+   "detail": "193.0 - 48.57 vs 144.43",
+   "doc": "d:1c00bc1138"
+  },
+  {
+   "check": "PBT - tax = PAT (Q4 FY24)",
+   "ok": true,
+   "detail": "184.0 - 46.32 vs 137.68",
+   "doc": "d:1c00bc1138"
+  },
+  {
+   "check": "PBT - tax = PAT (Q1 FY24)",
+   "ok": true,
+   "detail": "152.0 - 38.26 vs 113.74",
+   "doc": "d:1c00bc1138"
+  }
+ ],
+ "gaps": [],
+ "rejections": [],
+ "fetch_log": [
+  {
+   "source": "nse",
+   "target": "equity master",
+   "url": "file:///home/claude/finn/data/research_fixtures/nse/EQUITY_L.csv",
+   "ok": true,
+   "status": null,
+   "error": null,
+   "fetched_at": "2026-11-04T16:10:15.191675Z",
+   "raw_path": "/home/claude/finn/data/research_fixtures/nse/EQUITY_L.csv",
+   "rows": 5
+  },
+  {
+   "source": "bse",
+   "target": "scrip list",
+   "url": "file:///home/claude/finn/data/research_fixtures/bse/scrips.json",
+   "ok": true,
+   "status": null,
+   "error": null,
+   "fetched_at": "2026-11-04T16:10:15.191749Z",
+   "raw_path": "/home/claude/finn/data/research_fixtures/bse/scrips.json",
+   "rows": 5
+  },
+  {
+   "source": "bse",
+   "target": "990106",
+   "url": "file:///home/claude/finn/data/research_fixtures/bse/announcements/990106.json",
+   "ok": true,
+   "status": null,
+   "error": null,
+   "fetched_at": "2026-11-04T16:10:15.191990Z",
+   "raw_path": "/home/claude/finn/data/research_fixtures/bse/announcements/990106.json",
+   "rows": 44
+  },
+  {
+   "source": "nse",
+   "target": "SARANG",
+   "url": "file:///home/claude/finn/data/research_fixtures/nse/announcements/SARANG.json",
+   "ok": true,
+   "status": null,
+   "error": null,
+   "fetched_at": "2026-11-04T16:10:15.193002Z",
+   "raw_path": "/home/claude/finn/data/research_fixtures/nse/announcements/SARANG.json",
+   "rows": 0
+  },
+  {
+   "source": "nse",
+   "target": "SARANG annual reports",
+   "url": "file:///home/claude/finn/data/research_fixtures/nse/annual_reports/SARANG.json",
+   "ok": false,
+   "status": null,
+   "error": "no annual-reports file",
+   "fetched_at": "2026-11-04T16:10:15.193053Z",
+   "raw_path": null,
+   "rows": 0
+  },
+  {
+   "source": "file",
+   "target": "SARANG_Q1FY25_results.pdf",
+   "url": "file:///home/claude/finn/data/research_fixtures/attachments/SARANG_Q1FY25_results.pdf",
+   "ok": true,
+   "status": null,
+   "error": null,
+   "fetched_at": "2026-11-04T16:10:15.193145Z",
+   "raw_path": "/home/claude/finn/data/research_fixtures/attachments/SARANG_Q1FY25_results.pdf",
+   "rows": 1
+  },
+  {
+   "source": "file",
+   "target": "SARANG_Q2FY25_results.pdf",
+   "url": "file:///home/claude/finn/data/research_fixtures/attachments/SARANG_Q2FY25_results.pdf",
+   "ok": true,
+   "status": null,
+   "error": null,
+   "fetched_at": "2026-11-04T16:10:15.193196Z",
+   "raw_path": "/home/claude/finn/data/research_fixtures/attachments/SARANG_Q2FY25_results.pdf",
+   "rows": 1
+  },
+  {
+   "source": "file",
+   "target": "SARANG_Q3FY25_results.pdf",
+   "url": "file:///home/claude/finn/data/research_fixtures/attachments/SARANG_Q3FY25_results.pdf",
+   "ok": true,
+   "status": null,
+   "error": null,
+   "fetched_at": "2026-11-04T16:10:15.193249Z",
+   "raw_path": "/home/claude/finn/data/research_fixtures/attachments/SARANG_Q3FY25_results.pdf",
+   "rows": 1
+  },
+  {
+   "source": "file",
+   "target": "SARANG_Q4FY25_results.pdf",
+   "url": "file:///home/claude/finn/data/research_fixtures/attachments/SARANG_Q4FY25_results.pdf",
+   "ok": true,
+   "status": null,
+   "error": null,
+   "fetched_at": "2026-11-04T16:10:15.193290Z",
+   "raw_path": "/home/claude/finn/data/research_fixtures/attachments/SARANG_Q4FY25_results.pdf",
+   "rows": 1
+  },
+  {
+   "source": "file",
+   "target": "SARANG_Q1FY26_results.pdf",
+   "url": "file:///home/claude/finn/data/research_fixtures/attachments/SARANG_Q1FY26_results.pdf",
+   "ok": true,
+   "status": null,
+   "error": null,
+   "fetched_at": "2026-11-04T16:10:15.193339Z",
+   "raw_path": "/home/claude/finn/data/research_fixtures/attachments/SARANG_Q1FY26_results.pdf",
+   "rows": 1
+  },
+  {
+   "source": "file",
+   "target": "SARANG_Q2FY26_results.pdf",
+   "url": "file:///home/claude/finn/data/research_fixtures/attachments/SARANG_Q2FY26_results.pdf",
+   "ok": true,
+   "status": null,
+   "error": null,
+   "fetched_at": "2026-11-04T16:10:15.193377Z",
+   "raw_path": "/home/claude/finn/data/research_fixtures/attachments/SARANG_Q2FY26_results.pdf",
+   "rows": 1
+  },
+  {
+   "source": "file",
+   "target": "SARANG_Q3FY26_results.pdf",
+   "url": "file:///home/claude/finn/data/research_fixtures/attachments/SARANG_Q3FY26_results.pdf",
+   "ok": true,
+   "status": null,
+   "error": null,
+   "fetched_at": "2026-11-04T16:10:15.193426Z",
+   "raw_path": "/home/claude/finn/data/research_fixtures/attachments/SARANG_Q3FY26_results.pdf",
+   "rows": 1
+  },
+  {
+   "source": "file",
+   "target": "SARANG_Q4FY26_results.pdf",
+   "url": "file:///home/claude/finn/data/research_fixtures/attachments/SARANG_Q4FY26_results.pdf",
+   "ok": true,
+   "status": null,
+   "error": null,
+   "fetched_at": "2026-11-04T16:10:15.193467Z",
+   "raw_path": "/home/claude/finn/data/research_fixtures/attachments/SARANG_Q4FY26_results.pdf",
+   "rows": 1
+  },
+  {
+   "source": "file",
+   "target": "SARANG_Q1FY27_results.pdf",
+   "url": "file:///home/claude/finn/data/research_fixtures/attachments/SARANG_Q1FY27_results.pdf",
+   "ok": true,
+   "status": null,
+   "error": null,
+   "fetched_at": "2026-11-04T16:10:15.193572Z",
+   "raw_path": "/home/claude/finn/data/research_fixtures/attachments/SARANG_Q1FY27_results.pdf",
+   "rows": 1
+  },
+  {
+   "source": "file",
+   "target": "SARANG_Q2FY27_results.pdf",
+   "url": "file:///home/claude/finn/data/research_fixtures/attachments/SARANG_Q2FY27_results.pdf",
+   "ok": true,
+   "status": null,
+   "error": null,
+   "fetched_at": "2026-11-04T16:10:15.193618Z",
+   "raw_path": "/home/claude/finn/data/research_fixtures/attachments/SARANG_Q2FY27_results.pdf",
+   "rows": 1
+  },
+  {
+   "source": "file",
+   "target": "SARANG_Q1FY25_transcript.pdf",
+   "url": "file:///home/claude/finn/data/research_fixtures/attachments/SARANG_Q1FY25_transcript.pdf",
+   "ok": true,
+   "status": null,
+   "error": null,
+   "fetched_at": "2026-11-04T16:10:15.193668Z",
+   "raw_path": "/home/claude/finn/data/research_fixtures/attachments/SARANG_Q1FY25_transcript.pdf",
+   "rows": 1
+  },
+  {
+   "source": "file",
+   "target": "SARANG_Q2FY25_transcript.pdf",
+   "url": "file:///home/claude/finn/data/research_fixtures/attachments/SARANG_Q2FY25_transcript.pdf",
+   "ok": true,
+   "status": null,
+   "error": null,
+   "fetched_at": "2026-11-04T16:10:15.193693Z",
+   "raw_path": "/home/claude/finn/data/research_fixtures/attachments/SARANG_Q2FY25_transcript.pdf",
+   "rows": 1
+  },
+  {
+   "source": "file",
+   "target": "SARANG_Q3FY25_transcript.pdf",
+   "url": "file:///home/claude/finn/data/research_fixtures/attachments/SARANG_Q3FY25_transcript.pdf",
+   "ok": true,
+   "status": null,
+   "error": null,
+   "fetched_at": "2026-11-04T16:10:15.193720Z",
+   "raw_path": "/home/claude/finn/data/research_fixtures/attachments/SARANG_Q3FY25_transcript.pdf",
+   "rows": 1
+  },
+  {
+   "source": "file",
+   "target": "SARANG_Q4FY25_transcript.pdf",
+   "url": "file:///home/claude/finn/data/research_fixtures/attachments/SARANG_Q4FY25_transcript.pdf",
+   "ok": true,
+   "status": null,
+   "error": null,
+   "fetched_at": "2026-11-04T16:10:15.193746Z",
+   "raw_path": "/home/claude/finn/data/research_fixtures/attachments/SARANG_Q4FY25_transcript.pdf",
+   "rows": 1
+  },
+  {
+   "source": "file",
+   "target": "SARANG_Q1FY26_transcript.pdf",
+   "url": "file:///home/claude/finn/data/research_fixtures/attachments/SARANG_Q1FY26_transcript.pdf",
+   "ok": true,
+   "status": null,
+   "error": null,
+   "fetched_at": "2026-11-04T16:10:15.193772Z",
+   "raw_path": "/home/claude/finn/data/research_fixtures/attachments/SARANG_Q1FY26_transcript.pdf",
+   "rows": 1
+  },
+  {
+   "source": "file",
+   "target": "SARANG_Q2FY26_transcript.pdf",
+   "url": "file:///home/claude/finn/data/research_fixtures/attachments/SARANG_Q2FY26_transcript.pdf",
+   "ok": true,
+   "status": null,
+   "error": null,
+   "fetched_at": "2026-11-04T16:10:15.193799Z",
+   "raw_path": "/home/claude/finn/data/research_fixtures/attachments/SARANG_Q2FY26_transcript.pdf",
+   "rows": 1
+  },
+  {
+   "source": "file",
+   "target": "SARANG_Q3FY26_transcript.pdf",
+   "url": "file:///home/claude/finn/data/research_fixtures/attachments/SARANG_Q3FY26_transcript.pdf",
+   "ok": true,
+   "status": null,
+   "error": null,
+   "fetched_at": "2026-11-04T16:10:15.193825Z",
+   "raw_path": "/home/claude/finn/data/research_fixtures/attachments/SARANG_Q3FY26_transcript.pdf",
+   "rows": 1
+  },
+  {
+   "source": "file",
+   "target": "SARANG_Q4FY26_transcript.pdf",
+   "url": "file:///home/claude/finn/data/research_fixtures/attachments/SARANG_Q4FY26_transcript.pdf",
+   "ok": true,
+   "status": null,
+   "error": null,
+   "fetched_at": "2026-11-04T16:10:15.193852Z",
+   "raw_path": "/home/claude/finn/data/research_fixtures/attachments/SARANG_Q4FY26_transcript.pdf",
+   "rows": 1
+  },
+  {
+   "source": "file",
+   "target": "SARANG_Q1FY27_transcript.pdf",
+   "url": "file:///home/claude/finn/data/research_fixtures/attachments/SARANG_Q1FY27_transcript.pdf",
+   "ok": true,
+   "status": null,
+   "error": null,
+   "fetched_at": "2026-11-04T16:10:15.193876Z",
+   "raw_path": "/home/claude/finn/data/research_fixtures/attachments/SARANG_Q1FY27_transcript.pdf",
+   "rows": 1
+  },
+  {
+   "source": "file",
+   "target": "SARANG_Q2FY27_transcript.pdf",
+   "url": "file:///home/claude/finn/data/research_fixtures/attachments/SARANG_Q2FY27_transcript.pdf",
+   "ok": true,
+   "status": null,
+   "error": null,
+   "fetched_at": "2026-11-04T16:10:15.193904Z",
+   "raw_path": "/home/claude/finn/data/research_fixtures/attachments/SARANG_Q2FY27_transcript.pdf",
+   "rows": 1
+  },
+  {
+   "source": "file",
+   "target": "SARANG_AR_FY26.pdf",
+   "url": "file:///home/claude/finn/data/research_fixtures/attachments/SARANG_AR_FY26.pdf",
+   "ok": true,
+   "status": null,
+   "error": null,
+   "fetched_at": "2026-11-04T16:10:15.193931Z",
+   "raw_path": "/home/claude/finn/data/research_fixtures/attachments/SARANG_AR_FY26.pdf",
+   "rows": 1
+  }
+ ]
+}

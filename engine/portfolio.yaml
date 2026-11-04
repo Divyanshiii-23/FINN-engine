@@ -1,0 +1,28 @@
+# Live mock portfolio: 18 NSE-listed companies across sectors and sizes.
+#
+# bse_code is needed for the BSE announcements feed. The pipeline checks every
+# returned filing's company name against `name` and rejects mismatches, so a
+# wrong code cannot attach another company's filings. Verify codes on first run.
+#
+# market_cap_cr / revenue_ttm_cr (₹ crore) are optional reference sizes for the
+# materiality "size" component. Left blank here on purpose: fill them from the
+# company's filings; when blank, size is reported as "not assessed".
+companies:
+  - {symbol: RELIANCE,   name: Reliance Industries,        bse_code: "500325", sector: Conglomerate,          weight: 8}
+  - {symbol: HDFCBANK,   name: HDFC Bank,                  bse_code: "500180", sector: Banking,               weight: 8, is_financial: true}
+  - {symbol: TCS,        name: Tata Consultancy Services,  bse_code: "532540", sector: IT services,           weight: 7}
+  - {symbol: INFY,       name: Infosys,                    bse_code: "500209", sector: IT services,           weight: 6}
+  - {symbol: ITC,        name: ITC,                        bse_code: "500875", sector: FMCG,                  weight: 6}
+  - {symbol: LT,         name: Larsen & Toubro,            bse_code: "500510", sector: Capital goods,         weight: 6}
+  - {symbol: BHARTIARTL, name: Bharti Airtel,              bse_code: "532454", sector: Telecom,               weight: 6}
+  - {symbol: SUNPHARMA,  name: Sun Pharmaceutical Industries, bse_code: "524715", sector: Pharmaceuticals,    weight: 5}
+  - {symbol: TITAN,      name: Titan Company,              bse_code: "500114", sector: Consumer discretionary, weight: 5}
+  - {symbol: BAJFINANCE, name: Bajaj Finance,              bse_code: "500034", sector: NBFC,                  weight: 5, is_financial: true}
+  - {symbol: ULTRACEMCO, name: UltraTech Cement,           bse_code: "532538", sector: Cement,                weight: 5}
+  - {symbol: TATASTEEL,  name: Tata Steel,                 bse_code: "500470", sector: Metals,                weight: 5}
+  - {symbol: TRENT,      name: Trent,                      bse_code: "500251", sector: Retail,                weight: 5}
+  - {symbol: DIXON,      name: Dixon Technologies (India), bse_code: "540699", sector: Electronics manufacturing, weight: 5}
+  - {symbol: POLYCAB,    name: Polycab India,              bse_code: "542652", sector: Electricals,           weight: 4}
+  - {symbol: PIIND,      name: PI Industries,              bse_code: "523642", sector: Agrochemicals,         weight: 4}
+  - {symbol: KPITTECH,   name: KPIT Technologies,          bse_code: "542651", sector: IT services,           weight: 3}
+  - {symbol: INDHOTEL,   name: The Indian Hotels Company,  bse_code: "500850", sector: Hotels,                weight: 2}

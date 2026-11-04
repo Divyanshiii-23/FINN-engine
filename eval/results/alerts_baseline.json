@@ -1,0 +1,204 @@
+{
+ "suite": "alerts",
+ "label": "baseline",
+ "checks": [
+  {
+   "area": "C",
+   "group": "C4 alert thresholds",
+   "name": "defaults (±5%, 2x): SARANG, MERIDIAN, LOTUS alert; QUANTA, KESTREL don't",
+   "passed": true,
+   "detail": "got LOTUS,MERIDIAN,SARANG, expected LOTUS,MERIDIAN,SARANG",
+   "severity": "critical",
+   "data": {}
+  },
+  {
+   "area": "C",
+   "group": "C4 alert thresholds",
+   "name": "price ±3% / volume 2x",
+   "passed": true,
+   "detail": "got LOTUS,MERIDIAN,QUANTA,SARANG, expected LOTUS,MERIDIAN,QUANTA,SARANG",
+   "severity": "critical",
+   "data": {}
+  },
+  {
+   "area": "C",
+   "group": "C4 alert thresholds",
+   "name": "price ±5% / volume 3x",
+   "passed": true,
+   "detail": "got LOTUS,MERIDIAN, expected LOTUS,MERIDIAN",
+   "severity": "critical",
+   "data": {}
+  },
+  {
+   "area": "C",
+   "group": "C4 alert thresholds",
+   "name": "price ±6% / volume 10x",
+   "passed": true,
+   "detail": "got MERIDIAN, expected MERIDIAN",
+   "severity": "critical",
+   "data": {}
+  },
+  {
+   "area": "C",
+   "group": "C4 alert thresholds",
+   "name": "price ±10% / volume 1.5x",
+   "passed": true,
+   "detail": "got LOTUS,MERIDIAN,QUANTA,SARANG, expected LOTUS,MERIDIAN,QUANTA,SARANG",
+   "severity": "critical",
+   "data": {}
+  },
+  {
+   "area": "C",
+   "group": "C4 alert thresholds",
+   "name": "price ±1% / volume 1.2x",
+   "passed": true,
+   "detail": "got LOTUS,MERIDIAN,QUANTA,SARANG, expected LOTUS,MERIDIAN,QUANTA,SARANG",
+   "severity": "critical",
+   "data": {}
+  },
+  {
+   "area": "C",
+   "group": "C4 alert thresholds",
+   "name": "exactly +5.0% alerts",
+   "passed": true,
+   "detail": "[\"price\"]",
+   "severity": "critical",
+   "data": {}
+  },
+  {
+   "area": "C",
+   "group": "C4 alert thresholds",
+   "name": "+4.99% does not alert",
+   "passed": true,
+   "detail": "[]",
+   "severity": "critical",
+   "data": {}
+  },
+  {
+   "area": "C",
+   "group": "C4 alert thresholds",
+   "name": "-5.0% alerts (either direction)",
+   "passed": true,
+   "detail": "",
+   "severity": "critical",
+   "data": {}
+  },
+  {
+   "area": "C",
+   "group": "C4 alert thresholds",
+   "name": "exactly 2.0x volume alerts as a volume alert",
+   "passed": true,
+   "detail": "[\"volume\"]",
+   "severity": "critical",
+   "data": {}
+  },
+  {
+   "area": "C",
+   "group": "C4 alert thresholds",
+   "name": "1.99x volume does not alert",
+   "passed": true,
+   "detail": "",
+   "severity": "critical",
+   "data": {}
+  },
+  {
+   "area": "C",
+   "group": "C4 alert thresholds",
+   "name": "price and volume together give one combined alert",
+   "passed": true,
+   "detail": "[\"price_volume\"]",
+   "severity": "critical",
+   "data": {}
+  },
+  {
+   "area": "C",
+   "group": "C4 alert thresholds",
+   "name": "a -50% print on a split day does not raise a price alert",
+   "passed": true,
+   "detail": "[]",
+   "severity": "critical",
+   "data": {}
+  },
+  {
+   "area": "C",
+   "group": "C4 alert thresholds",
+   "name": "missing price and volume: no alert, no crash",
+   "passed": true,
+   "detail": "",
+   "severity": "critical",
+   "data": {}
+  },
+  {
+   "area": "C",
+   "group": "C4 alert thresholds",
+   "name": "a move that rounds to 5.0% on screen is not silently left out",
+   "passed": false,
+   "detail": "ret 4.996% displays as 5.0% but alerts=0",
+   "severity": "normal",
+   "data": {}
+  },
+  {
+   "area": "C",
+   "group": "C4 alert thresholds",
+   "name": "muting SARANG removes its market alerts",
+   "passed": true,
+   "detail": "",
+   "severity": "critical",
+   "data": {}
+  },
+  {
+   "area": "C",
+   "group": "C4 alert thresholds",
+   "name": "muting is market-only, as the setting says: SARANG's rating-downgrade event alert remains",
+   "passed": true,
+   "detail": "1 event alerts",
+   "severity": "normal",
+   "data": {}
+  },
+  {
+   "area": "C",
+   "group": "C4 alert thresholds",
+   "name": "'hide' on capex removes a non-floored interrupt (KAVERI)",
+   "passed": true,
+   "detail": "",
+   "severity": "critical",
+   "data": {}
+  },
+  {
+   "area": "C",
+   "group": "C4 alert thresholds",
+   "name": "'brief' on capex demotes it to the brief",
+   "passed": true,
+   "detail": "brief",
+   "severity": "critical",
+   "data": {}
+  },
+  {
+   "area": "C",
+   "group": "C4 alert thresholds",
+   "name": "hard floor wins over 'hide' (SARANG credit_rating): still alerts",
+   "passed": true,
+   "detail": "interrupt",
+   "severity": "normal",
+   "data": {}
+  },
+  {
+   "area": "C",
+   "group": "C4 alert thresholds",
+   "name": "'alert' on agm_egm promotes a routine filing to an alert",
+   "passed": true,
+   "detail": "",
+   "severity": "critical",
+   "data": {}
+  },
+  {
+   "area": "C",
+   "group": "C4 alert thresholds",
+   "name": "an interrupt filed 8 days ago is not an alert",
+   "passed": true,
+   "detail": "",
+   "severity": "critical",
+   "data": {}
+  }
+ ]
+}

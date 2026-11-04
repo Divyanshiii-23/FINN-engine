@@ -1,0 +1,128 @@
+@import "tailwindcss";
+
+/*
+  FINN design tokens
+  - Ink-blue darks, not neutral black.
+  - One interaction accent (brass). Signal colours carry meaning only.
+  - Plex Sans for UI and every number (tabular figures).
+  - Source Serif 4 is reserved for FINN's AI interpretation: a change of
+    typeface marks machine opinion apart from fact.
+*/
+
+@theme {
+  --color-base: #0d1218;
+  --color-surface: #131a22;
+  --color-raised: #1a2330;
+  --color-line: #25303d;
+  --color-line-strong: #34414f;
+
+  --color-ink: #e6ebf1;
+  --color-ink-2: #a3afbd;
+  --color-ink-3: #7b8898;
+
+  --color-brass: #c7a35e;
+  --color-brass-dim: #8c7544;
+
+  --color-up: #4db083;
+  --color-down: #e2614f;
+  --color-alert: #e0913f;
+  --color-guided: #8fb3db;
+  --color-ai: #b3a6d9;
+
+  --font-sans: "IBM Plex Sans Variable", "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Source Serif 4 Variable", "Source Serif 4", Georgia, serif;
+
+  --text-2xs: 0.6875rem;
+  --text-2xs--line-height: 1rem;
+  --text-xs: 0.75rem;
+  --text-xs--line-height: 1.05rem;
+  --text-sm: 0.8125rem;
+  --text-sm--line-height: 1.2rem;
+  --text-base: 0.875rem;
+  --text-base--line-height: 1.35rem;
+  --text-md: 1rem;
+  --text-md--line-height: 1.45rem;
+  --text-lg: 1.25rem;
+  --text-lg--line-height: 1.65rem;
+  --text-xl: 1.625rem;
+  --text-xl--line-height: 2rem;
+}
+
+@layer base {
+  html {
+    color-scheme: dark;
+    background: var(--color-base);
+    -webkit-text-size-adjust: 100%;
+  }
+  body {
+    background: var(--color-base);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    font-size: var(--text-base);
+    line-height: var(--text-base--line-height);
+    font-feature-settings: "ss02" 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  ::selection {
+    background: color-mix(in oklab, var(--color-brass) 35%, transparent);
+  }
+  :focus-visible {
+    outline: 2px solid var(--color-brass);
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
+  button {
+    cursor: pointer;
+  }
+  button:disabled {
+    cursor: not-allowed;
+  }
+}
+
+@layer utilities {
+  .num {
+    font-variant-numeric: tabular-nums lining-nums;
+    font-feature-settings: "tnum" 1, "lnum" 1;
+  }
+  .hairline {
+    border-color: var(--color-line);
+  }
+  .pb-safe {
+    padding-bottom: max(env(safe-area-inset-bottom), 0px);
+  }
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    scrollbar-width: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Bottom sheet entrance answers the user's tap; nothing else animates on load. */
+@keyframes sheet-up {
+  from {
+    transform: translateY(16px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.sheet-enter {
+  animation: sheet-up 180ms ease-out;
+}
+
+/* Height of the phone top bar, set by AppShell; 0 on desktop where the bar is hidden. */
+:root { --topbar: 0px; }
+@media (min-width: 1024px) { :root { --topbar: 0px !important; } }

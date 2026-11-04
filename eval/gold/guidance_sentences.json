@@ -1,0 +1,430 @@
+{
+ "_about": "Held-out management sentences for guidance extraction, written for this evaluation (not drawn from the fixtures or the unit tests). Call: Q2 FY27, held 29 Oct 2026. 'expect' is one of: numeric (an explicit numeric guidance claim must exist matching metric/period/values), no_numeric (no explicit numeric guidance claim may exist), forbid (no explicit claim may match the listed wrong reading). 'trap' names the misreading being tested.",
+ "items": [
+  {
+   "id": "g01",
+   "s": "We are guiding for revenue growth of 9% to 11% for FY27.",
+   "expect": "numeric",
+   "metric": [
+    "revenue"
+   ],
+   "period": "FY27",
+   "low": 9,
+   "high": 11
+  },
+  {
+   "id": "g02",
+   "s": "For the full year, we now expect EBITDA margins in the range of 18.5% to 19.5%.",
+   "expect": "numeric",
+   "metric": [
+    "ebitda_margin"
+   ],
+   "period": "FY27",
+   "low": 18.5,
+   "high": 19.5
+  },
+  {
+   "id": "g03",
+   "s": "We continue to expect healthy double-digit growth this year.",
+   "expect": "forbid",
+   "forbid": [
+    {
+     "low_gt": 10
+    },
+    {
+     "high_set": true
+    }
+   ],
+   "trap": "vague phrase turned into a specific number (a floor of 10 is the literal reading and is allowed)"
+  },
+  {
+   "id": "g04",
+   "s": "Margins should improve meaningfully from here.",
+   "expect": "no_numeric",
+   "trap": "vague direction turned into a number"
+  },
+  {
+   "id": "g05",
+   "s": "We expect to spend about Rs. 1,200 crore on capex over FY27 and FY28.",
+   "expect": "forbid",
+   "forbid": [
+    {
+     "metric": "capex",
+     "period": "FY27",
+     "value_near": 1200
+    }
+   ],
+   "trap": "two-year total read as a one-year target"
+  },
+  {
+   "id": "g06",
+   "s": "Our credit cost for the year should be in the 1.6% to 1.8% band.",
+   "fin": true,
+   "expect": "numeric",
+   "metric": [
+    "credit_cost"
+   ],
+   "period": "FY27",
+   "low": 1.6,
+   "high": 1.8
+  },
+  {
+   "id": "g07",
+   "s": "We delivered EBITDA margin of 21.4% this quarter, ahead of our guidance.",
+   "expect": "no_numeric",
+   "trap": "a reported outcome read as forward guidance"
+  },
+  {
+   "id": "g08",
+   "s": "We don't give quarterly guidance, but we are comfortable with where consensus is.",
+   "expect": "no_numeric",
+   "trap": "refusal to guide read as guidance"
+  },
+  {
+   "id": "g09",
+   "s": "We expect revenue growth of 12% in dollar terms for FY27.",
+   "it": true,
+   "expect": "numeric",
+   "metric": [
+    "revenue_growth_cc"
+   ],
+   "period": "FY27",
+   "low": 12,
+   "high": 12
+  },
+  {
+   "id": "g10",
+   "s": "Net debt should come down to below Rs. 3,000 crore by March 2027.",
+   "expect": "numeric",
+   "metric": [
+    "net_debt"
+   ],
+   "period": "FY27",
+   "high": 3000
+  },
+  {
+   "id": "g11",
+   "s": "We expect margins to be at the lower end of our 24% to 25% range.",
+   "expect": "numeric",
+   "metric": [
+    "ebitda_margin"
+   ],
+   "period": "FY27",
+   "low": 24,
+   "high_max": 25,
+   "trap": "'lower end' should not be read as the full range"
+  },
+  {
+   "id": "g12",
+   "s": "We are withdrawing our FY27 margin guidance given the uncertainty.",
+   "expect": "no_numeric",
+   "withdraws": true
+  },
+  {
+   "id": "g13",
+   "s": "We reiterate our guidance of 15% loan book growth for FY27.",
+   "fin": true,
+   "expect": "numeric",
+   "metric": [
+    "loan_growth"
+   ],
+   "period": "FY27",
+   "low": 15,
+   "high": 15
+  },
+  {
+   "id": "g14",
+   "s": "If demand recovers in the second half, we could see growth of about 8%.",
+   "expect": "any",
+   "hedge_not": [
+    "firm",
+    "expected"
+   ],
+   "trap": "conditional statement treated as a firm commitment"
+  },
+  {
+   "id": "g15",
+   "s": "Our aspiration is to reach Rs. 10,000 crore of revenue by FY30.",
+   "expect": "forbid",
+   "forbid": [
+    {
+     "period": "FY27"
+    },
+    {
+     "hedge": "firm"
+    }
+   ],
+   "trap": "a FY30 aspiration scored against FY27"
+  },
+  {
+   "id": "g16",
+   "s": "Some analysts have been modelling 20% growth, which we think is too aggressive.",
+   "expect": "forbid",
+   "forbid": [
+    {
+     "value_near": 20
+    }
+   ],
+   "trap": "an analyst's number attributed to management"
+  },
+  {
+   "id": "g17",
+   "s": "Last year we had guided for 14% growth and we ended at 13.2%.",
+   "expect": "forbid",
+   "forbid": [
+    {
+     "period": "FY27",
+     "value_near": 14
+    }
+   ],
+   "trap": "past guidance restated as new guidance"
+  },
+  {
+   "id": "g18",
+   "s": "We expect the tax rate to be around 25% for the year.",
+   "expect": "forbid",
+   "forbid": [
+    {
+     "value_near": 25
+    }
+   ],
+   "trap": "tax rate attributed to a margin or growth metric"
+  },
+  {
+   "id": "g19",
+   "s": "Gross margins should expand by 100 to 150 basis points over the next two years.",
+   "expect": "forbid",
+   "forbid": [
+    {
+     "period": "FY27",
+     "metric": "gross_margin"
+    }
+   ],
+   "trap": "two-year expansion scored as a FY27 target"
+  },
+  {
+   "id": "g20",
+   "s": "We are confident of delivering mid-teens EBITDA growth in FY27.",
+   "expect": "no_numeric",
+   "trap": "'mid-teens' turned into a number"
+  },
+  {
+   "id": "g21",
+   "s": "Capex this year will be Rs. 600 to 650 crore, of which Rs. 280 crore has been spent in the first half.",
+   "expect": "numeric",
+   "metric": [
+    "capex"
+   ],
+   "period": "FY27",
+   "low": 600,
+   "high": 650,
+   "forbid": [
+    {
+     "value_near": 280
+    }
+   ],
+   "trap": "amount already spent read as the target"
+  },
+  {
+   "id": "g22",
+   "s": "We expect volumes to grow 6% to 7% in FY27, ahead of industry growth of 5%.",
+   "expect": "numeric",
+   "metric": [
+    "volume_growth"
+   ],
+   "period": "FY27",
+   "low": 6,
+   "high": 7,
+   "forbid": [
+    {
+     "value_near": 5
+    }
+   ],
+   "trap": "industry figure read as company guidance"
+  },
+  {
+   "id": "g23",
+   "s": "Our EBIT margin guidance band for FY27 remains 20% to 22%.",
+   "it": true,
+   "expect": "numeric",
+   "metric": [
+    "ebit_margin"
+   ],
+   "period": "FY27",
+   "low": 20,
+   "high": 22
+  },
+  {
+   "id": "g24",
+   "s": "We have revised our revenue growth guidance downwards to 6% to 8% from 8% to 10% earlier.",
+   "expect": "numeric",
+   "metric": [
+    "revenue"
+   ],
+   "period": "FY27",
+   "low": 6,
+   "high": 8,
+   "forbid": [
+    {
+     "low_near": 8,
+     "high_near": 10
+    }
+   ],
+   "trap": "the superseded range kept as current guidance"
+  },
+  {
+   "id": "g25",
+   "s": "Q3 is seasonally weak, so we expect margins to dip sequentially.",
+   "expect": "no_numeric"
+  },
+  {
+   "id": "g26",
+   "s": "We target GNPA below 2% by the end of FY27.",
+   "fin": true,
+   "expect": "numeric",
+   "metric": [
+    "gnpa"
+   ],
+   "period": "FY27",
+   "high": 2
+  },
+  {
+   "id": "g27",
+   "s": "Working capital days should come down to around 60 days by year-end.",
+   "expect": "numeric",
+   "metric": [
+    "wc_days"
+   ],
+   "period": "FY27",
+   "low_near": 60
+  },
+  {
+   "id": "g28",
+   "s": "Revenue grew 11% this quarter.",
+   "expect": "no_numeric",
+   "trap": "a reported outcome read as guidance"
+  },
+  {
+   "id": "g29",
+   "s": "For the second half, we expect revenue growth of about 10%.",
+   "expect": "numeric",
+   "metric": [
+    "revenue"
+   ],
+   "period": "H2 FY27",
+   "contains": 10,
+   "_correction": "first run: 'about 10%' read as a displayed 9-11% band is FINN's documented convention; gold now requires a band containing 10"
+  },
+  {
+   "id": "g30",
+   "s": "We would not like to put a number to it at this stage.",
+   "expect": "no_numeric"
+  },
+  {
+   "id": "g31",
+   "s": "EBITDA per tonne should be Rs. 1,000 to 1,100 in FY27.",
+   "expect": "forbid",
+   "forbid": [
+    {
+     "metric": "ebitda_margin"
+    },
+    {
+     "metric": "ebitda"
+    }
+   ],
+   "trap": "a per-tonne figure attributed to EBITDA margin or growth"
+  },
+  {
+   "id": "g32",
+   "s": "The board has approved a dividend payout policy of at least 30% of profits.",
+   "expect": "forbid",
+   "forbid": [
+    {
+     "metric": "pat"
+    },
+    {
+     "metric": "pat_margin"
+    }
+   ],
+   "trap": "payout ratio read as profit guidance"
+  },
+  {
+   "id": "g33",
+   "s": "We expect attrition to stabilise around 13% to 14%.",
+   "it": true,
+   "expect": "numeric",
+   "metric": [
+    "attrition"
+   ],
+   "low": 13,
+   "high": 14
+  },
+  {
+   "id": "g34",
+   "s": "Our order book stands at Rs. 12,400 crore, which is 3.1 times our revenue.",
+   "expect": "no_numeric",
+   "trap": "a current state read as guidance"
+  },
+  {
+   "id": "g35",
+   "s": "We expect to turn net cash by FY28.",
+   "expect": "forbid",
+   "forbid": [
+    {
+     "period": "FY27"
+    }
+   ],
+   "trap": "a FY28 goal scored against FY27"
+  },
+  {
+   "id": "g36",
+   "s": "Price increases of 3% taken in October should support margins in the second half.",
+   "expect": "forbid",
+   "forbid": [
+    {
+     "metric": "ebitda_margin",
+     "value_near": 3
+    }
+   ],
+   "trap": "a price increase read as a 3% margin target"
+  },
+  {
+   "id": "g37",
+   "s": "We expect revenue to be flat to marginally positive this year.",
+   "expect": "no_numeric",
+   "trap": "'flat' turned into a numeric range"
+  },
+  {
+   "id": "g38",
+   "s": "We expect EBITDA margin of 23% plus or minus 50 basis points in FY27.",
+   "expect": "numeric",
+   "metric": [
+    "ebitda_margin"
+   ],
+   "period": "FY27",
+   "low": 22.5,
+   "high": 23.5
+  },
+  {
+   "id": "g39",
+   "s": "We expect PAT to double over the next three years.",
+   "expect": "forbid",
+   "forbid": [
+    {
+     "period": "FY27"
+    }
+   ],
+   "trap": "a three-year goal scored against FY27"
+  },
+  {
+   "id": "g40",
+   "s": "Capex guidance for FY27 is unchanged at Rs. 450 crore.",
+   "expect": "numeric",
+   "metric": [
+    "capex"
+   ],
+   "period": "FY27",
+   "low_near": 450
+  }
+ ]
+}

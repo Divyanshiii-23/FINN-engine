@@ -1,0 +1,84 @@
+{
+ "companies": [
+  {
+   "symbol": "CORAL",
+   "name": "Coral Retail Limited",
+   "industry": "Diversified Retail",
+   "dataset": "fixture",
+   "as_of": "2026-11-04",
+   "generated_at": "2026-11-04T16:10:15.685742+00:00",
+   "documents": {
+    "results": 0,
+    "transcript": 0,
+    "presentation": 0,
+    "annual_report": 0,
+    "press_release": 0
+   },
+   "flags": 0
+  },
+  {
+   "symbol": "HALCYON",
+   "name": "Halcyon Infotech Limited",
+   "industry": "Computers - Software & Consulting",
+   "dataset": "fixture",
+   "as_of": "2026-11-04",
+   "generated_at": "2026-11-04T16:10:14.844385+00:00",
+   "documents": {
+    "results": 10,
+    "transcript": 10,
+    "presentation": 1,
+    "annual_report": 1,
+    "press_release": 0
+   },
+   "flags": 4
+  },
+  {
+   "symbol": "KAVERI",
+   "name": "Kaveri Cement Limited",
+   "industry": "Cement & Cement Products",
+   "dataset": "fixture",
+   "as_of": "2026-11-04",
+   "generated_at": "2026-11-04T16:10:15.183952+00:00",
+   "documents": {
+    "results": 10,
+    "transcript": 10,
+    "presentation": 1,
+    "annual_report": 2,
+    "press_release": 0
+   },
+   "flags": 9
+  },
+  {
+   "symbol": "SARANG",
+   "name": "Sarang Finance Limited",
+   "industry": "Non Banking Financial Company (NBFC)",
+   "dataset": "fixture",
+   "as_of": "2026-11-04",
+   "generated_at": "2026-11-04T16:10:15.381071+00:00",
+   "documents": {
+    "results": 10,
+    "transcript": 10,
+    "presentation": 0,
+    "annual_report": 1,
+    "press_release": 0
+   },
+   "flags": 3
+  },
+  {
+   "symbol": "VEDIKA",
+   "name": "Vedika Pharmaceuticals Limited",
+   "industry": "Pharmaceuticals",
+   "dataset": "fixture",
+   "as_of": "2026-11-04",
+   "generated_at": "2026-11-04T16:10:15.677039+00:00",
+   "documents": {
+    "results": 10,
+    "transcript": 9,
+    "presentation": 1,
+    "annual_report": 1,
+    "press_release": 0
+   },
+   "flags": 5
+  }
+ ]
+}
